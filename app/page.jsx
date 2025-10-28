@@ -61,17 +61,6 @@ export default function Home() {
     }
   };
 
-        setErr(msg);
-      }
-    } catch (errAny) {
-      setErr(errAny?.name === "AbortError" ? "Tempo excedido. Verifique a conexão e tente novamente." : "Falha de rede.");
-    } finally {
-      clearTimeout(timeout);
-      setSending(false);
-    }
-  };
-
-
   const inputCls =
     "w-full rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 " +
     "px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500/60 focus:border-orange-500";
@@ -429,11 +418,6 @@ export default function Home() {
                 >
                   {sending ? "Enviando..." : "Enviar"}
                 </button>
-              </div>
-              {/* Feedback */}
-              <div id="form-feedback" className="md:col-span-3 mt-3 text-sm">
-                {sent && <p className="text-green-700">Mensagem enviada com sucesso! 👍</p>}
-                {err && <p className="text-red-700">{err}</p>}
               </div>
             </form>
           ) : (
