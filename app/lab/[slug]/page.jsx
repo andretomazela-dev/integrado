@@ -22,7 +22,25 @@ export default function Page({ params }) {
         <main className="container py-24">
           <h1 className="text-2xl font-bold">Post não encontrado</h1>
           <p className="mt-4"><Link href="/lab" className="text-orange-600 underline">Voltar ao LAB</Link></p>
-        </main>
+        {/* Navegação entre posts */}
+<section className="container pb-12">
+  <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div className="flex gap-3">
+      <a href="/lab" className="btn btn-outline rounded-2xl hover:bg-orange-50">← Voltar ao LAB</a>
+      <a href="/" className="btn btn-primary rounded-2xl">Ir para a Home</a>
+    </div>
+    <div className="flex gap-3">
+      {prev && (
+        <a href={`/lab/${prev.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50"}>← {prev.title}</a>
+      )}
+      {next && (
+        <a href={`/lab/${next.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50"}>{next.title} →</a>
+      )}
+    </div>
+  </div>
+</section>
+
+      </main>
         <Footer />
       </div>
     );
@@ -31,6 +49,12 @@ export default function Page({ params }) {
   const related = labPosts
     .filter(p => p.slug !== post.slug && (p.tags || []).some(t => (post.tags || []).includes(t)))
     .slice(0, 3);
+
+  // Navegação prev/next baseada na ordem cronológica (mais recente primeiro)
+  const sortedPosts = [...labPosts].sort((a,b) => new Date(b.date) - new Date(a.date));
+  const currentIndex = sortedPosts.findIndex(p => p.slug === post.slug);
+  const prev = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null;
+  const next = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null;
 
   return (
     <div>
@@ -78,6 +102,24 @@ export default function Page({ params }) {
             </div>
           ) : null}
         </section>
+      {/* Navegação entre posts */}
+<section className="container pb-12">
+  <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div className="flex gap-3">
+      <a href="/lab" className="btn btn-outline rounded-2xl hover:bg-orange-50">← Voltar ao LAB</a>
+      <a href="/" className="btn btn-primary rounded-2xl">Ir para a Home</a>
+    </div>
+    <div className="flex gap-3">
+      {prev && (
+        <a href={`/lab/${prev.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50"}>← {prev.title}</a>
+      )}
+      {next && (
+        <a href={`/lab/${next.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50"}>{next.title} →</a>
+      )}
+    </div>
+  </div>
+</section>
+
       </main>
 
       <Footer />
