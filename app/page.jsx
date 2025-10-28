@@ -30,8 +30,13 @@ export default function Home() {
     e.preventDefault();
     setSending(true);
     setErr("");
+    setSent(false);
     const form = e.currentTarget;
     const fd = new FormData(form);
+
+    // Abort após 12s para evitar ficar 'Enviando...' indefinidamente
+    const ctrl = new AbortController();
+    const timeout = setTimeout(() => ctrl.abort(), 12000);
 
     try {
       // Honeypot
@@ -45,21 +50,31 @@ export default function Home() {
         method: "POST",
         headers: { Accept: "application/json" },
         body: fd,
+        mode: "cors",
+        signal: ctrl.signal,
+        redirect: "follow",
+        cache: "no-store",
       });
 
       if (res.ok) {
         setSent(true);
         form.reset();
       } else {
-        const j = await res.json().catch(() => ({}));
-        setErr(j.error || "Não foi possível enviar.");
+        let msg = "Não foi possível enviar.";
+        try {
+          const j = await res.json();
+          if (j && (j.error || j.message)) msg = j.error || j.message;
+        } catch {};
+        setErr(msg);
       }
-    } catch {
-      setErr("Falha de rede.");
+    } catch (errAny) {
+      setErr(errAny?.name === "AbortError" ? "Tempo excedido. Verifique a conexão e tente novamente." : "Falha de rede.");
     } finally {
+      clearTimeout(timeout);
       setSending(false);
     }
   };
+
 
   const inputCls =
     "w-full rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 " +
@@ -418,6 +433,11 @@ export default function Home() {
                 >
                   {sending ? "Enviando..." : "Enviar"}
                 </button>
+              </div>
+              {/* Feedback */}
+              <div id="form-feedback" className="md:col-span-3 mt-3 text-sm">
+                {sent && <p className="text-green-700">Mensagem enviada com sucesso! 👍</p>}
+                {err && <p className="text-red-700">{err}</p>}
               </div>
             </form>
           ) : (
