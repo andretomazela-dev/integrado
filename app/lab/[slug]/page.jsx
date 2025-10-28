@@ -23,7 +23,7 @@ export default function Page({ params }) {
           <h1 className="text-2xl font-bold">Post não encontrado</h1>
           <p className="mt-4"><Link href="/lab" className="text-orange-600 underline">Voltar ao LAB</Link></p>
         {/* Navegação entre posts */}
-<section className="container pb-12">
+<section className="container pb-20 md:pb-28 mt-10 border-t border-gray-100 pt-8">
   <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
     <div className="flex gap-3">
       <a href="/lab" className="btn btn-outline rounded-2xl hover:bg-orange-50">← Voltar ao LAB</a>
@@ -103,7 +103,7 @@ export default function Page({ params }) {
           ) : null}
         </section>
       {/* Navegação entre posts */}
-<section className="container pb-12">
+<section className="container pb-20 md:pb-28 mt-10 border-t border-gray-100 pt-8">
   <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
     <div className="flex gap-3">
       <a href="/lab" className="btn btn-outline rounded-2xl hover:bg-orange-50">← Voltar ao LAB</a>
