@@ -22,8 +22,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="preconnect" href="https://formspree.io" />
-        <link rel="dns-prefetch" href="https://formspree.io" />
       </head>
       <body>
         {children}
