@@ -84,3 +84,9 @@ export default function Page({ params }) {
     </div>
   );
 }
+
+export function generateStaticParams() {
+  return labPosts.map(p => ({ slug: p.slug }));
+}
+
+export const dynamicParams = false;
