@@ -30,13 +30,8 @@ export default function Home() {
     e.preventDefault();
     setSending(true);
     setErr("");
-    setSent(false);
     const form = e.currentTarget;
     const fd = new FormData(form);
-
-    // Abort após 12s para evitar ficar 'Enviando...' indefinidamente
-    const ctrl = new AbortController();
-    const timeout = setTimeout(() => ctrl.abort(), 12000);
 
     try {
       // Honeypot
@@ -50,21 +45,22 @@ export default function Home() {
         method: "POST",
         headers: { Accept: "application/json" },
         body: fd,
-        mode: "cors",
-        signal: ctrl.signal,
-        redirect: "follow",
-        cache: "no-store",
       });
 
       if (res.ok) {
         setSent(true);
         form.reset();
       } else {
-        let msg = "Não foi possível enviar.";
-        try {
-          const j = await res.json();
-          if (j && (j.error || j.message)) msg = j.error || j.message;
-        } catch {};
+        const j = await res.json().catch(() => ({}));
+        setErr(j.error || "Não foi possível enviar.");
+      }
+    } catch {
+      setErr("Falha de rede.");
+    } finally {
+      setSending(false);
+    }
+  };
+
         setErr(msg);
       }
     } catch (errAny) {
