@@ -31,10 +31,10 @@ export default function Page({ params }) {
     </div>
     <div className="flex gap-3">
       {prev && (
-        <a href={`/lab/${prev.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50"}>← {prev.title}</a>
+        <a href={`/lab/${prev.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50">← {prev.title}</a>
       )}
       {next && (
-        <a href={`/lab/${next.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50"}>{next.title} →</a>
+        <a href={`/lab/${next.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50">{next.title} →</a>
       )}
     </div>
   </div>
@@ -111,10 +111,10 @@ export default function Page({ params }) {
     </div>
     <div className="flex gap-3">
       {prev && (
-        <a href={`/lab/${prev.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50"}>← {prev.title}</a>
+        <a href={`/lab/${prev.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50">← {prev.title}</a>
       )}
       {next && (
-        <a href={`/lab/${next.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50"}>{next.title} →</a>
+        <a href={`/lab/${next.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50">{next.title} →</a>
       )}
     </div>
   </div>
