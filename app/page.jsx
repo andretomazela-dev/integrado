@@ -82,7 +82,7 @@ export default function Home() {
             Estratégia que posiciona, conteúdo que conecta e relações que abrem
             portas. Clareza, método e propósito em cada projeto.
           </p>
-          <div className="mt-6 flex gap-3">
+          <div className="mt-6 flex flex-wrap gap-3">
             <a
               href="#servicos"
               onClick={(e) => {
@@ -93,6 +93,10 @@ export default function Home() {
             >
               Ver serviços
             </a>
+
+            <Link href="/manifesto" className="btn btn-outline" aria-label="Leia nosso manifesto">
+              Leia nosso manifesto
+            </Link>
           </div>
           <p className="mt-6 text-sm text-gray-600">
             São Paulo • Brasil •{" "}
@@ -322,22 +326,22 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Quem é André Tomazela</h2>
 
             <div className="text-gray-700 space-y-5">
-          <p>
-            Sou jornalista formado pela Unesp-Bauru, com especialização em Jornalismo
-            Institucional e pós-graduação em Gestão da Comunicação em Mídias Digitais.
-            Há mais de 20 anos, atuo com comunicação corporativa, com foco em
-            planejamento estratégico de comunicação integrada, comunicação interna,
-            criação de conteúdo, gestão de canais digitais e offline, além de relações
-            com a imprensa para empresas, organizações e agências de comunicação.
-          </p>
+              <p>
+                Sou jornalista formado pela Unesp-Bauru, com especialização em Jornalismo
+                Institucional e pós-graduação em Gestão da Comunicação em Mídias Digitais.
+                Há mais de 20 anos, atuo com comunicação corporativa, com foco em
+                planejamento estratégico de comunicação integrada, comunicação interna,
+                criação de conteúdo, gestão de canais digitais e offline, além de relações
+                com a imprensa para empresas, organizações e agências de comunicação.
+              </p>
 
-          <p>
-            Como repórter do Valor Econômico, elaboro matérias para projetos especiais
-            sobre sustentabilidade, meio ambiente, inovação, infraestrutura e logística,
-            energia, saneamento básico, agronegócios e COP 30.
-          </p>
-        </div>
-          
+              <p>
+                Como repórter do Valor Econômico, elaboro matérias para projetos especiais
+                sobre sustentabilidade, meio ambiente, inovação, infraestrutura e logística,
+                energia, saneamento básico, agronegócios e COP 30.
+              </p>
+            </div>
+
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
                 href="https://www.linkedin.com/in/tomazela"
