@@ -1,4 +1,4 @@
-\"use client\";
+"use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -93,9 +93,6 @@ export default function Home() {
             >
               Ver serviços
             </a>
-            <Link href="/manifesto" className="btn btn-outline">
-              Leia nosso manifesto
-            </Link>
           </div>
           <p className="mt-6 text-sm text-gray-600">
             São Paulo • Brasil •{" "}
@@ -128,6 +125,7 @@ export default function Home() {
           </p>
 
           <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {/* 1 */}
             <div className="card">
               <div className="mb-3 text-orange-600">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -143,6 +141,7 @@ export default function Home() {
               </p>
             </div>
 
+            {/* 2 */}
             <div className="card">
               <div className="mb-3 text-orange-600">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -160,6 +159,7 @@ export default function Home() {
               </p>
             </div>
 
+            {/* 3 */}
             <div className="card">
               <div className="mb-3 text-orange-600">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -174,6 +174,7 @@ export default function Home() {
               </p>
             </div>
 
+            {/* 4 */}
             <div className="card">
               <div className="mb-3 text-orange-600">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -186,6 +187,7 @@ export default function Home() {
               </p>
             </div>
 
+            {/* 5 */}
             <div className="card">
               <div className="mb-3 text-orange-600">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -202,6 +204,7 @@ export default function Home() {
               </p>
             </div>
 
+            {/* 6 */}
             <div className="card">
               <div className="mb-3 text-orange-600">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -215,6 +218,7 @@ export default function Home() {
               </p>
             </div>
 
+            {/* 7 */}
             <div className="card">
               <div className="mb-3 text-orange-600">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -231,6 +235,7 @@ export default function Home() {
               </p>
             </div>
 
+            {/* 8 */}
             <div className="card">
               <div className="mb-3 text-orange-600">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -246,6 +251,7 @@ export default function Home() {
               </p>
             </div>
 
+            {/* 9 — CTA invertido */}
             <div
               className="rounded-2xl p-6 bg-[#FF4D00] text-white shadow-lg hover:opacity-90 transition cursor-pointer ring-1 ring-black/5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FF4D00]"
               role="button"
@@ -282,9 +288,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SOBRE */}
       <section id="sobre" className="py-14 md:py-16 bg-white scroll-mt-28">
         <div className="container grid md:grid-cols-2 gap-10 items-center">
+          {/* FOTO – mobile 1:1 com foco no topo; desktop com alturas e foco no topo */}
           <div className="rounded-2xl overflow-hidden shadow-card bg-white">
+            {/* Mobile (até md): quadrada 1:1 com cover e foco no topo */}
             <div className="relative aspect-square md:hidden">
               <Image
                 src="/andretomazelafoto.png"
@@ -295,6 +304,7 @@ export default function Home() {
                 sizes="100vw"
               />
             </div>
+            {/* Desktop (md+): mantém visual, mas com foco no topo e leve ajuste de altura */}
             <div className="hidden md:flex md:items-center md:justify-center">
               <Image
                 src="/andretomazelafoto.png"
@@ -312,22 +322,22 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Quem é André Tomazela</h2>
 
             <div className="text-gray-700 space-y-5">
-              <p>
-                Sou jornalista formado pela Unesp-Bauru, com especialização em Jornalismo
-                Institucional e pós-graduação em Gestão da Comunicação em Mídias Digitais.
-                Há mais de 20 anos, atuo com comunicação corporativa, com foco em
-                planejamento estratégico de comunicação integrada, comunicação interna,
-                criação de conteúdo, gestão de canais digitais e offline, além de relações
-                com a imprensa para empresas, organizações e agências de comunicação.
-              </p>
+          <p>
+            Sou jornalista formado pela Unesp-Bauru, com especialização em Jornalismo
+            Institucional e pós-graduação em Gestão da Comunicação em Mídias Digitais.
+            Há mais de 20 anos, atuo com comunicação corporativa, com foco em
+            planejamento estratégico de comunicação integrada, comunicação interna,
+            criação de conteúdo, gestão de canais digitais e offline, além de relações
+            com a imprensa para empresas, organizações e agências de comunicação.
+          </p>
 
-              <p>
-                Como repórter do Valor Econômico, elaboro matérias para projetos especiais
-                sobre sustentabilidade, meio ambiente, inovação, infraestrutura e logística,
-                energia, saneamento básico, agronegócios e COP 30.
-              </p>
-            </div>
-
+          <p>
+            Como repórter do Valor Econômico, elaboro matérias para projetos especiais
+            sobre sustentabilidade, meio ambiente, inovação, infraestrutura e logística,
+            energia, saneamento básico, agronegócios e COP 30.
+          </p>
+        </div>
+          
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
                 href="https://www.linkedin.com/in/tomazela"
@@ -352,6 +362,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CONTATO */}
       <section
         id="contato"
         className="py-14 md:py-16 bg-gradient-to-t from-orange-50 to-white border-t scroll-mt-28"
@@ -390,6 +401,7 @@ export default function Home() {
                 className={`md:col-span-3 ${inputCls}`}
               />
 
+              {/* Honeypot invisível */}
               <input
                 type="text"
                 name="website"
