@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { labPosts } from "@/content/lab-posts";
 
 export default function Home() {
   const [sent, setSent] = useState(false);
@@ -65,7 +66,12 @@ export default function Home() {
     "w-full rounded-xl border border-gray-300 bg-white text-gray-900 placeholder-gray-400 " +
     "px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500/60 focus:border-orange-500";
 
-  return (
+  
+  // Post mais recente do LAB (ordem por data desc)
+  const latestLabPost = [...labPosts].sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  )[0];
+return (
     <div>
       <Header />
 
@@ -291,6 +297,45 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+
+      {/* Destaque do LAB (post mais recente) */}
+      {latestLabPost ? (
+        <section className="bg-[#FFF4EF] py-20">
+          <div className="container grid md:grid-cols-2 gap-10 items-center">
+            <div className="order-2 md:order-1">
+              <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900">
+                No LAB
+              </h2>
+              <p className="text-gray-700 mb-6">
+                Ideias, aprendizados e bastidores sobre comunicação e estratégia.
+              </p>
+              <h3 className="text-xl font-semibold mb-2">
+                {latestLabPost.title}
+              </h3>
+              {latestLabPost.excerpt ? (
+                <p className="text-gray-700 mb-6">{latestLabPost.excerpt}</p>
+              ) : null}
+              <a
+                href={`/lab/${latestLabPost.slug}`}
+                className="inline-block bg-[#FF4D00] text-white px-6 py-3 rounded-2xl font-medium hover:bg-[#e64500] transition"
+              >
+                Ler no LAB →
+              </a>
+            </div>
+
+            <div className="order-1 md:order-2">
+              <img
+                src={latestLabPost.cover}
+                alt={latestLabPost.title}
+                className="rounded-2xl shadow-lg object-cover w-full h-72"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </section>
+      ) : null}
+
 
       {/* SOBRE */}
       <section id="sobre" className="py-14 md:py-16 bg-white scroll-mt-28">
