@@ -305,7 +305,7 @@ return (
     <div className="container grid md:grid-cols-2 gap-10 items-center">
       <div className="order-2 md:order-1">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900">
-          No LAB
+          LAB
         </h2>
         <p className="text-gray-600 mb-6 text-lg md:text-base">
           Ideias, aprendizados e bastidores sobre comunicação e estratégia.
