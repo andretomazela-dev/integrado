@@ -294,8 +294,7 @@ export default function Home() {
 
       {/* SOBRE */}
       <section id="sobre" className="py-14 md:py-16 bg-white scroll-mt-28">
-        <div className="container">
-            <article className="grid md:grid-cols-2 gap-10 items-center" itemScope itemType="https://schema.org/BlogPosting">
+        <div className="container grid md:grid-cols-2 gap-10 items-center">
           {/* FOTO – mobile 1:1 com foco no topo; desktop com alturas e foco no topo */}
           <div className="rounded-2xl overflow-hidden shadow-card bg-white">
             {/* Mobile (até md): quadrada 1:1 com cover e foco no topo */}
