@@ -375,6 +375,9 @@ return (
               <p>
                 Sou jornalista formado pela Unesp-Bauru, com especialização em Jornalismo
                 Institucional e pós-graduação em Gestão da Comunicação em Mídias Digitais.
+                </p>
+
+              <p>
                 Há mais de 20 anos, atuo com comunicação corporativa, com foco em
                 planejamento estratégico de comunicação integrada, comunicação interna,
                 criação de conteúdo, gestão de canais digitais e offline, além de relações
