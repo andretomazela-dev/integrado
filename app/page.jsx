@@ -255,9 +255,9 @@ return (
                   <line x1="3" y1="10" x2="21" y2="10"></line>
                 </svg>
               </div>
-              <h3 className="font-semibold">Planejamento de eventos</h3>
+              <h3 className="font-semibold">Comunicação e presença em eventos</h3>
               <p className="text-sm text-gray-600 mt-2">
-                Organização e divulgação de ações que destaquem sua marca.
+                Posicionamento, narrativa e comunicação para fortalecer sua presença institucional em eventos.
               </p>
             </div>
 
