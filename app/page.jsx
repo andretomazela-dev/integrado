@@ -193,7 +193,7 @@ return (
               </div>
               <h3 className="font-semibold">Redes sociais</h3>
               <p className="text-sm text-gray-600 mt-2">
-                Planejamento e execução de conteúdo alinhado ao seu público.
+                Consultoria de estratégia digital: posicionamento, narrativa e curadoria de conteúdo.
               </p>
             </div>
 
