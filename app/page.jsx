@@ -222,9 +222,9 @@ return (
                   <path d="M19 14l.8 1.8L22 16l-1.8.8L19 19l-.8-2.2L16 16l2.2-.2L19 14Z"></path>
                 </svg>
               </div>
-              <h3 className="font-semibold">Parcerias com influenciadores</h3>
+              <h3 className="font-semibold">Conexões estratégicas</h3>
               <p className="text-sm text-gray-600 mt-2">
-                Conexões estratégicas para amplificar sua mensagem.
+                Alinhamento com vozes relevantes para fortalecer sua mensagem e reputação.
               </p>
             </div>
 
