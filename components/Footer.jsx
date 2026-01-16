@@ -65,7 +65,7 @@ export default function Footer() {
             <IconLinkedIn />
           </a>
           <a
-            href="https://www.instagram.com/tomazela.comunica/"
+            href="https://www.instagram.com/andre.tomazela/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
