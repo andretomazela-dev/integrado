@@ -89,7 +89,7 @@ return (
             portas. Clareza, método e propósito em cada projeto.
           </p>
           <p className="mt-3 text-sm text-gray-600">
-         André Tomazela - jornalista e consultor de comunicação estratégica.
+         André Tomazela, jornalista e consultor de comunicação estratégica.
          </p>
         <div className="mt-6 flex flex-wrap gap-3">
             <a
