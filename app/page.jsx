@@ -82,7 +82,7 @@ return (
       >
         <div>
           <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
-            Comunicação sob medida para marcas e organizações de impacto.
+            Comunicação sob medida para marcas, empresas e organizações de impacto.
           </h1>
           <p className="mt-4 text-lg text-gray-700">
             Estratégia que posiciona, conteúdo que conecta e relações que abrem
