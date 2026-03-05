@@ -117,7 +117,7 @@ return (
 
        <div className="rounded-2xl shadow-card overflow-hidden bg-white flex items-center justify-center p-6">
   <img
-    src="/ilustracao-estrategia-comunicacao.svg"
+    src="/ilustracao-estrategia-comunicacao.png"
     alt="Estratégia de comunicação"
     className="w-full h-auto object-contain max-h-[420px]"
     loading="lazy"
