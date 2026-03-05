@@ -117,7 +117,7 @@ return (
 
         <div className="rounded-2xl shadow-card overflow-hidden bg-white flex items-center justify-center">
           <img
-            src="/social-media-entertainment-lifestyle-graphic-concept.jpg"
+            src="/ilustracao_estrategia_comunicacao.svg"
             alt="Marca Tomazela"
             className="block w-full h-auto object-contain max-h-[280px] md:max-h-[360px]"
             loading="lazy"
