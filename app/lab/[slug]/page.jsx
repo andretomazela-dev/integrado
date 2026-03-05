@@ -15,32 +15,19 @@ function formatDate(iso) {
 
 export default function Page({ params }) {
   const post = labPosts.find(p => p.slug === params.slug);
+
   if (!post) {
     return (
       <div>
         <Header />
         <main className="container py-24">
           <h1 className="text-2xl font-bold">Post não encontrado</h1>
-          <p className="mt-4"><Link href="/lab" className="text-orange-600 underline">Voltar ao LAB</Link></p>
-        {/* Navegação entre posts */}
-<section className="container pb-20 md:pb-28 mt-10 border-t border-gray-100 pt-8">
-  <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <div className="flex gap-3">
-      <a href="/lab" className="btn btn-outline rounded-2xl hover:bg-orange-50">← Voltar ao LAB</a>
-      <a href="/" className="btn btn-primary rounded-2xl">Ir para a Home</a>
-    </div>
-    <div className="flex gap-3">
-      {prev && (
-        <a href={`/lab/${prev.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50">← {prev.title}</a>
-      )}
-      {next && (
-        <a href={`/lab/${next.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50">{next.title} →</a>
-      )}
-    </div>
-  </div>
-</section>
-
-      </main>
+          <p className="mt-4">
+            <Link href="/lab" className="text-orange-600 underline">
+              Voltar ao LAB
+            </Link>
+          </p>
+        </main>
         <Footer />
       </div>
     );
@@ -50,7 +37,6 @@ export default function Page({ params }) {
     .filter(p => p.slug !== post.slug && (p.tags || []).some(t => (post.tags || []).includes(t)))
     .slice(0, 3);
 
-  // Navegação prev/next baseada na ordem cronológica (mais recente primeiro)
   const sortedPosts = [...labPosts].sort((a,b) => new Date(b.date) - new Date(a.date));
   const currentIndex = sortedPosts.findIndex(p => p.slug === post.slug);
   const prev = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null;
@@ -61,10 +47,19 @@ export default function Page({ params }) {
       <Header />
 
       <main className="bg-white">
+
         <section className="container py-8 md:py-10">
-          <p className="uppercase tracking-wide text-sm text-orange-600 font-semibold">LAB</p>
-          <h1 className="mt-1 text-3xl md:text-5xl font-extrabold leading-tight">{post.title}</h1>
-          <div className="mt-2 text-sm text-gray-500">{formatDate(post.date)}</div>
+          <p className="uppercase tracking-wide text-sm text-orange-600 font-semibold">
+            LAB
+          </p>
+
+          <h1 className="mt-1 text-3xl md:text-5xl font-extrabold leading-tight">
+            {post.title}
+          </h1>
+
+          <div className="mt-2 text-sm text-gray-500">
+            {formatDate(post.date)}
+          </div>
 
           <div className="mt-6 rounded-2xl overflow-hidden shadow-card relative h-[300px] md:h-[420px]">
             <Image
@@ -79,46 +74,108 @@ export default function Page({ params }) {
         </section>
 
         <section className="container pb-10 md:pb-14">
+
           <article className="content text-gray-800 text-lg leading-relaxed">
             <div dangerouslySetInnerHTML={{ __html: post.content }} />
           </article>
 
+          {/* CTA CONSULTORIA */}
+          <div className="mt-16 p-8 md:p-10 rounded-2xl bg-gray-50 border border-gray-200 text-center">
+            <h2 className="text-2xl md:text-3xl font-semibold">
+              Quer aplicar essas ideias no seu projeto?
+            </h2>
+
+            <p className="mt-4 text-gray-700 max-w-xl mx-auto">
+              Se você busca estruturar comunicação estratégica, fortalecer sua presença
+              institucional ou desenvolver conteúdo com método e clareza, podemos
+              conversar sobre o seu desafio.
+            </p>
+
+            <div className="mt-6">
+              <Link
+                href="/#contato"
+                className="inline-block bg-[#FF4D00] text-white font-semibold py-3 px-6 rounded-2xl hover:opacity-90 transition"
+              >
+                Falar sobre meu projeto
+              </Link>
+            </div>
+          </div>
+
           {related.length ? (
-            <div className="mt-12">
-              <h2 className="text-xl font-semibold mb-4">Você também pode curtir</h2>
+            <div className="mt-16">
+              <h2 className="text-xl font-semibold mb-4">
+                Você também pode curtir
+              </h2>
+
               <div className="grid gap-6 md:grid-cols-3">
                 {related.map(p => (
-                  <Link key={p.slug} href={`/lab/${p.slug}`} className="card rounded-2xl overflow-hidden border border-gray-200">
+                  <Link
+                    key={p.slug}
+                    href={`/lab/${p.slug}`}
+                    className="card rounded-2xl overflow-hidden border border-gray-200"
+                  >
                     <div className="relative h-36">
-                      <Image src={p.cover} alt={p.title} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
+                      <Image
+                        src={p.cover}
+                        alt={p.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className="object-cover"
+                      />
                     </div>
+
                     <div className="p-4">
-                      <div className="text-xs uppercase tracking-wide text-gray-500">{formatDate(p.date)}</div>
-                      <h3 className="mt-1 font-semibold leading-snug">{p.title}</h3>
+                      <div className="text-xs uppercase tracking-wide text-gray-500">
+                        {formatDate(p.date)}
+                      </div>
+                      <h3 className="mt-1 font-semibold leading-snug">
+                        {p.title}
+                      </h3>
                     </div>
                   </Link>
                 ))}
               </div>
             </div>
           ) : null}
+
         </section>
-      {/* Navegação entre posts */}
-<section className="container pb-20 md:pb-28 mt-10 border-t border-gray-100 pt-8">
-  <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <div className="flex gap-3">
-      <a href="/lab" className="btn btn-outline rounded-2xl hover:bg-orange-50">← Voltar ao LAB</a>
-      <a href="/" className="btn btn-primary rounded-2xl">Ir para a Home</a>
-    </div>
-    <div className="flex gap-3">
-      {prev && (
-        <a href={`/lab/${prev.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50">← {prev.title}</a>
-      )}
-      {next && (
-        <a href={`/lab/${next.slug}`} className="btn btn-outline rounded-2xl hover:bg-orange-50">{next.title} →</a>
-      )}
-    </div>
-  </div>
-</section>
+
+        {/* Navegação entre posts */}
+        <section className="container pb-20 md:pb-28 mt-10 border-t border-gray-100 pt-8">
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+
+            <div className="flex gap-3">
+              <Link href="/lab" className="btn btn-outline rounded-2xl hover:bg-orange-50">
+                ← Voltar ao LAB
+              </Link>
+
+              <Link href="/" className="btn btn-primary rounded-2xl">
+                Ir para a Home
+              </Link>
+            </div>
+
+            <div className="flex gap-3">
+              {prev && (
+                <Link
+                  href={`/lab/${prev.slug}`}
+                  className="btn btn-outline rounded-2xl hover:bg-orange-50"
+                >
+                  ← {prev.title}
+                </Link>
+              )}
+
+              {next && (
+                <Link
+                  href={`/lab/${next.slug}`}
+                  className="btn btn-outline rounded-2xl hover:bg-orange-50"
+                >
+                  {next.title} →
+                </Link>
+              )}
+            </div>
+
+          </div>
+        </section>
 
       </main>
 
