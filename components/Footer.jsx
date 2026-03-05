@@ -36,7 +36,7 @@ export default function Footer() {
           priority
         />
 
-        <p className="text-sm">Santa Cecília | São Paulo SP</p>
+        <p className="text-sm">São Paulo • Brasil</p>
 
         <a
           href="mailto:andre@andretomazela.com.br"
