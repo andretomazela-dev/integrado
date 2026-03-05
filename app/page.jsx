@@ -296,7 +296,7 @@ return (
             }}
             className="inline-block mt-8 btn btn-primary"
           >
-            Solicitar proposta
+            Falar sobre meu projeto
           </a>
         </div>
       </section>
@@ -424,8 +424,7 @@ return (
         <div className="container">
           <h2 className="text-2xl md:text-3xl font-bold">Vamos conversar?</h2>
           <p className="mt-2 mb-6 text-gray-700 max-w-prose">
-            Conte rápido seu objetivo. Eu respondo com um caminho claro e um
-            pacote de soluções sob medida.
+            Conte rapidamente seu objetivo. Eu respondo com um caminho claro e uma proposta sob medida.
           </p>
 
           {!sent ? (
