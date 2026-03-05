@@ -389,7 +389,7 @@ return (
 
   <p>
     Também atuo como repórter do Valor Econômico, onde elaboro matérias para projetos especiais 
-    sobre sustentabilidade, inovação, infraestrutura, logística, energia, saneamento básico e agronegócios. 
+    sobre sustentabilidade, inovação, infraestrutura, energia, saneamento básico e agronegócios. 
     Em 2026, fui finalista do VIII Prêmio de Jornalismo em Seguros com reportagem publicada no jornal.
   </p>
 </div>
