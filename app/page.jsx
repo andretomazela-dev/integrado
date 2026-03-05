@@ -115,14 +115,14 @@ return (
           </p>
         </div>
 
-        <div className="rounded-2xl shadow-card overflow-hidden bg-white flex items-center justify-center">
-          <img
-            src="/Ilustracao_estrategia_comunicacao.png"
-            alt="Ilustração de estratégia e comunicação"
-            className="block w-full h-auto object-contain max-h-[280px] md:max-h-[360px]"
-            loading="lazy"
-          />
-        </div>
+       <div className="rounded-2xl shadow-card overflow-hidden bg-white flex items-center justify-center p-6">
+  <img
+    src="/ilustracao-estrategia-comunicacao.svg"
+    alt="Estratégia de comunicação"
+    className="w-full h-auto object-contain max-h-[420px]"
+    loading="lazy"
+  />
+</div>
       </section>
 
       {/* SERVIÇOS */}
