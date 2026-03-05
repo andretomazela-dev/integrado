@@ -372,27 +372,27 @@ return (
           </div>
 
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Quem é André Tomazela</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Sobre André Tomazela</h2>
 
             <div className="text-gray-700 space-y-5">
-              <p>
-                Sou jornalista formado pela Unesp-Bauru, com especialização em Jornalismo
-                Institucional e pós-graduação em Gestão da Comunicação em Mídias Digitais.
-                </p>
+  <p>
+    Trabalho com comunicação corporativa há mais de 20 anos, ajudando empresas e organizações 
+    a estruturar estratégia de comunicação, produzir conteúdo e fortalecer o relacionamento com seus públicos. 
+    Ao longo da carreira, atuei com planejamento de comunicação integrada, comunicação interna, 
+    criação de conteúdos institucionais, gestão de canais digitais e relacionamento com a imprensa.
+  </p>
 
-              <p>
-                Há mais de 20 anos, atuo com comunicação corporativa, com foco em
-                planejamento estratégico de comunicação integrada, comunicação interna,
-                criação de conteúdo, gestão de canais digitais e offline, além de relações
-                com a imprensa para empresas, organizações e agências de comunicação.
-              </p>
+  <p>
+    Sou jornalista formado pela Unesp-Bauru, com especialização em Jornalismo Institucional 
+    e pós-graduação em Gestão da Comunicação em Mídias Digitais.
+  </p>
 
-              <p>
-                Como repórter do Valor Econômico, elaboro matérias para projetos especiais
-                sobre sustentabilidade, meio ambiente, inovação, infraestrutura e logística,
-                energia, saneamento básico, agronegócios e COP 30.
-              </p>
-            </div>
+  <p>
+    Também atuo como repórter do Valor Econômico, onde elaboro matérias para projetos especiais 
+    sobre sustentabilidade, inovação, infraestrutura, logística, energia, saneamento básico e agronegócios. 
+    Em 2026, fui finalista do Prêmio de Jornalismo em Seguros com reportagem publicada no jornal.
+  </p>
+</div>
 
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
