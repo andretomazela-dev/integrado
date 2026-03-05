@@ -94,7 +94,7 @@ export const labPosts = [
     slug: "sequestro-da-subjetividade-no-trabalho",
     title: "O sequestro da subjetividade no trabalho e seus impactos na saúde mental",
     date: "2025-03-02",
-    cover: "/lab/3783105.webp",
+    cover: "/lab/Capturado.png",
     excerpt: "Quando o trabalho captura a identidade, a saúde mental pede socorro. O que a comunicação pode fazer?",
     tags: ["saude-mental", "cultura-organizacional", "comunicacao-interna"],
     content: `
