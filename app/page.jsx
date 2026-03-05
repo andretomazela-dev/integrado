@@ -486,19 +486,20 @@ return (
             </div>
           )}
 
-          <div className="mt-6 text-sm text-gray-600 flex flex-wrap gap-4 items-center">
-            <a className="underline" href="mailto:andre@andretomazela.com.br">
-              andre@andretomazela.com.br
-            </a>
-            <span>•</span>
-            <a className="underline" href="https://wa.me/message/TUNCL3KFQIECM1">
-              WhatsApp
-            </a>
-            <span>•</span>
-            <a className="underline" href="https://www.linkedin.com/in/tomazela/">
-              LinkedIn
-            </a>
-          </div>
+          <div className="mt-6 text-sm text-gray-600 flex flex-wrap gap-2 items-center">
+  <span>Prefere falar direto?</span>
+  <a className="underline" href="https://wa.me/message/TUNCL3KFQIECM1">
+    WhatsApp
+  </a>
+  <span>•</span>
+  <a className="underline" href="https://www.linkedin.com/in/tomazela/">
+    LinkedIn
+  </a>
+  <span>•</span>
+  <a className="underline" href="mailto:andre@andretomazela.com.br">
+    E-mail
+  </a>
+</div>
         </div>
       </section>
 
