@@ -117,8 +117,8 @@ return (
 
         <div className="rounded-2xl shadow-card overflow-hidden bg-white flex items-center justify-center">
           <img
-            src="/ilustracao_estrategia_comunicacao.svg"
-            alt="Marca Tomazela"
+            src="/ilustracao-estrategia-comunicacao.svg"
+            alt="Ilustração de estratégia de comunicação"
             className="block w-full h-auto object-contain max-h-[280px] md:max-h-[360px]"
             loading="lazy"
           />
