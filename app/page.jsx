@@ -374,23 +374,21 @@ return (
           <div>
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Sobre André Tomazela</h2>
 
-            <div className="text-gray-700 space-y-5">
+ <div className="text-gray-700 space-y-5">
   <p>
-    Trabalho com comunicação corporativa há mais de 20 anos, ajudando empresas e organizações a 
-    estruturar estratégias, produzir conteúdo e fortalecer o relacionamento com seus públicos. 
-    Ao longo da carreira, atuei em planejamento de comunicação integrada, comunicação interna, 
-    criação de conteúdos institucionais, gestão de canais digitais e relacionamento com a imprensa.
+    Trabalho com comunicação corporativa há mais de 20 anos, ajudando empresas e organizações a estruturar estratégias, 
+    produzir conteúdo e fortalecer o relacionamento com seus públicos. Ao longo da carreira, atuei em planejamento de 
+    comunicação integrada, comunicação interna, conteúdos institucionais, gestão de canais digitais e relacionamento com a imprensa.
   </p>
 
   <p>
-    Sou jornalista formado pela Unesp-Bauru, com especialização em Jornalismo Institucional 
-    e pós-graduação em Gestão da Comunicação em Mídias Digitais.
+    Como repórter freelancer, elaboro matérias para projetos especiais do Valor Econômico sobre sustentabilidade, 
+    inovação, infraestrutura e logística. Em 2026, fui finalista do VIII Prêmio de Jornalismo em Seguros com reportagem publicada no jornal.
   </p>
 
   <p>
-    Também atuo como repórter do Valor Econômico, onde elaboro matérias para projetos especiais 
-    sobre sustentabilidade, inovação, infraestrutura, energia, entre outros. Em 2026, fui finalista 
-    do VIII Prêmio de Jornalismo em Seguros com reportagem publicada no jornal.
+    Sou jornalista formado pela Unesp-Bauru, com especialização em Jornalismo Institucional e 
+    pós-graduação em Gestão da Comunicação em Mídias Digitais.
   </p>
 </div>
 
