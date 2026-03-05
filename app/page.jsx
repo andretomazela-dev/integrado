@@ -376,9 +376,9 @@ return (
 
             <div className="text-gray-700 space-y-5">
   <p>
-    Trabalho com comunicação corporativa há mais de 20 anos, ajudando empresas e organizações 
-    a estruturar estratégia de comunicação, produzir conteúdo e fortalecer o relacionamento com seus públicos. 
-    Ao longo da carreira, atuei com planejamento de comunicação integrada, comunicação interna, 
+    Trabalho com comunicação corporativa há mais de 20 anos, ajudando empresas e organizações a 
+    estruturar estratégias, produzir conteúdo e fortalecer o relacionamento com seus públicos. 
+    Ao longo da carreira, atuei em planejamento de comunicação integrada, comunicação interna, 
     criação de conteúdos institucionais, gestão de canais digitais e relacionamento com a imprensa.
   </p>
 
@@ -389,8 +389,8 @@ return (
 
   <p>
     Também atuo como repórter do Valor Econômico, onde elaboro matérias para projetos especiais 
-    sobre sustentabilidade, inovação, infraestrutura, energia, saneamento básico e agronegócios. 
-    Em 2026, fui finalista do VIII Prêmio de Jornalismo em Seguros com reportagem publicada no jornal.
+    sobre sustentabilidade, inovação, infraestrutura, energia, entre outros. Em 2026, fui finalista 
+    do VIII Prêmio de Jornalismo em Seguros com reportagem publicada no jornal.
   </p>
 </div>
 
