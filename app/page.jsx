@@ -82,11 +82,13 @@ return (
       >
         <div>
           <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
-            Comunicação sob medida para marcas, empresas e organizações de impacto.
+            Comunicação estratégica para quem gera impacto real.
           </h1>
           <p className="mt-4 text-lg text-gray-700">
-            Estratégia que posiciona, conteúdo que conecta e relações que abrem
-            portas. Clareza, método e propósito em cada projeto.
+            No excesso de ruído atual, a clareza é um ativo raro. Desenvolvo estratégias 
+            e narrativas que não buscam apenas visibilidade, mas relevância e autoridade. 
+            Com método e um olhar crítico, ajudo marcas e lideranças a traduzirem propósitos 
+            complexos em mensagens que realmente geram movimento.
           </p>
           <p className="mt-3 text-sm text-gray-600">
          André Tomazela · jornalista e consultor em comunicação estratégica
@@ -100,11 +102,11 @@ return (
               }}
               className="btn btn-primary"
             >
-              Ver serviços
+              Como eu trabalho
             </a>
 
             <Link href="/manifesto" className="btn btn-outline" aria-label="Leia nosso manifesto">
-              Leia nosso manifesto
+              O manifesto
             </Link>
           </div>
           <p className="mt-6 text-sm text-gray-600">
@@ -129,12 +131,12 @@ return (
       <section id="servicos" className="bg-gray-50 py-14 md:py-16 scroll-mt-28">
         <div className="container">
           <h2 className="text-2xl md:text-3xl font-bold">
-            O que podemos fazer por você
+            O que posso fazer por você
           </h2>
           <p className="mt-2 text-gray-600 max-w-prose">
-            Serviços pensados para empresas e organizações de impacto. Objetivo:
-            ampliar visibilidade, fortalecer reputação e criar relações
-            consistentes.
+            Serviços desenhados para marcas que buscam relevância 
+            em um cenário de excesso de ruído. O objetivo é transformar 
+            propósito em autoridade e presença institucional consistente.
           </p>
 
           <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -147,10 +149,10 @@ return (
                   <path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path>
                 </svg>
               </div>
-              <h3 className="font-semibold">Posicionamento e narrativas de marca</h3>
+              <h3 className="font-semibold">Posicionamento e narrativa de marca</h3>
               <p className="text-sm text-gray-600 mt-2">
-                Identidade verbal e narrativa para marcas, projetos e lideranças
-                que querem comunicar com autenticidade e propósito.
+                Definição de uma voz única e coerente. Ajudo a marca a encontrar 
+                seu lugar no mercado sem recorrer a fórmulas prontas ou clichês de setor.
               </p>
             </div>
 
@@ -167,8 +169,9 @@ return (
               </div>
               <h3 className="font-semibold">Relações com a imprensa</h3>
               <p className="text-sm text-gray-600 mt-2">
-                Criação de pautas e materiais estratégicos para fortalecer sua
-                marca na mídia.
+                Curadoria de pautas e gestão de relacionamentos. 
+                O foco não é apenas o volume de menções, mas a construção 
+                de uma reputação sólida junto a formadores de opinião.
               </p>
             </div>
 
@@ -180,10 +183,11 @@ return (
                   <path d="M12 8l1.2 2.4 2.6.4-1.9 1.9.5 2.7L12 14.5 9.6 15.4l.5-2.7-1.9-1.9 2.6-.4L12 8Z"></path>
                 </svg>
               </div>
-              <h3 className="font-semibold">Estratégia e reputação</h3>
+              <h3 className="font-semibold">Conselho e reputação</h3>
               <p className="text-sm text-gray-600 mt-2">
-                Diagnóstico e plano de comunicação para fortalecer reputação e
-                alinhar propósito, voz e presença.
+                Acompanhamento estratégico para lideranças. 
+                Um olhar externo e experiente para antecipar crises e 
+                proteger o valor institucional da organização.
               </p>
             </div>
 
@@ -194,9 +198,10 @@ return (
                   <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1-4-4h10a4 4 0 0 1 4 4z"></path>
                 </svg>
               </div>
-              <h3 className="font-semibold">Redes sociais</h3>
+              <h3 className="font-semibold">Presença digital</h3>
               <p className="text-sm text-gray-600 mt-2">
-                Consultoria de estratégia digital: posicionamento, narrativa e curadoria de conteúdo.
+                Estratégias de presença digital que privilegiam a qualidade da interação e 
+                a autoridade do discurso em vez do volume vazio de postagens.
               </p>
             </div>
 
@@ -212,8 +217,9 @@ return (
               </div>
               <h3 className="font-semibold">Comunicação interna e cultura</h3>
               <p className="text-sm text-gray-600 mt-2">
-                Campanhas e ações de engajamento que fortalecem diálogo e
-                pertencimento.
+                Alinhamento entre o discurso externo e a prática interna. 
+                Narrativas que engajam equipes e consolidam 
+                a identidade da empresa de dentro para fora.
               </p>
             </div>
 
@@ -225,46 +231,14 @@ return (
                   <path d="M19 14l.8 1.8L22 16l-1.8.8L19 19l-.8-2.2L16 16l2.2-.2L19 14Z"></path>
                 </svg>
               </div>
-              <h3 className="font-semibold">Conexões estratégicas</h3>
-              <p className="text-sm text-gray-600 mt-2">
-                Alinhamento com vozes relevantes para fortalecer sua mensagem e reputação.
-              </p>
-            </div>
-
-            {/* 7 */}
-            <div className="card">
-              <div className="mb-3 text-orange-600">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                  <path d="M14 2v6h6"></path>
-                  <line x1="16" y1="13" x2="8" y2="13"></line>
-                  <line x1="16" y1="17" x2="8" y2="17"></line>
-                  <line x1="10" y1="9" x2="8" y2="9"></line>
-                </svg>
-              </div>
               <h3 className="font-semibold">Criação de conteúdo</h3>
               <p className="text-sm text-gray-600 mt-2">
-                Textos e materiais que posicionam sua organização no mercado.
+                Produção de material com rigor e ponto de vista, de artigos de opinião 
+                a relatórios anuais, desenhados para reforçar a credibilidade da marca.
               </p>
             </div>
-
-            {/* 8 */}
-            <div className="card">
-              <div className="mb-3 text-orange-600">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                  <line x1="16" y1="2" x2="16" y2="6"></line>
-                  <line x1="8" y1="2" x2="8" y2="6"></line>
-                  <line x1="3" y1="10" x2="21" y2="10"></line>
-                </svg>
-              </div>
-              <h3 className="font-semibold">Comunicação e presença em eventos</h3>
-              <p className="text-sm text-gray-600 mt-2">
-                Posicionamento, narrativa e comunicação para fortalecer sua presença institucional em eventos.
-              </p>
-            </div>
-
-            {/* 9 — CTA invertido */}
+                                
+            {/* 7 — CTA invertido */}
             <div
               className="rounded-2xl p-6 bg-[#FF4D00] text-white shadow-lg hover:opacity-90 transition cursor-pointer ring-1 ring-black/5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FF4D00]"
               role="button"
@@ -280,7 +254,7 @@ return (
               </div>
               <h3 className="font-semibold">O que mais você precisa?</h3>
               <p className="text-sm mt-2 opacity-95">
-                Montamos um pacote sob medida, de acordo com suas necessidades.
+                Desenvolvemos soluções sob medida e projetos especiais de acordo com o seu desafio atual.
               </p>
               <span className="mt-3 inline-block text-xs font-semibold bg-white/15 rounded-full px-3 py-1">
                 Clique para falar com a gente
@@ -311,7 +285,7 @@ return (
           LAB
         </h2>
         <p className="text-gray-600 mb-6 text-lg md:text-base">
-          Ideias, aprendizados e bastidores sobre comunicação e estratégia.
+        Ideias e visão crítica sobre comunicação e sociedade.
         </p>
         <h3 className="text-xl font-semibold mb-2">
           {latestLabPost.title}
@@ -324,7 +298,7 @@ return (
           className="inline-block bg-[#FF4D00] text-white px-6 py-3 rounded-2xl font-medium hover:opacity-90 transition"
           aria-label="Ler mais no LAB"
         >
-          Ler no LAB →
+          Acessar o LAB →
         </a>
       </div>
 
@@ -376,19 +350,11 @@ return (
 
  <div className="text-gray-700 space-y-5">
   <p>
-    Trabalho com comunicação corporativa há mais de 20 anos, ajudando empresas e organizações a estruturar estratégias, 
-    produzir conteúdo e fortalecer o relacionamento com seus públicos. Ao longo da carreira, atuei em planejamento de 
-    comunicação integrada, comunicação interna, conteúdos institucionais, gestão de canais digitais e relacionamento com a imprensa.
-  </p>
-
-  <p>
-    Como repórter freelancer, elaboro matérias para projetos especiais do Valor Econômico sobre sustentabilidade, 
-    inovação, infraestrutura e logística. Em 2026, fui finalista do VIII Prêmio de Jornalismo em Seguros com reportagem publicada no jornal.
-  </p>
-
-  <p>
-    Sou jornalista formado pela Unesp-Bauru, com especialização em Jornalismo Institucional e 
-    pós-graduação em Gestão da Comunicação em Mídias Digitais.
+    Transito há mais de 20 anos entre as redações e o coração da comunicação corporativa. 
+    Nesse percurso, aprendi que estratégia sem verdade é apenas ruído. 
+    Como jornalista e consultor, minha entrega é baseada em escuta ativa e método, 
+    ajudando empresas a amadurecerem sua forma de se expressar e se relacionar com o mundo. 
+    Acredito em uma comunicação que não apenas informa, mas que forma opinião e consolida legados.
   </p>
 </div>
 
@@ -424,7 +390,8 @@ return (
         <div className="container">
           <h2 className="text-2xl md:text-3xl font-bold">Vamos conversar?</h2>
           <p className="mt-2 mb-6 text-gray-700 max-w-prose">
-            Conte rapidamente seu objetivo. Eu respondo com um caminho claro e uma proposta sob medida.
+             Sua marca tem uma história que precisa de clareza?
+            Vamos entender o seu momento e definir o que vem a seguir.
           </p>
 
           {!sent ? (
