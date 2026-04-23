@@ -23,18 +23,17 @@ export default function Header() {
       <div className="container flex items-center justify-between py-3 h-20">
         
         {/* LOGO */}
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/logo-tomazela.png"
-            alt="Tomazela"
-            width={440}
-            height={120}
-            priority
-            className={`w-auto transition-all duration-200 ${
-              scrolled ? "h-[85px] sm:h-[95px]" : "h-[95px] sm:h-[110px]"
-            }`}
-          />
-        </Link>
+        <Link href="/" className="flex items-center h-[70px] sm:h-[80px]">
+  <div className="relative h-full w-[180px] sm:w-[220px]">
+    <Image
+      src="/logo-tomazela.png"
+      alt="Tomazela"
+      fill
+      priority
+      className="object-contain transition-all duration-200"
+    />
+  </div>
+</Link>
 
         {/* MENU DESKTOP */}
         <nav className="hidden md:flex items-center gap-8">
