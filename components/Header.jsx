@@ -18,13 +18,13 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur border-b transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-100 transition-all duration-300 ${
         scrolled ? "py-2" : "py-3"
       }`}
     >
       <div className="container flex items-center justify-between">
         
-        {/* LOGO */}
+        {/* LOGO — NÃO ALTERADO */}
         <Link href="/" className="flex items-center">
           <div
             className={`relative transition-all duration-300 ${
@@ -43,15 +43,15 @@ export default function Header() {
           </div>
         </Link>
 
-        {/* MENU */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+        {/* MENU — CORRIGIDO */}
+        <nav className="hidden md:flex items-center gap-8 text-[16px] font-medium text-gray-800">
           <Link href="#servicos" className="hover:underline underline-offset-4">
             Serviços
           </Link>
-            <Link href="/manifesto" className="hover:underline underline-offset-4"> 
-              Manifesto
-            </Link>
-           <Link href="#conteudo" className="hover:underline underline-offset-4">
+          <Link href="/manifesto" className="hover:underline underline-offset-4">
+            Manifesto
+          </Link>
+          <Link href="#conteudo" className="hover:underline underline-offset-4">
             Conteúdo
           </Link>
           <Link href="#sobre" className="hover:underline underline-offset-4">
@@ -60,15 +60,15 @@ export default function Header() {
         </nav>
 
         {/* CTA */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4">
           <Link
             href="#contato"
-            className="bg-[#FF4D00] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition"
+            className="bg-[#FF4D00] text-white px-6 py-2.5 rounded-full text-[15px] font-semibold hover:opacity-90 transition"
           >
             Vamos conversar
           </Link>
 
-          {/* Ícone (ex: Instagram) */}
+          {/* Ícone */}
           <Link href="#" className="hidden sm:block text-[#FF4D00]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
