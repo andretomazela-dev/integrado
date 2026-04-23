@@ -42,13 +42,13 @@ export default function Header() {
             Manifesto
           </Link>
           <Link href="/lab" className="hover:text-brand">
-            Lab
+            Conteúdo
           </Link>
           <a href="/#sobre" className="hover:text-brand">
-            Quem somos
+            Sobre
           </a>
           <a href="/#contato" className="btn btn-primary rounded-2xl">
-            Fale com a gente
+            Vamos conversar
           </a>
 
           {/* Instagram */}
