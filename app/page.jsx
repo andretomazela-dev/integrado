@@ -315,32 +315,28 @@ return (
 
      {/* SOBRE */}
 <section id="sobre" className="py-14 md:py-16 bg-white scroll-mt-28">
-  <div className="container grid md:grid-cols-[auto,1fr] gap-6 md:gap-6 items-center">
+  <div className="container grid md:grid-cols-[320px,1fr] gap-8 md:gap-10 items-center">
 
     {/* FOTO */}
     <div className="flex justify-center md:justify-start">
-      <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80">
+      <div className="relative w-64 h-64 md:w-72 md:h-72">
 
-        {/* halo sutil */}
-        <div className="absolute inset-0 rounded-full bg-orange-100 blur-2xl opacity-40 scale-110"></div>
-
-        {/* imagem */}
-        <div className="relative w-full h-full rounded-full overflow-hidden shadow-lg border-4 border-white">
+        <div className="relative w-full h-full rounded-full overflow-hidden shadow-md border border-gray-200">
           <Image
             src="/andretomazelafoto.png"
             alt="André Tomazela"
             fill
             priority
             className="object-cover object-top"
-            sizes="(max-width: 768px) 256px, 320px"
+            sizes="(max-width: 768px) 256px, 288px"
           />
         </div>
       </div>
     </div>
 
     {/* TEXTO */}
-    <div className="max-w-xl md:-ml-6">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4">
+    <div className="max-w-xl">
+      <h2 className="text-2xl md:text-3xl font-bold mb-5">
         Sobre André Tomazela
       </h2>
 
@@ -356,9 +352,8 @@ return (
         </p>
 
         <p>
-          Acredito que estratégia sem verdade é apenas ruído. 
-          Por isso, meu trabalho é ajudar marcas e lideranças a construírem 
-          posicionamentos que informam, influenciam e sustentam reputação no longo prazo.
+          Acredito que estratégia sem verdade é apenas ruído. Por isso, meu trabalho é ajudar marcas e lideranças 
+          a construírem posicionamentos que informam, influenciam e sustentam reputação no longo prazo.
         </p>
       </div>
 
