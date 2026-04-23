@@ -85,10 +85,8 @@ return (
             Comunicação estratégica para quem gera impacto real.
           </h1>
           <p className="mt-4 text-lg text-gray-700">
-            No excesso de ruído atual, a clareza é um ativo raro. Desenvolvo estratégias 
-            e narrativas que não buscam apenas visibilidade, mas relevância e autoridade. 
-            Com método e um olhar crítico, ajudo marcas e lideranças a traduzirem propósitos 
-            complexos em mensagens que realmente geram movimento.
+            Desenvolvo estratégias e narrativas para marcas e lideranças 
+            que buscam relevância, não apenas visibilidade. Com método e verdade.
           </p>
           <p className="mt-3 text-sm text-gray-600">
          André Tomazela · jornalista e consultor em comunicação estratégica
