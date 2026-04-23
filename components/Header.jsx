@@ -129,17 +129,17 @@ export default function Header() {
               Manifesto
             </Link>
             <Link href="/lab" onClick={() => setMenuOpen(false)}>
-              Lab
+              Conteúdo
             </Link>
             <a href="/#sobre" onClick={() => setMenuOpen(false)}>
-              Quem somos
+              Sobre
             </a>
             <a
               href="/#contato"
               className="btn btn-primary rounded-2xl"
               onClick={() => setMenuOpen(false)}
             >
-              Fale com a gente
+              Vamos conversar
             </a>
           </nav>
         </div>
