@@ -313,12 +313,12 @@ return (
 ) : null}
 
 
-     {/* SOBRE */}
+   {/* SOBRE */}
 <section id="sobre" className="py-14 md:py-16 bg-white scroll-mt-28">
   <div className="container grid md:grid-cols-[320px,1fr] gap-8 md:gap-10 items-center">
 
     {/* FOTO */}
-    <div className="flex justify-center md:justify-start">
+    <div className="flex justify-center md:justify-start md:-mt-4">
       <div className="relative w-64 h-64 md:w-72 md:h-72">
 
         <div className="relative w-full h-full rounded-full overflow-hidden shadow-md border border-gray-200">
@@ -335,7 +335,7 @@ return (
     </div>
 
     {/* TEXTO */}
-    <div className="max-w-xl">
+    <div className="max-w-lg">
       <h2 className="text-2xl md:text-3xl font-bold mb-5">
         Sobre André Tomazela
       </h2>
