@@ -1,11 +1,5 @@
 import "./globals.css";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-
-export const metadata = {
-  title: "Tomazela | Estratégia & Comunicação",
-  description: "Comunicação sob medida para marcas e organizações de impacto",
-};
 
 export default function RootLayout({ children }) {
   return (
@@ -14,12 +8,10 @@ export default function RootLayout({ children }) {
 
         <Header />
 
-        {/* ✅ CORREÇÃO GLOBAL (resolve manifesto, lab e tudo mais) */}
+        {/* ✅ SÓ ISSO resolve o problema */}
         <main className="pt-[110px] md:pt-[130px]">
           {children}
         </main>
-
-        <Footer />
 
       </body>
     </html>
