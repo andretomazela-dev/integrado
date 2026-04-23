@@ -313,61 +313,86 @@ return (
 ) : null}
 
 
-      {/* SOBRE */}
-      <section id="sobre" className="py-14 md:py-16 bg-white scroll-mt-28">
-        <div className="container grid md:grid-cols-2 gap-10 items-center">
-          {/* FOTO – mobile 1:1 com foco no topo; desktop com alturas e foco no topo */}
-         <div className="flex justify-center md:justify-start">
-  <div className="relative w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-card border-4 border-white">
-    <Image
-      src="/andretomazelafoto.png"
-      alt="André Tomazela"
-      fill
-      priority
-      className="object-cover object-top"
-      sizes="(max-width: 768px) 192px, 256px"
-    />
-  </div>
-</div>
+     {/* SOBRE */}
+<section id="sobre" className="py-14 md:py-16 bg-white scroll-mt-28">
+  <div className="container grid md:grid-cols-2 gap-6 md:gap-8 items-center">
 
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Sobre André Tomazela</h2>
+    {/* FOTO */}
+    <div className="flex justify-center md:justify-start">
+      <div className="relative w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72">
 
- <div className="text-gray-700 space-y-5">
-  <p>
-    Construí minha trajetória ao longo de 20 anos na comunicação corporativa, 
-    atuando na linha de frente de setores complexos como Saúde, Indústria Farmacêutica e Terceiro Setor. 
-    Como jornalista e consultor, utilizo o rigor da apuração para desenvolver estratégias 
-    que transformam informações densas em narrativas claras e com autoridade.     
-    Acredito que estratégia sem verdade é apenas ruído. Por isso, minha entrega foca 
-    em ajudar marcas e lideranças a consolidarem um posicionamento 
-    que não apenas informa, mas que forma opinião e sustenta legados.
-  </p>
-</div>
+        {/* halo sutil */}
+        <div className="absolute inset-0 rounded-full bg-orange-100 blur-2xl opacity-40 scale-110"></div>
 
-            <div className="mt-5 flex flex-wrap gap-3">
-              <Link
-                href="https://www.linkedin.com/in/tomazela"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center rounded-2xl px-4 py-2 text-sm font-medium bg-orange-600 text-white hover:bg-orange-700 transition"
-              >
-                Ver LinkedIn
-              </Link>
-              <a
-                href="#contato"
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToId("#contato");
-                }}
-                className="inline-block btn btn-outline"
-              >
-                Fale comigo
-              </a>
-            </div>
-          </div>
+        {/* imagem */}
+        <div className="relative w-full h-full rounded-full overflow-hidden shadow-lg border-4 border-white">
+          <Image
+            src="/andretomazelafoto.png"
+            alt="André Tomazela"
+            fill
+            priority
+            className="object-cover object-top"
+            sizes="(max-width: 768px) 224px, 288px"
+          />
         </div>
-      </section>
+      </div>
+    </div>
+
+    {/* TEXTO */}
+    <div className="max-w-xl">
+      <h2 className="text-2xl md:text-3xl font-bold mb-4">
+        Sobre André Tomazela
+      </h2>
+
+      <div className="text-gray-700 space-y-5 leading-relaxed">
+        <p>
+          Construí minha trajetória ao longo de 20 anos na comunicação corporativa, 
+          atuando na linha de frente de setores complexos como Saúde, Indústria Farmacêutica e Terceiro Setor.
+        </p>
+
+        <p>
+          Como jornalista e consultor, utilizo o rigor da apuração para transformar 
+          informações densas em narrativas claras, estratégicas e com autoridade.
+        </p>
+
+        <p>
+          Acredito que estratégia sem verdade é apenas ruído. 
+          Por isso, meu trabalho é ajudar marcas e lideranças a construírem 
+          posicionamentos que informam, influenciam e sustentam reputação no longo prazo.
+        </p>
+      </div>
+
+      <div className="mt-6 flex flex-wrap gap-3">
+        <Link
+          href="https://www.linkedin.com/in/tomazela"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center rounded-2xl px-5 py-2.5 text-sm font-medium bg-orange-600 text-white hover:bg-orange-700 transition"
+        >
+          Ver LinkedIn
+        </Link>
+
+        <a
+          href="#contato"
+          onClick={(e) => {
+            e.preventDefault();
+            const el = document.querySelector("#contato");
+            if (el) {
+              const header = document.querySelector("header");
+              const offset = header?.offsetHeight ? header.offsetHeight + 12 : 80;
+              const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
+              window.scrollTo({ top: y, behavior: "smooth" });
+            }
+          }}
+          className="inline-block btn btn-outline"
+        >
+          Fale comigo
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* CONTATO */}
       <section
