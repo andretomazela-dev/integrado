@@ -1,4 +1,5 @@
 "use client";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +7,7 @@ import Link from "next/link";
 export default function Manifesto() {
   return (
     <div>
+      <Header />
 
       <main className="bg-white">
         {/* Intro */}
