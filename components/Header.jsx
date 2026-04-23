@@ -1,169 +1,88 @@
 "use client";
-import { useState, useEffect } from "react";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 4);
-    window.addEventListener("scroll", onScroll);
-    onScroll();
-    return () => window.removeEventListener("scroll", onScroll);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-white shadow-sm border-b ${
-        scrolled ? "border-gray-200" : "border-transparent"
+      className={`fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur border-b transition-all duration-300 ${
+        scrolled ? "py-2" : "py-3"
       }`}
     >
-      <div className="container flex items-center justify-between py-3 h-20">
+      <div className="container flex items-center justify-between">
         
         {/* LOGO */}
         <Link href="/" className="flex items-center">
-  <div
-    className={`relative transition-all duration-300 ${
-      scrolled
-        ? "h-[60px] sm:h-[70px]"
-        : "h-[75px] sm:h-[90px]"
-    } w-[200px] sm:w-[260px]`}
-  >
-    <Image
-      src="/logo-tomazela.png"
-      alt="Tomazela"
-      fill
-      priority
-      className="object-contain"
-    />
-  </div>
-</Link>
+          <div
+            className={`relative transition-all duration-300 ${
+              scrolled
+                ? "h-[65px] sm:h-[75px]"
+                : "h-[80px] sm:h-[95px]"
+            } w-[240px] sm:w-[300px]`}
+          >
+            <Image
+              src="/logo-tomazela.png"
+              alt="Tomazela"
+              fill
+              priority
+              className="object-contain"
+            />
+          </div>
+        </Link>
 
-        {/* MENU DESKTOP */}
-        <nav className="hidden md:flex items-center gap-8">
-          <a href="/#servicos" className="hover:text-brand transition">
+        {/* MENU */}
+        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+          <Link href="#servicos" className="hover:underline underline-offset-4">
             Serviços
-          </a>
-
-          <Link href="/manifesto" className="hover:text-brand transition">
+          </Link>
+          <Link href="#manifesto" className="hover:underline underline-offset-4">
             Manifesto
           </Link>
-
-          <Link href="/lab" className="hover:text-brand transition">
+          <Link href="#conteudo" className="hover:underline underline-offset-4">
             Conteúdo
           </Link>
-
-          <a href="/#sobre" className="hover:text-brand transition">
+          <Link href="#sobre" className="hover:underline underline-offset-4">
             Sobre
-          </a>
-
-          {/* CTA */}
-          <a
-            href="/#contato"
-            className="ml-6 btn btn-primary rounded-2xl"
-          >
-            Vamos conversar
-          </a>
-
-          {/* Instagram */}
-          <a
-            href="https://www.instagram.com/andre.tomazela/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram Tomazela"
-            className="ml-2 inline-flex items-center justify-center w-9 h-9 rounded-full border border-transparent opacity-70 hover:opacity-100 hover:border-orange-500 hover:bg-orange-50 transition"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#FF4D00"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-          </a>
+          </Link>
         </nav>
 
-        {/* BOTÃO MOBILE */}
-        <button
-          className="md:hidden inline-flex items-center justify-center rounded-xl border px-3 py-2"
-          aria-label="Abrir menu"
-          onClick={() => setMenuOpen(true)}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+        {/* CTA */}
+        <div className="flex items-center gap-3">
+          <Link
+            href="#contato"
+            className="bg-[#FF4D00] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition"
           >
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
-      </div>
+            Vamos conversar
+          </Link>
 
-      {/* MENU MOBILE */}
-      <div
-        className={`fixed inset-0 z-40 md:hidden ${
-          menuOpen ? "" : "pointer-events-none"
-        }`}
-      >
-        <div
-          className={`absolute inset-0 bg-black/50 transition-opacity duration-200 ${
-            menuOpen ? "opacity-100" : "opacity-0"
-          }`}
-          onClick={() => setMenuOpen(false)}
-        />
-
-        <div
-          className={`absolute right-0 top-0 h-full w-72 bg-white shadow-xl p-6 transition-transform duration-200 ${
-            menuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
-        >
-          <button className="mb-4" onClick={() => setMenuOpen(false)}>
-            Fechar
-          </button>
-
-          <nav className="flex flex-col gap-4">
-            <a href="/#servicos" onClick={() => setMenuOpen(false)}>
-              Serviços
-            </a>
-
-            <Link href="/manifesto" onClick={() => setMenuOpen(false)}>
-              Manifesto
-            </Link>
-
-            <Link href="/lab" onClick={() => setMenuOpen(false)}>
-              Conteúdo
-            </Link>
-
-            <a href="/#sobre" onClick={() => setMenuOpen(false)}>
-              Sobre
-            </a>
-
-            <a
-              href="/#contato"
-              className="btn btn-primary rounded-2xl mt-2"
-              onClick={() => setMenuOpen(false)}
+          {/* Ícone (ex: Instagram) */}
+          <Link href="#" className="hidden sm:block text-[#FF4D00]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={1.8}
             >
-              Vamos conversar
-            </a>
-          </nav>
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17" cy="7" r="1" />
+            </svg>
+          </Link>
         </div>
       </div>
     </header>
