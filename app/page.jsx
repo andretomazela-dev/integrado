@@ -348,11 +348,13 @@ return (
 
  <div className="text-gray-700 space-y-5">
   <p>
-    Transito há mais de 20 anos entre as redações e o coração da comunicação corporativa. 
-    Nesse percurso, aprendi que estratégia sem verdade é apenas ruído. 
-    Como jornalista e consultor, minha entrega é baseada em escuta ativa e método, 
-    ajudando empresas a amadurecerem sua forma de se expressar e se relacionar com o mundo. 
-    Acredito em uma comunicação que não apenas informa, mas que forma opinião e consolida legados.
+    Construí minha trajetória ao longo de 20 anos na comunicação corporativa, 
+    atuando na linha de frente de setores complexos como Saúde, Indústria Farmacêutica e Terceiro Setor. 
+    Como jornalista e consultor, utilizo o rigor da apuração para desenvolver estratégias 
+    que transformam informações densas em narrativas claras e com autoridade.     
+    Acredito que estratégia sem verdade é apenas ruído. Por isso, minha entrega foca 
+    em ajudar marcas e lideranças a consolidarem um posicionamento 
+    que não apenas informa, mas que forma opinião e sustenta legados.
   </p>
 </div>
 
