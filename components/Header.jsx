@@ -1,101 +1,148 @@
 "use client";
-
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Instagram } from "lucide-react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 4);
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-100 transition-all duration-300 ${
-        scrolled ? "h-[76px]" : "h-[92px]"
+      className={`sticky top-0 z-50 bg-white shadow-sm border-b ${
+        scrolled ? "border-gray-200" : "border-transparent"
       }`}
     >
-      <div className="container flex items-center justify-between h-full">
-
-        {/* LOGO */}
+      <div className="container flex items-center justify-between py-3">
         <Link href="/" className="flex items-center">
           <Image
-  src="/logo-tomazela.png"
-  alt="Tomazela"
-  width={180}
-  height={50}
-  priority
-  className={`object-contain transition-all duration-300 ${
-    scrolled ? "h-[42px]" : "h-[50px]"
-  } w-auto`}
-/>
+            src="/logo-tomazela.png"
+            alt="Tomazela"
+            width={440}
+            height={120}
+            priority
+            className={`w-auto transition-all duration-200 ${
+              scrolled ? "h-[85px] sm:h-[105px]" : "h-[100px] sm:h-[125px]"
+            }`}
+          />
         </Link>
 
-        {/* MENU */}
-        <nav className="hidden md:flex items-center gap-8 text-[16px] font-medium text-gray-800">
-          
-          <Link
-            href="/#servicos"
-            className="relative group transition-all duration-200 hover:text-[#FF4D00] hover:scale-[1.04]"
-          >
+        <nav className="hidden md:flex items-center gap-6">
+          <a href="/#servicos" className="hover:text-brand">
             Serviços
-            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#FF4D00] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-
-          <Link
-            href="/manifesto"
-            className="relative group transition-all duration-200 hover:text-[#FF4D00] hover:scale-[1.04]"
-          >
+          </a>
+          <Link href="/manifesto" className="hover:text-brand">
             Manifesto
-            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#FF4D00] transition-all duration-300 group-hover:w-full"></span>
           </Link>
-
-          <Link
-            href="/lab"
-            className="relative group transition-all duration-200 hover:text-[#FF4D00] hover:scale-[1.04]"
-          >
+          <Link href="/lab" className="hover:text-brand">
             Conteúdo
-            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#FF4D00] transition-all duration-300 group-hover:w-full"></span>
           </Link>
-
-          <Link
-            href="/#sobre"
-            className="relative group transition-all duration-200 hover:text-[#FF4D00] hover:scale-[1.04]"
-          >
+          <a href="/#sobre" className="hover:text-brand">
             Sobre
-            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#FF4D00] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-
-        </nav>
-
-        {/* CTA + SOCIAL */}
-        <div className="flex items-center gap-4">
-
-          <Link
-            href="/#contato"
-            className="bg-[#FF4D00] text-white px-6 py-2.5 rounded-2xl text-sm font-semibold hover:opacity-90 transition"
-          >
+          </a>
+          <a href="/#contato" className="btn btn-primary rounded-2xl">
             Vamos conversar
-          </Link>
-
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#FF4D00] hover:scale-110 transition"
-          >
-            <Instagram size={20} strokeWidth={2} />
           </a>
 
-        </div>
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/andre.tomazela/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram Tomazela"
+            className="ml-2 inline-flex items-center justify-center w-9 h-9 rounded-full border border-transparent hover:border-orange-500 hover:bg-orange-50 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#FF4D00"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        </nav>
 
+        {/* Botão mobile */}
+        <button
+          className="md:hidden inline-flex items-center justify-center rounded-xl border px-3 py-2"
+          aria-label="Abrir menu"
+          onClick={() => setMenuOpen(true)}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      {/* Menu mobile */}
+      <div
+        className={`fixed inset-0 z-40 md:hidden ${
+          menuOpen ? "" : "pointer-events-none"
+        }`}
+      >
+        <div
+          className={`absolute inset-0 bg-black/50 transition-opacity duration-200 ${
+            menuOpen ? "opacity-100" : "opacity-0"
+          }`}
+          onClick={() => setMenuOpen(false)}
+        />
+        <div
+          className={`absolute right-0 top-0 h-full w-72 bg-white shadow-xl p-6 transition-transform duration-200 ${
+            menuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <button className="mb-4" onClick={() => setMenuOpen(false)}>
+            Fechar
+          </button>
+          <nav className="flex flex-col gap-4">
+            <a href="/#servicos" onClick={() => setMenuOpen(false)}>
+              Serviços
+            </a>
+            <Link href="/manifesto" onClick={() => setMenuOpen(false)}>
+              Manifesto
+            </Link>
+            <Link href="/lab" onClick={() => setMenuOpen(false)}>
+              Lab
+            </Link>
+            <a href="/#sobre" onClick={() => setMenuOpen(false)}>
+              Quem somos
+            </a>
+            <a
+              href="/#contato"
+              className="btn btn-primary rounded-2xl"
+              onClick={() => setMenuOpen(false)}
+            >
+              Fale com a gente
+            </a>
+          </nav>
+        </div>
       </div>
     </header>
   );
