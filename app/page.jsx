@@ -315,11 +315,11 @@ return (
 
      {/* SOBRE */}
 <section id="sobre" className="py-14 md:py-16 bg-white scroll-mt-28">
-  <div className="container grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+  <div className="container grid md:grid-cols-[auto,1fr] gap-6 md:gap-6 items-center">
 
     {/* FOTO */}
     <div className="flex justify-center md:justify-start">
-      <div className="relative w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72">
+      <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80">
 
         {/* halo sutil */}
         <div className="absolute inset-0 rounded-full bg-orange-100 blur-2xl opacity-40 scale-110"></div>
@@ -332,14 +332,14 @@ return (
             fill
             priority
             className="object-cover object-top"
-            sizes="(max-width: 768px) 224px, 288px"
+            sizes="(max-width: 768px) 256px, 320px"
           />
         </div>
       </div>
     </div>
 
     {/* TEXTO */}
-    <div className="max-w-xl">
+    <div className="max-w-xl md:-ml-6">
       <h2 className="text-2xl md:text-3xl font-bold mb-4">
         Sobre André Tomazela
       </h2>
