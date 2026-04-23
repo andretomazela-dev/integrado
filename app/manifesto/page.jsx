@@ -1,4 +1,5 @@
 "use client";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,10 +7,9 @@ import Link from "next/link";
 export default function Manifesto() {
   return (
     <div>
-    
-      {/* ✅ CORREÇÃO AQUI */}
-      <main className="bg-white pt-[110px] md:pt-[130px]">
-        
+      <Header />
+
+      <main className="bg-white">
         {/* Intro */}
         <section className="container py-12 md:py-16">
           <p className="uppercase tracking-wide text-sm text-orange-600 font-semibold">
@@ -29,7 +29,7 @@ export default function Manifesto() {
           </p>
         </section>
 
-        {/* BLOCO 1 */}
+        {/* BLOCO 1 — Texto à ESQUERDA / Imagem à DIREITA */}
         <section className="container grid md:grid-cols-12 gap-10 items-start">
 
           {/* Texto */}
@@ -77,7 +77,7 @@ export default function Manifesto() {
             </ul>
           </div>
 
-          {/* Imagem */}
+          {/* Imagem vertical */}
           <div className="md:col-span-5 order-1 md:order-2 mb-10 md:mb-0 mt-10 md:mt-0">
             <div className="rounded-2xl overflow-hidden shadow-card relative h-[320px] md:h-[520px] lg:h-[560px]">
               <Image
@@ -93,6 +93,7 @@ export default function Manifesto() {
 
         </section>
 
+        {/* espaço entre blocos */}
         <div className="container mt-12 md:mt-16" />
 
         {/* BLOCO 2 */}
@@ -138,6 +139,7 @@ export default function Manifesto() {
 
         </section>
 
+        {/* respiro */}
         <div className="h-10 md:h-12" />
       </main>
 
