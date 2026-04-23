@@ -27,13 +27,15 @@ export default function Header() {
         {/* LOGO */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo-tomazela.png"
-            alt="Tomazela"
-            width={180}
-            height={50}
-            priority
-            className="transition-all duration-300"
-          />
+  src="/logo-tomazela.png"
+  alt="Tomazela"
+  width={180}
+  height={50}
+  priority
+  className={`object-contain transition-all duration-300 ${
+    scrolled ? "h-[42px]" : "h-[50px]"
+  } w-auto`}
+/>
         </Link>
 
         {/* MENU */}
