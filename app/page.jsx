@@ -317,31 +317,18 @@ return (
       <section id="sobre" className="py-14 md:py-16 bg-white scroll-mt-28">
         <div className="container grid md:grid-cols-2 gap-10 items-center">
           {/* FOTO – mobile 1:1 com foco no topo; desktop com alturas e foco no topo */}
-          <div className="rounded-2xl overflow-hidden shadow-card bg-white">
-            {/* Mobile (até md): quadrada 1:1 com cover e foco no topo */}
-            <div className="relative aspect-square md:hidden">
-              <Image
-                src="/andretomazelafoto.png"
-                alt="André Tomazela"
-                fill
-                priority
-                className="object-cover object-top"
-                sizes="100vw"
-              />
-            </div>
-            {/* Desktop (md+): mantém visual, mas com foco no topo e leve ajuste de altura */}
-            <div className="hidden md:flex md:items-center md:justify-center">
-              <Image
-                src="/andretomazelafoto.png"
-                alt="André Tomazela"
-                width={900}
-                height={1100}
-                priority
-                className="block w-full h-auto object-cover object-top max-h-[300px] md:max-h-[340px] lg:max-h-[380px]"
-                sizes="(max-width: 1024px) 50vw, 600px"
-              />
-            </div>
-          </div>
+         <div className="flex justify-center md:justify-start">
+  <div className="relative w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-card border-4 border-white">
+    <Image
+      src="/andretomazelafoto.png"
+      alt="André Tomazela"
+      fill
+      priority
+      className="object-cover object-top"
+      sizes="(max-width: 768px) 192px, 256px"
+    />
+  </div>
+</div>
 
           <div>
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Sobre André Tomazela</h2>
