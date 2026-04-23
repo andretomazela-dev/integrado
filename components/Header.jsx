@@ -23,14 +23,20 @@ export default function Header() {
       <div className="container flex items-center justify-between py-3 h-20">
         
         {/* LOGO */}
-        <Link href="/" className="flex items-center h-[70px] sm:h-[80px]">
-  <div className="relative h-full w-[180px] sm:w-[220px]">
+        <Link href="/" className="flex items-center">
+  <div
+    className={`relative transition-all duration-300 ${
+      scrolled
+        ? "h-[60px] sm:h-[70px]"
+        : "h-[75px] sm:h-[90px]"
+    } w-[200px] sm:w-[260px]`}
+  >
     <Image
       src="/logo-tomazela.png"
       alt="Tomazela"
       fill
       priority
-      className="object-contain transition-all duration-200"
+      className="object-contain"
     />
   </div>
 </Link>
