@@ -48,10 +48,10 @@ export default function Header() {
           <Link href="#servicos" className="hover:underline underline-offset-4">
             Serviços
           </Link>
-          <Link href="#manifesto" className="hover:underline underline-offset-4">
-            Manifesto
-          </Link>
-          <Link href="#conteudo" className="hover:underline underline-offset-4">
+            <Link href="/manifesto" className="hover:underline underline-offset-4"> 
+              Manifesto
+            </Link>
+           <Link href="#conteudo" className="hover:underline underline-offset-4">
             Conteúdo
           </Link>
           <Link href="#sobre" className="hover:underline underline-offset-4">
