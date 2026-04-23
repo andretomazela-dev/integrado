@@ -7,8 +7,7 @@ import Link from "next/link";
 export default function Manifesto() {
   return (
     <div>
-      <Header />
-
+    
       {/* ✅ CORREÇÃO AQUI */}
       <main className="bg-white pt-[110px] md:pt-[130px]">
         
