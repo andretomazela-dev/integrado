@@ -20,7 +20,9 @@ export default function Header() {
         scrolled ? "border-gray-200" : "border-transparent"
       }`}
     >
-      <div className="container flex items-center justify-between py-3">
+      <div className="container flex items-center justify-between py-3 h-20">
+        
+        {/* LOGO */}
         <Link href="/" className="flex items-center">
           <Image
             src="/logo-tomazela.png"
@@ -29,26 +31,35 @@ export default function Header() {
             height={120}
             priority
             className={`w-auto transition-all duration-200 ${
-              scrolled ? "h-[85px] sm:h-[105px]" : "h-[100px] sm:h-[125px]"
+              scrolled ? "h-[85px] sm:h-[95px]" : "h-[95px] sm:h-[110px]"
             }`}
           />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6">
-          <a href="/#servicos" className="hover:text-brand">
+        {/* MENU DESKTOP */}
+        <nav className="hidden md:flex items-center gap-8">
+          <a href="/#servicos" className="hover:text-brand transition">
             Serviços
           </a>
-          <Link href="/manifesto" className="hover:text-brand">
+
+          <Link href="/manifesto" className="hover:text-brand transition">
             Manifesto
           </Link>
-          <Link href="/lab" className="hover:text-brand">
-            Lab
+
+          <Link href="/lab" className="hover:text-brand transition">
+            Conteúdo
           </Link>
-          <a href="/#sobre" className="hover:text-brand">
-            Quem somos
+
+          <a href="/#sobre" className="hover:text-brand transition">
+            Sobre
           </a>
-          <a href="/#contato" className="btn btn-primary rounded-2xl">
-            Fale com a gente
+
+          {/* CTA */}
+          <a
+            href="/#contato"
+            className="ml-6 btn btn-primary rounded-2xl"
+          >
+            Vamos conversar
           </a>
 
           {/* Instagram */}
@@ -57,7 +68,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram Tomazela"
-            className="ml-2 inline-flex items-center justify-center w-9 h-9 rounded-full border border-transparent hover:border-orange-500 hover:bg-orange-50 transition"
+            className="ml-2 inline-flex items-center justify-center w-9 h-9 rounded-full border border-transparent opacity-70 hover:opacity-100 hover:border-orange-500 hover:bg-orange-50 transition"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +88,7 @@ export default function Header() {
           </a>
         </nav>
 
-        {/* Botão mobile */}
+        {/* BOTÃO MOBILE */}
         <button
           className="md:hidden inline-flex items-center justify-center rounded-xl border px-3 py-2"
           aria-label="Abrir menu"
@@ -101,7 +112,7 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Menu mobile */}
+      {/* MENU MOBILE */}
       <div
         className={`fixed inset-0 z-40 md:hidden ${
           menuOpen ? "" : "pointer-events-none"
@@ -113,6 +124,7 @@ export default function Header() {
           }`}
           onClick={() => setMenuOpen(false)}
         />
+
         <div
           className={`absolute right-0 top-0 h-full w-72 bg-white shadow-xl p-6 transition-transform duration-200 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
@@ -121,25 +133,30 @@ export default function Header() {
           <button className="mb-4" onClick={() => setMenuOpen(false)}>
             Fechar
           </button>
+
           <nav className="flex flex-col gap-4">
             <a href="/#servicos" onClick={() => setMenuOpen(false)}>
               Serviços
             </a>
+
             <Link href="/manifesto" onClick={() => setMenuOpen(false)}>
               Manifesto
             </Link>
+
             <Link href="/lab" onClick={() => setMenuOpen(false)}>
-              Lab
+              Conteúdo
             </Link>
+
             <a href="/#sobre" onClick={() => setMenuOpen(false)}>
-              Quem somos
+              Sobre
             </a>
+
             <a
               href="/#contato"
-              className="btn btn-primary rounded-2xl"
+              className="btn btn-primary rounded-2xl mt-2"
               onClick={() => setMenuOpen(false)}
             >
-              Fale com a gente
+              Vamos conversar
             </a>
           </nav>
         </div>
