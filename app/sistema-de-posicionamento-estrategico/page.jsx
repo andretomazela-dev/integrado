@@ -46,12 +46,12 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* PROBLEMA + QUANDO */}
-        <section className="section-tight">
+        <section className="section-sm">
           <div className="container grid md:grid-cols-2 gap-12">
 
             <div>
               <h2 className="font-bold mb-3 flex items-center gap-2">
-                <span className="text-orange-500">❓</span>
+                <span className="icon text-orange-500">❓</span>
                 O problema
               </h2>
 
@@ -62,7 +62,7 @@ export default function SistemaPosicionamento() {
 
             <div>
               <h2 className="font-bold mb-3 flex items-center gap-2">
-                <span className="text-orange-500">✔️</span>
+                <span className="icon text-orange-500">✔️</span>
                 Quando isso faz sentido
               </h2>
 
@@ -78,29 +78,22 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* TRANSFORMAÇÃO */}
-        <section className="section-tight">
+        <section className="section-sm">
           <div className="container">
 
-            <h2 className="text-2xl font-bold flex items-center gap-2">
-              <span className="text-orange-500">🧭</span>
+            <h2 className="text-2xl font-bold flex items-center gap-2 mb-3">
+              <span className="icon text-orange-500">🧭</span>
               O que muda com o trabalho
             </h2>
 
-            <p className="mt-3 text-gray-700 max-w-2xl">
+            <p className="text-gray-700 mb-8 max-w-2xl">
               A comunicação deixa de ser pontual e passa a ter direção.
             </p>
 
-          </div>
-        </section>
-
-        {/* ENTREGA */}
-        <section className="section-tight">
-          <div className="container">
-
-            <div className="bg-gray-100 rounded-2xl p-8">
+            <div className="card-soft">
 
               <h3 className="font-semibold mb-6 flex items-center gap-2">
-                <span className="text-orange-500">🎁</span>
+                <span className="icon text-orange-500">🎁</span>
                 Você sai com isso estruturado
               </h3>
 
@@ -109,21 +102,25 @@ export default function SistemaPosicionamento() {
                 <div>
                   <div className="text-orange-500 text-xl mb-2">🎯</div>
                   <h4 className="font-semibold">Posicionamento claro</h4>
+                  <p className="text-sm text-gray-600">Definição do que torna sua empresa relevante.</p>
                 </div>
 
                 <div>
                   <div className="text-orange-500 text-xl mb-2">💬</div>
                   <h4 className="font-semibold">Mensagens-chave</h4>
+                  <p className="text-sm text-gray-600">Narrativas alinhadas ao público e objetivos.</p>
                 </div>
 
                 <div>
                   <div className="text-orange-500 text-xl mb-2">📄</div>
                   <h4 className="font-semibold">Forma consistente</h4>
+                  <p className="text-sm text-gray-600">Discursos e conteúdos conectados ao posicionamento.</p>
                 </div>
 
                 <div>
                   <div className="text-orange-500 text-xl mb-2">🧩</div>
                   <h4 className="font-semibold">Aplicações práticas</h4>
+                  <p className="text-sm text-gray-600">Materiais prontos para uso no dia a dia.</p>
                 </div>
 
               </div>
@@ -137,7 +134,7 @@ export default function SistemaPosicionamento() {
         <section className="section">
           <div className="container">
 
-            <div className="bg-orange-50 rounded-2xl p-8 flex justify-between items-center">
+            <div className="bg-orange-50 rounded-2xl p-8 flex flex-col md:flex-row justify-between items-center gap-4">
 
               <div>
                 <h2 className="font-bold">Próximo passo</h2>
@@ -146,10 +143,7 @@ export default function SistemaPosicionamento() {
                 </p>
               </div>
 
-              <Link
-                href="/#contato"
-                className="btn btn-primary"
-              >
+              <Link href="/#contato" className="btn btn-primary">
                 Solicitar análise inicial →
               </Link>
 
