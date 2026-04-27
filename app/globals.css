@@ -18,4 +18,42 @@ html,body{background:#fff;color:#111827}
 .content a{color:#FF4D00;text-decoration:underline}
 .content blockquote{border-left:4px solid #e5e7eb;padding-left:1rem;color:#4b5563;margin:1rem 0}
 .content img{border-radius:1rem}
+/* ===== SECTION SYSTEM (novo, não quebra nada) ===== */
 
+.section {
+  padding: 4rem 0;
+}
+
+.section-sm {
+  padding: 3rem 0;
+}
+
+.section-lg {
+  padding: 5rem 0;
+}
+
+/* controle de ritmo vertical */
+.section + .section {
+  margin-top: 1rem;
+}
+
+/* ===== ICON SYSTEM ===== */
+
+.icon-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  border: 1px solid #FF4D00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FF4D00;
+}
+
+/* ===== CARD SOFT (igual caixa cinza que você usa) ===== */
+
+.card-soft {
+  background: #f3f4f6;
+  border-radius: 1rem;
+  padding: 2rem;
+}
