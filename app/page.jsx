@@ -131,6 +131,29 @@ return (
           <h2 className="text-2xl md:text-3xl font-bold">
             O que posso fazer por você
           </h2>
+          {/* BLOCO DESTACADO – SISTEMA DE POSICIONAMENTO */}
+<div className="bg-white rounded-2xl p-8 md:p-10 mb-10 shadow-sm border border-gray-200">
+
+  <span className="text-xs uppercase tracking-wide text-gray-500">
+    Comece por aqui
+  </span>
+
+  <h2 className="text-2xl md:text-3xl font-semibold mt-2">
+    Sistema de Posicionamento Estratégico
+  </h2>
+
+  <p className="mt-3 text-gray-700 max-w-2xl">
+    Estruturo o que sua empresa faz em uma comunicação clara, consistente e aplicável, com direção estratégica e uso inteligente de IA.
+  </p>
+
+  <Link
+    href="/sistema-de-posicionamento-estrategico"
+    className="inline-block mt-5 bg-[#FF4D00] text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition"
+  >
+    Ver como funciona
+  </Link>
+  
+</div>
           <p className="mt-2 text-gray-600 max-w-prose">
             Serviços desenhados para marcas que buscam relevância 
             em um cenário de excesso de ruído. O objetivo é transformar 
