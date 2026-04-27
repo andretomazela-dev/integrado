@@ -78,7 +78,7 @@ return (
       {/* HERO */}
       <section
         id="home"
-        className="container py-14 md:py-20 grid md:grid-cols-2 gap-10 items-center scroll-mt-28"
+        className="container pt-14 pb-6 md:pt-20 md:pb-8 grid md:grid-cols-2 gap-10 items-center scroll-mt-28"
       >
         <div>
           <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
@@ -126,11 +126,11 @@ return (
       </section>
 
      {/* SERVIÇOS */}
-<section id="servicos" className="bg-gray-50 py-14 md:py-16 scroll-mt-28">
+<section id="servicos" className="bg-gray-50 pt-8 pb-14 md:pt-10 md:pb-16 scroll-mt-28">
   <div className="container">
 
     {/* BLOCO DESTACADO – SISTEMA DE POSICIONAMENTO */}
-    <div className="bg-white rounded-2xl p-8 md:p-10 mb-10 shadow-sm border border-gray-200">
+    <div className="bg-white rounded-2xl p-8 md:p-10 mb-6 shadow-sm border border-gray-200">
 
       <span className="text-xs uppercase tracking-wide text-gray-500">
         Comece por aqui
