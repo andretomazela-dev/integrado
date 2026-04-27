@@ -128,9 +128,7 @@ return (
       {/* SERVIÇOS */}
       <section id="servicos" className="bg-gray-50 py-14 md:py-16 scroll-mt-28">
         <div className="container">
-          <h2 className="text-2xl md:text-3xl font-bold">
-            O que posso fazer por você
-          </h2>
+
           {/* BLOCO DESTACADO – SISTEMA DE POSICIONAMENTO */}
 <div className="bg-white rounded-2xl p-8 md:p-10 mb-10 shadow-sm border border-gray-200">
 
@@ -145,8 +143,10 @@ return (
   <p className="mt-3 text-gray-700 max-w-2xl">
     Estruturo o que sua empresa faz em uma comunicação clara, consistente e aplicável, com direção estratégica e uso inteligente de IA.
   </p>
-
-  <Link
+          <h2 className="text-2xl md:text-3xl font-bold">
+            O que posso fazer por você
+          </h2>
+          <Link
     href="/sistema-de-posicionamento-estrategico"
     className="inline-block mt-5 bg-[#FF4D00] text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition"
   >
