@@ -11,113 +11,147 @@ export default function SistemaPosicionamento() {
 
       <main className="bg-white">
 
-        {/* INTRO */}
-        <section className="container py-12 md:py-16">
-          <p className="uppercase tracking-wide text-sm text-orange-600 font-semibold">
-            Serviço
-          </p>
+        {/* HERO */}
+        <section className="container py-12 md:py-16 grid md:grid-cols-2 gap-10 items-center">
 
-          <h1 className="mt-2 text-3xl md:text-5xl font-extrabold leading-tight">
-            Sistema de Posicionamento Estratégico
-          </h1>
+          <div>
+            <p className="uppercase tracking-wide text-sm text-orange-600 font-semibold">
+              Serviço
+            </p>
 
-          <p className="mt-6 text-lg text-gray-700 max-w-prose">
-            Transformo o que sua empresa faz em uma comunicação clara, consistente e aplicável.
-          </p>
+            <h1 className="mt-2 text-3xl md:text-5xl font-extrabold leading-tight">
+              Sistema de Posicionamento Estratégico
+            </h1>
 
-          <p className="mt-6 text-lg font-medium text-gray-900 max-w-prose">
-            Se o mercado não entende o que você faz, você está perdendo oportunidade.
-          </p>
+            <p className="mt-6 text-lg text-gray-700 max-w-prose">
+              Transformo o que sua empresa faz em uma comunicação clara, consistente e aplicável.
+            </p>
+
+            <p className="mt-6 text-lg font-semibold text-gray-900">
+              Se o mercado não entende o que você faz, você está perdendo oportunidade.
+            </p>
+          </div>
+
+          {/* NOVA IMAGEM */}
+          <div className="rounded-2xl overflow-hidden shadow-card relative h-[300px] md:h-[400px]">
+            <Image
+              src="/hero-posicionamento.png"
+              alt="Clareza e direção estratégica"
+              fill
+              className="object-cover"
+            />
+          </div>
+
         </section>
 
-        {/* BLOCO PRINCIPAL */}
-        <section className="container grid md:grid-cols-12 gap-10 items-start">
+        {/* PROBLEMA + QUANDO */}
+        <section className="container grid md:grid-cols-2 gap-10 mt-10">
 
-          {/* TEXTO */}
-          <div className="md:col-span-7">
-
-            {/* PROBLEMA */}
-            <h2 className="text-2xl font-bold">
+          {/* PROBLEMA */}
+          <div>
+            <h2 className="text-xl font-bold mb-3">
               O problema
             </h2>
 
-            <p className="mt-4 text-gray-700">
+            <p className="text-gray-700">
               Muitas empresas sabem o que fazem, mas não conseguem transformar isso em uma comunicação clara.
               Isso gera ruído, perda de oportunidades e dificuldade de posicionamento.
             </p>
+          </div>
 
-            {/* QUANDO FAZ SENTIDO */}
-            <h2 className="text-2xl font-bold mt-10">
+          {/* QUANDO FAZ SENTIDO */}
+          <div>
+            <h2 className="text-xl font-bold mb-3">
               Quando isso faz sentido
             </h2>
 
-            <ul className="mt-4 space-y-3 text-gray-800">
-              <li>Sua empresa tem uma boa solução, mas dificuldade de explicar</li>
-              <li>A comunicação é dispersa ou inconsistente</li>
-              <li>O negócio depende demais do fundador</li>
-              <li>O conteúdo existe, mas não sustenta posicionamento</li>
+            <ul className="space-y-3 text-gray-800">
+              <li>✔ Sua empresa tem uma boa solução, mas dificuldade de explicar</li>
+              <li>✔ A comunicação é dispersa ou inconsistente</li>
+              <li>✔ O negócio depende demais do fundador</li>
+              <li>✔ O conteúdo existe, mas não sustenta posicionamento</li>
             </ul>
-
-          </div>
-
-          {/* IMAGEM ÚNICA */}
-          <div className="md:col-span-5">
-            <div className="rounded-2xl overflow-hidden shadow-card relative h-[320px] md:h-[420px]">
-              <Image
-                src="/Ilustracao_estrategia_comunicacao.png"
-                alt="Estratégia de comunicação"
-                fill
-                className="object-cover"
-              />
-            </div>
           </div>
 
         </section>
 
-        {/* ESPAÇO */}
-        <div className="container mt-12 md:mt-16" />
-
-        {/* RESULTADO */}
-        <section className="container max-w-3xl">
+        {/* TRANSFORMAÇÃO */}
+        <section className="container mt-14">
 
           <h2 className="text-2xl md:text-3xl font-bold">
             O que muda com o trabalho
           </h2>
 
-          <p className="mt-4 text-gray-700">
+          <p className="mt-4 text-gray-700 max-w-2xl">
             A comunicação deixa de ser pontual e passa a ter direção.
             O que sua empresa faz se torna compreensível, consistente e aplicável em diferentes contextos.
           </p>
 
-          <h3 className="mt-8 font-semibold text-lg">
-            Você sai com isso estruturado
-          </h3>
+        </section>
 
-          <ul className="mt-4 space-y-3 text-gray-800">
-            <li>Posicionamento claro da empresa</li>
-            <li>Mensagens-chave organizadas</li>
-            <li>Forma consistente de apresentar o negócio</li>
-            <li>Aplicações práticas prontas para uso</li>
-          </ul>
+        {/* ENTREGA DESTACADA */}
+        <section className="container mt-10">
+
+          <div className="bg-gray-100 rounded-2xl p-8">
+
+            <h3 className="text-xl font-semibold mb-6">
+              Você sai com isso estruturado
+            </h3>
+
+            <div className="grid md:grid-cols-2 gap-6">
+
+              <div>
+                <h4 className="font-semibold">Posicionamento claro da empresa</h4>
+                <p className="text-sm text-gray-600 mt-1">
+                  Definição do que torna sua empresa relevante.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">Mensagens-chave organizadas</h4>
+                <p className="text-sm text-gray-600 mt-1">
+                  Narrativas alinhadas ao seu público e objetivos.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">Forma consistente de apresentar o negócio</h4>
+                <p className="text-sm text-gray-600 mt-1">
+                  Discursos e conteúdos conectados ao posicionamento.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">Aplicações práticas prontas para uso</h4>
+                <p className="text-sm text-gray-600 mt-1">
+                  Materiais e direcionamentos aplicáveis no dia a dia.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
 
         </section>
 
         {/* CTA */}
         <section className="container py-14 md:py-16">
 
-          <div className="max-w-2xl">
+          <div className="bg-orange-50 rounded-2xl p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
 
-            <h2 className="text-2xl md:text-3xl font-bold">
-              Próximo passo
-            </h2>
+            <div>
+              <h2 className="text-2xl font-bold">
+                Próximo passo
+              </h2>
 
-            <p className="mt-4 text-gray-700">
-              Posso fazer uma leitura inicial da sua comunicação e estruturar um caminho possível de trabalho.
-            </p>
+              <p className="mt-2 text-gray-700 max-w-md">
+                Posso fazer uma leitura inicial da sua comunicação e estruturar um caminho possível de trabalho.
+              </p>
+            </div>
 
             <Link
               href="/#contato"
-              className="inline-block mt-6 bg-[#FF4D00] text-white font-semibold py-3 px-6 rounded-2xl hover:opacity-90 transition"
+              className="bg-[#FF4D00] text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition"
             >
               Solicitar análise inicial
             </Link>
