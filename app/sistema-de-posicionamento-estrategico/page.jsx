@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
-const Icon = ({ children }) => (
-  <div className="icon-circle">
+const IconWrap = ({ children }) => (
+  <div className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00]">
     {children}
   </div>
 );
@@ -18,8 +18,8 @@ export default function SistemaPosicionamento() {
       <main className="bg-white">
 
         {/* HERO */}
-        <section className="section-lg">
-          <div className="container grid md:grid-cols-2 gap-14 items-center">
+        <section className="py-20">
+          <div className="container grid md:grid-cols-2 gap-16 items-center">
 
             <div>
               <p className="uppercase tracking-wide text-sm text-orange-600 font-semibold">
@@ -52,24 +52,34 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* PROBLEMA + QUANDO */}
-        <section className="section">
+        <section className="py-16">
           <div className="container grid md:grid-cols-2 gap-16">
 
             <div>
-              <h2 className="text-xl font-bold mb-4 flex items-center gap-3">
-                <Icon>?</Icon>
+              <h2 className="text-xl font-bold mb-5 flex items-center gap-3">
+                <IconWrap>
+                  <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <circle cx="9" cy="9" r="7" />
+                    <path d="M9 6v2" />
+                    <circle cx="9" cy="12" r="0.5" />
+                  </svg>
+                </IconWrap>
                 O problema
               </h2>
 
-              <p className="text-gray-700">
+              <p className="text-gray-700 leading-relaxed">
                 Muitas empresas sabem o que fazem, mas não conseguem transformar isso em uma comunicação clara.
                 Isso gera ruído, perda de oportunidades e dificuldade de posicionamento.
               </p>
             </div>
 
             <div>
-              <h2 className="text-xl font-bold mb-4 flex items-center gap-3">
-                <Icon>✓</Icon>
+              <h2 className="text-xl font-bold mb-5 flex items-center gap-3">
+                <IconWrap>
+                  <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <path d="M4 9l3 3 7-7" />
+                  </svg>
+                </IconWrap>
                 Quando isso faz sentido
               </h2>
 
@@ -85,15 +95,19 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* TRANSFORMAÇÃO */}
-        <section className="section">
+        <section className="py-20">
           <div className="container">
 
             <h2 className="text-2xl md:text-3xl font-bold flex items-center gap-3">
-              <Icon>→</Icon>
+              <IconWrap>
+                <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <path d="M5 9h8M9 5l4 4-4 4" />
+                </svg>
+              </IconWrap>
               O que muda com o trabalho
             </h2>
 
-            <p className="mt-4 text-gray-700 max-w-2xl">
+            <p className="mt-6 text-gray-700 max-w-2xl">
               A comunicação deixa de ser pontual e passa a ter direção.
               O que sua empresa faz se torna compreensível, consistente e aplicável em diferentes contextos.
             </p>
@@ -102,49 +116,38 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* ENTREGA */}
-        <section className="section">
+        <section className="py-16">
           <div className="container">
 
-            <div className="card-soft">
+            <div className="bg-gray-100 rounded-2xl p-10">
 
-              <h3 className="text-xl font-semibold mb-8 flex items-center gap-3">
-                <Icon>★</Icon>
+              <h3 className="text-xl font-semibold mb-10 flex items-center gap-3">
+                <IconWrap>
+                  <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <path d="M9 2l2 4 4 .5-3 3 .7 4.5L9 12l-4.7 2.5L5 9.5l-3-3 4-.5z" />
+                  </svg>
+                </IconWrap>
                 Você sai com isso estruturado
               </h3>
 
-              <div className="grid md:grid-cols-4 gap-8">
+              <div className="grid md:grid-cols-4 gap-10">
 
-                <div>
-                  <div className="icon-circle mb-4">●</div>
-                  <h4 className="font-semibold">Posicionamento claro</h4>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Definição do que torna sua empresa relevante.
-                  </p>
-                </div>
-
-                <div>
-                  <div className="icon-circle mb-4">●</div>
-                  <h4 className="font-semibold">Mensagens-chave</h4>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Narrativas alinhadas ao público e objetivos.
-                  </p>
-                </div>
-
-                <div>
-                  <div className="icon-circle mb-4">●</div>
-                  <h4 className="font-semibold">Forma consistente</h4>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Discursos e conteúdos conectados ao posicionamento.
-                  </p>
-                </div>
-
-                <div>
-                  <div className="icon-circle mb-4">●</div>
-                  <h4 className="font-semibold">Aplicações práticas</h4>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Materiais prontos para uso no dia a dia.
-                  </p>
-                </div>
+                {[
+                  ["Posicionamento claro", "Definição do que torna sua empresa relevante."],
+                  ["Mensagens-chave", "Narrativas alinhadas ao público e objetivos."],
+                  ["Forma consistente", "Discursos e conteúdos conectados ao posicionamento."],
+                  ["Aplicações práticas", "Materiais prontos para uso no dia a dia."]
+                ].map((item, i) => (
+                  <div key={i}>
+                    <div className="w-12 h-12 flex items-center justify-center rounded-full border border-[#FF4D00] mb-4 text-[#FF4D00]">
+                      <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8">
+                        <circle cx="9" cy="9" r="7" />
+                      </svg>
+                    </div>
+                    <h4 className="font-semibold">{item[0]}</h4>
+                    <p className="text-sm text-gray-600 mt-1">{item[1]}</p>
+                  </div>
+                ))}
 
               </div>
 
@@ -154,17 +157,17 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* CTA */}
-        <section className="section-lg">
+        <section className="py-20 pb-32">
           <div className="container">
 
-            <div className="bg-orange-50 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="bg-orange-50 rounded-2xl p-10 flex flex-col md:flex-row items-center justify-between gap-6">
 
               <div>
                 <h2 className="text-xl font-bold">
                   Próximo passo
                 </h2>
 
-                <p className="text-gray-700 text-sm mt-1 max-w-md">
+                <p className="text-gray-700 mt-2 max-w-md">
                   Posso fazer uma leitura inicial da sua comunicação e estruturar um caminho possível de trabalho.
                 </p>
               </div>
