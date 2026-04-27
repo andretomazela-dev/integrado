@@ -24,37 +24,45 @@ export default function SistemaPosicionamento() {
           <p className="mt-6 text-lg text-gray-700 max-w-prose">
             Transformo o que sua empresa faz em uma comunicação clara, consistente e aplicável.
           </p>
+
+          <p className="mt-6 text-lg font-medium text-gray-900 max-w-prose">
+            Se o mercado não entende o que você faz, você está perdendo oportunidade.
+          </p>
         </section>
 
-        {/* BLOCO 1 */}
+        {/* BLOCO PRINCIPAL */}
         <section className="container grid md:grid-cols-12 gap-10 items-start">
 
-          <div className="md:col-span-7 order-2 md:order-1">
+          {/* TEXTO */}
+          <div className="md:col-span-7">
 
-            <h2 className="text-2xl font-bold mb-4">
-              Quando isso faz sentido
-            </h2>
-
-            <ul className="space-y-4 text-gray-800 leading-relaxed">
-              <li>Sua empresa tem uma boa solução, mas dificuldade de explicar</li>
-              <li>A comunicação é dispersa ou inconsistente</li>
-              <li>O negócio depende demais do fundador para se apresentar</li>
-              <li>O conteúdo existe, mas não sustenta posicionamento</li>
-            </ul>
-
-            <h2 className="text-2xl font-bold mt-10 mb-4">
+            {/* PROBLEMA */}
+            <h2 className="text-2xl font-bold">
               O problema
             </h2>
 
-            <p className="text-gray-700">
+            <p className="mt-4 text-gray-700">
               Muitas empresas sabem o que fazem, mas não conseguem transformar isso em uma comunicação clara.
               Isso gera ruído, perda de oportunidades e dificuldade de posicionamento.
             </p>
 
+            {/* QUANDO FAZ SENTIDO */}
+            <h2 className="text-2xl font-bold mt-10">
+              Quando isso faz sentido
+            </h2>
+
+            <ul className="mt-4 space-y-3 text-gray-800">
+              <li>Sua empresa tem uma boa solução, mas dificuldade de explicar</li>
+              <li>A comunicação é dispersa ou inconsistente</li>
+              <li>O negócio depende demais do fundador</li>
+              <li>O conteúdo existe, mas não sustenta posicionamento</li>
+            </ul>
+
           </div>
 
-          <div className="md:col-span-5 order-1 md:order-2">
-            <div className="rounded-2xl overflow-hidden shadow-card relative h-[320px] md:h-[520px]">
+          {/* IMAGEM ÚNICA */}
+          <div className="md:col-span-5">
+            <div className="rounded-2xl overflow-hidden shadow-card relative h-[320px] md:h-[420px]">
               <Image
                 src="/Ilustracao_estrategia_comunicacao.png"
                 alt="Estratégia de comunicação"
@@ -66,50 +74,37 @@ export default function SistemaPosicionamento() {
 
         </section>
 
+        {/* ESPAÇO */}
         <div className="container mt-12 md:mt-16" />
 
-        {/* BLOCO 2 */}
-        <section className="container grid md:grid-cols-12 gap-10 items-center">
+        {/* RESULTADO */}
+        <section className="container max-w-3xl">
 
-          <div className="md:col-span-6 mb-10 md:mb-0">
-            <div className="rounded-2xl overflow-hidden shadow-card relative h-[320px] md:h-[420px]">
-              <Image
-                src="/Ilustracao_estrategia_comunicacao.png"
-                alt="Aplicação prática"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
+          <h2 className="text-2xl md:text-3xl font-bold">
+            O que muda com o trabalho
+          </h2>
 
-          <div className="md:col-span-6">
+          <p className="mt-4 text-gray-700">
+            A comunicação deixa de ser pontual e passa a ter direção.
+            O que sua empresa faz se torna compreensível, consistente e aplicável em diferentes contextos.
+          </p>
 
-            <h2 className="text-2xl md:text-3xl font-bold leading-tight">
-              O que muda com o trabalho
-            </h2>
+          <h3 className="mt-8 font-semibold text-lg">
+            Você sai com isso estruturado
+          </h3>
 
-            <p className="mt-4 text-gray-700">
-              A comunicação deixa de ser pontual e passa a ter direção.
-              O que sua empresa faz se torna compreensível, consistente e aplicável.
-            </p>
-
-            <h3 className="mt-6 font-semibold text-lg">
-              Você sai com isso estruturado
-            </h3>
-
-            <ul className="mt-3 space-y-2 text-gray-700">
-              <li>Posicionamento claro da empresa</li>
-              <li>Mensagens-chave organizadas</li>
-              <li>Forma consistente de apresentar o negócio</li>
-              <li>Aplicações práticas prontas para uso</li>
-            </ul>
-
-          </div>
+          <ul className="mt-4 space-y-3 text-gray-800">
+            <li>Posicionamento claro da empresa</li>
+            <li>Mensagens-chave organizadas</li>
+            <li>Forma consistente de apresentar o negócio</li>
+            <li>Aplicações práticas prontas para uso</li>
+          </ul>
 
         </section>
 
         {/* CTA */}
         <section className="container py-14 md:py-16">
+
           <div className="max-w-2xl">
 
             <h2 className="text-2xl md:text-3xl font-bold">
@@ -128,6 +123,7 @@ export default function SistemaPosicionamento() {
             </Link>
 
           </div>
+
         </section>
 
       </main>
