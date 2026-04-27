@@ -12,7 +12,7 @@ export default function SistemaPosicionamento() {
       <main className="bg-white">
 
         {/* HERO */}
-        <section className="container pt-12 pb-8 md:pt-16 md:pb-10 grid md:grid-cols-2 gap-12 items-center">
+        <section className="container pt-14 pb-10 md:pt-16 md:pb-12 grid md:grid-cols-2 gap-12 items-center">
 
           <div>
             <p className="uppercase tracking-wide text-sm text-orange-600 font-semibold">
@@ -27,12 +27,12 @@ export default function SistemaPosicionamento() {
               Transformo o que sua empresa faz em uma comunicação clara, consistente e aplicável.
             </p>
 
-            <p className="mt-6 text-lg font-semibold text-gray-900">
+            <p className="mt-6 text-lg font-semibold text-gray-900 border-l-4 border-orange-500 pl-4">
               Se o mercado não entende o que você faz, você está perdendo oportunidade.
             </p>
           </div>
 
-          <div className="rounded-2xl overflow-hidden shadow-card relative h-[300px] md:h-[400px] bg-gray-100 p-6">
+          <div className="rounded-2xl overflow-hidden shadow-md relative h-[300px] md:h-[400px] bg-gray-100 p-6">
             <Image
               src="/hero-posicionamento.png"
               alt="Clareza e direção estratégica"
@@ -47,7 +47,8 @@ export default function SistemaPosicionamento() {
         <section className="container grid md:grid-cols-2 gap-12 mt-12">
 
           <div>
-            <h2 className="text-xl font-bold mb-3">
+            <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <span className="text-orange-500 text-xl">❓</span>
               O problema
             </h2>
 
@@ -58,15 +59,16 @@ export default function SistemaPosicionamento() {
           </div>
 
           <div>
-            <h2 className="text-xl font-bold mb-3">
+            <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <span className="text-orange-500 text-xl">🎯</span>
               Quando isso faz sentido
             </h2>
 
             <ul className="space-y-3 text-gray-800">
-              <li>✔ Sua empresa tem uma boa solução, mas dificuldade de explicar</li>
-              <li>✔ A comunicação é dispersa ou inconsistente</li>
-              <li>✔ O negócio depende demais do fundador</li>
-              <li>✔ O conteúdo existe, mas não sustenta posicionamento</li>
+              <li className="flex gap-2"><span className="text-orange-500">✔</span> Sua empresa tem uma boa solução, mas dificuldade de explicar</li>
+              <li className="flex gap-2"><span className="text-orange-500">✔</span> A comunicação é dispersa ou inconsistente</li>
+              <li className="flex gap-2"><span className="text-orange-500">✔</span> O negócio depende demais do fundador</li>
+              <li className="flex gap-2"><span className="text-orange-500">✔</span> O conteúdo existe, mas não sustenta posicionamento</li>
             </ul>
           </div>
 
@@ -75,7 +77,8 @@ export default function SistemaPosicionamento() {
         {/* TRANSFORMAÇÃO */}
         <section className="container mt-16">
 
-          <h2 className="text-2xl md:text-3xl font-bold">
+          <h2 className="text-2xl md:text-3xl font-bold flex items-center gap-2">
+            <span className="text-orange-500 text-xl">🧭</span>
             O que muda com o trabalho
           </h2>
 
@@ -87,41 +90,46 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* ENTREGA */}
-        <section className="container mt-12">
+        <section className="container mt-10">
 
-          <div className="bg-gray-100 rounded-2xl p-8">
+          <div className="bg-gray-100 rounded-2xl p-8 md:p-10">
 
-            <h3 className="text-xl font-semibold mb-6">
+            <h3 className="text-xl font-semibold mb-8 flex items-center gap-2">
+              <span className="text-orange-500 text-xl">🎁</span>
               Você sai com isso estruturado
             </h3>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-4 gap-6">
 
               <div>
-                <h4 className="font-semibold">Posicionamento claro da empresa</h4>
+                <div className="text-2xl mb-2 text-orange-500">🎯</div>
+                <h4 className="font-semibold">Posicionamento claro</h4>
                 <p className="text-sm text-gray-600 mt-1">
                   Definição do que torna sua empresa relevante.
                 </p>
               </div>
 
               <div>
-                <h4 className="font-semibold">Mensagens-chave organizadas</h4>
+                <div className="text-2xl mb-2 text-orange-500">💬</div>
+                <h4 className="font-semibold">Mensagens-chave</h4>
                 <p className="text-sm text-gray-600 mt-1">
-                  Narrativas alinhadas ao seu público e objetivos.
+                  Narrativas alinhadas ao público e objetivos.
                 </p>
               </div>
 
               <div>
-                <h4 className="font-semibold">Forma consistente de apresentar o negócio</h4>
+                <div className="text-2xl mb-2 text-orange-500">📄</div>
+                <h4 className="font-semibold">Forma consistente</h4>
                 <p className="text-sm text-gray-600 mt-1">
                   Discursos e conteúdos conectados ao posicionamento.
                 </p>
               </div>
 
               <div>
-                <h4 className="font-semibold">Aplicações práticas prontas para uso</h4>
+                <div className="text-2xl mb-2 text-orange-500">🧩</div>
+                <h4 className="font-semibold">Aplicações práticas</h4>
                 <p className="text-sm text-gray-600 mt-1">
-                  Materiais e direcionamentos aplicáveis no dia a dia.
+                  Materiais prontos para uso no dia a dia.
                 </p>
               </div>
 
@@ -132,25 +140,31 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* CTA */}
-        <section className="container pt-12 pb-16 md:pt-14 md:pb-20">
+        <section className="container pt-14 pb-20">
 
-          <div className="bg-orange-50 rounded-2xl p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div className="bg-orange-50 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
 
-            <div>
-              <h2 className="text-2xl font-bold">
-                Próximo passo
-              </h2>
+            <div className="flex items-center gap-4">
+              <div className="bg-[#FF4D00] text-white rounded-full w-14 h-14 flex items-center justify-center text-xl">
+                💬
+              </div>
 
-              <p className="mt-2 text-gray-700 max-w-md">
-                Posso fazer uma leitura inicial da sua comunicação e estruturar um caminho possível de trabalho.
-              </p>
+              <div>
+                <h2 className="text-xl font-bold">
+                  Próximo passo
+                </h2>
+
+                <p className="text-gray-700 text-sm mt-1 max-w-md">
+                  Posso fazer uma leitura inicial da sua comunicação e estruturar um caminho possível de trabalho.
+                </p>
+              </div>
             </div>
 
             <Link
               href="/#contato"
               className="bg-[#FF4D00] text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition"
             >
-              Solicitar análise inicial
+              Solicitar análise inicial →
             </Link>
 
           </div>
