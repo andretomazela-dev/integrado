@@ -12,7 +12,7 @@ export default function SistemaPosicionamento() {
       <main className="bg-white">
 
         {/* HERO */}
-        <section className="container pt-16 pb-12 grid md:grid-cols-2 gap-12 items-center">
+        <section className="container pt-16 pb-16 grid md:grid-cols-2 gap-14 items-center">
 
           <div>
             <p className="uppercase tracking-wide text-sm text-orange-600 font-semibold">
@@ -32,7 +32,6 @@ export default function SistemaPosicionamento() {
             </p>
           </div>
 
-          {/* IMAGEM SEM BORDA */}
           <div className="rounded-2xl overflow-hidden shadow-md relative h-[320px] md:h-[420px]">
             <Image
               src="/hero-posicionamento.png"
@@ -45,11 +44,13 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* PROBLEMA + QUANDO */}
-        <section className="container grid md:grid-cols-2 gap-14 mt-12">
+        <section className="container grid md:grid-cols-2 gap-16 mt-8">
 
           <div>
-            <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
-              <span className="w-8 h-8 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00] text-sm">?</span>
+            <h2 className="text-xl font-bold mb-5 flex items-center gap-3">
+              <span className="w-9 h-9 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00]">
+                ?
+              </span>
               O problema
             </h2>
 
@@ -60,16 +61,18 @@ export default function SistemaPosicionamento() {
           </div>
 
           <div>
-            <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
-              <span className="w-8 h-8 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00] text-sm">✓</span>
+            <h2 className="text-xl font-bold mb-5 flex items-center gap-3">
+              <span className="w-9 h-9 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00]">
+                ✓
+              </span>
               Quando isso faz sentido
             </h2>
 
             <ul className="space-y-3 text-gray-800">
-              <li className="flex gap-2"><span className="text-[#FF4D00]">✓</span> Sua empresa tem uma boa solução, mas dificuldade de explicar</li>
-              <li className="flex gap-2"><span className="text-[#FF4D00]">✓</span> A comunicação é dispersa ou inconsistente</li>
-              <li className="flex gap-2"><span className="text-[#FF4D00]">✓</span> O negócio depende demais do fundador</li>
-              <li className="flex gap-2"><span className="text-[#FF4D00]">✓</span> O conteúdo existe, mas não sustenta posicionamento</li>
+              <li className="flex gap-3"><span className="text-[#FF4D00]">✓</span> Sua empresa tem uma boa solução, mas dificuldade de explicar</li>
+              <li className="flex gap-3"><span className="text-[#FF4D00]">✓</span> A comunicação é dispersa ou inconsistente</li>
+              <li className="flex gap-3"><span className="text-[#FF4D00]">✓</span> O negócio depende demais do fundador</li>
+              <li className="flex gap-3"><span className="text-[#FF4D00]">✓</span> O conteúdo existe, mas não sustenta posicionamento</li>
             </ul>
           </div>
 
@@ -78,8 +81,10 @@ export default function SistemaPosicionamento() {
         {/* TRANSFORMAÇÃO */}
         <section className="container mt-20">
 
-          <h2 className="text-2xl md:text-3xl font-bold flex items-center gap-2">
-            <span className="w-8 h-8 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00] text-sm">→</span>
+          <h2 className="text-2xl md:text-3xl font-bold flex items-center gap-3">
+            <span className="w-9 h-9 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00]">
+              →
+            </span>
             O que muda com o trabalho
           </h2>
 
@@ -90,58 +95,34 @@ export default function SistemaPosicionamento() {
 
         </section>
 
-        {/* ENTREGA (CORRIGIDO) */}
-        <section className="container mt-12">
+        {/* ENTREGA */}
+        <section className="container mt-14">
 
-          <div className="bg-gray-100 rounded-2xl p-10 mt-6">
+          <div className="bg-gray-100 rounded-2xl p-10">
 
-            <h3 className="text-xl font-semibold mb-10 flex items-center gap-2">
-              <span className="w-8 h-8 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00] text-sm">★</span>
+            <h3 className="text-xl font-semibold mb-10 flex items-center gap-3">
+              <span className="w-9 h-9 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00]">
+                ★
+              </span>
               Você sai com isso estruturado
             </h3>
 
-            <div className="grid md:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-4 gap-10">
 
-              {/* ITEM */}
-              <div className="flex flex-col items-start">
-                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-sm border border-gray-200 mb-4 text-[#FF4D00]">
-                  🎯
+              {[
+                ["Posicionamento claro", "Definição do que torna sua empresa relevante."],
+                ["Mensagens-chave", "Narrativas alinhadas ao público e objetivos."],
+                ["Forma consistente", "Discursos e conteúdos conectados ao posicionamento."],
+                ["Aplicações práticas", "Materiais prontos para uso no dia a dia."]
+              ].map((item, i) => (
+                <div key={i}>
+                  <div className="w-12 h-12 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00] mb-4">
+                    ●
+                  </div>
+                  <h4 className="font-semibold">{item[0]}</h4>
+                  <p className="text-sm text-gray-600 mt-1">{item[1]}</p>
                 </div>
-                <h4 className="font-semibold">Posicionamento claro</h4>
-                <p className="text-sm text-gray-600 mt-1">
-                  Definição do que torna sua empresa relevante.
-                </p>
-              </div>
-
-              <div>
-                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-sm border border-gray-200 mb-4 text-[#FF4D00]">
-                  💬
-                </div>
-                <h4 className="font-semibold">Mensagens-chave</h4>
-                <p className="text-sm text-gray-600 mt-1">
-                  Narrativas alinhadas ao público e objetivos.
-                </p>
-              </div>
-
-              <div>
-                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-sm border border-gray-200 mb-4 text-[#FF4D00]">
-                  📄
-                </div>
-                <h4 className="font-semibold">Forma consistente</h4>
-                <p className="text-sm text-gray-600 mt-1">
-                  Discursos e conteúdos conectados ao posicionamento.
-                </p>
-              </div>
-
-              <div>
-                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-sm border border-gray-200 mb-4 text-[#FF4D00]">
-                  🧩
-                </div>
-                <h4 className="font-semibold">Aplicações práticas</h4>
-                <p className="text-sm text-gray-600 mt-1">
-                  Materiais prontos para uso no dia a dia.
-                </p>
-              </div>
+              ))}
 
             </div>
 
@@ -150,7 +131,7 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* CTA */}
-        <section className="container pt-16 pb-20">
+        <section className="container mt-16 mb-20">
 
           <div className="bg-orange-50 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
 
