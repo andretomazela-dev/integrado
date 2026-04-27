@@ -125,42 +125,46 @@ return (
 </div>
       </section>
 
-      {/* SERVIÇOS */}
-      <section id="servicos" className="bg-gray-50 py-14 md:py-16 scroll-mt-28">
-        <div className="container">
+     {/* SERVIÇOS */}
+<section id="servicos" className="bg-gray-50 py-14 md:py-16 scroll-mt-28">
+  <div className="container">
 
-          {/* BLOCO DESTACADO – SISTEMA DE POSICIONAMENTO */}
-<div className="bg-white rounded-2xl p-8 md:p-10 mb-10 shadow-sm border border-gray-200">
+    {/* BLOCO DESTACADO – SISTEMA DE POSICIONAMENTO */}
+    <div className="bg-white rounded-2xl p-8 md:p-10 mb-10 shadow-sm border border-gray-200">
 
-  <span className="text-xs uppercase tracking-wide text-gray-500">
-    Comece por aqui
-  </span>
+      <span className="text-xs uppercase tracking-wide text-gray-500">
+        Comece por aqui
+      </span>
 
-  <h2 className="text-2xl md:text-3xl font-semibold mt-2">
-    Sistema de Posicionamento Estratégico
-  </h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mt-2">
+        Sistema de Posicionamento Estratégico
+      </h2>
 
-  <p className="mt-3 text-gray-700 max-w-2xl">
-    Estruturo o que sua empresa faz em uma comunicação clara, consistente e aplicável, com direção estratégica e uso inteligente de IA.
-  </p>
-          <h2 className="text-2xl md:text-3xl font-bold">
-            O que posso fazer por você
-          </h2>
-          <Link
-    href="/sistema-de-posicionamento-estrategico"
-    className="inline-block mt-5 bg-[#FF4D00] text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition"
-  >
-    Ver como funciona
-  </Link>
-  
-</div>
-          <p className="mt-2 text-gray-600 max-w-prose">
-            Serviços desenhados para marcas que buscam relevância 
-            em um cenário de excesso de ruído. O objetivo é transformar 
-            propósito em autoridade e presença institucional consistente.
-          </p>
+      <p className="mt-3 text-gray-700 max-w-2xl">
+        Estruturo o que sua empresa faz em uma comunicação clara, consistente e aplicável, com direção estratégica e uso inteligente de IA.
+      </p>
 
-          <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <Link
+        href="/sistema-de-posicionamento-estrategico"
+        className="inline-block mt-5 bg-[#FF4D00] text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition"
+      >
+        Ver como funciona
+      </Link>
+
+    </div>
+
+    {/* TÍTULO CORRETO (FORA DO BLOCO) */}
+    <h2 className="text-2xl md:text-3xl font-bold">
+      O que posso fazer por você
+    </h2>
+
+    <p className="mt-2 text-gray-600 max-w-prose">
+      Serviços desenhados para marcas que buscam relevância 
+      em um cenário de excesso de ruído. O objetivo é transformar 
+      propósito em autoridade e presença institucional consistente.
+    </p>
+
+    <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {/* 1 */}
             <div className="card">
               <div className="mb-3 text-orange-600">
