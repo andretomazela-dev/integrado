@@ -12,7 +12,7 @@ export default function SistemaPosicionamento() {
       <main className="bg-white">
 
         {/* HERO */}
-        <section className="container py-12 md:py-16 grid md:grid-cols-2 gap-10 items-center">
+        <section className="container pt-12 pb-8 md:pt-16 md:pb-10 grid md:grid-cols-2 gap-12 items-center">
 
           <div>
             <p className="uppercase tracking-wide text-sm text-orange-600 font-semibold">
@@ -32,22 +32,20 @@ export default function SistemaPosicionamento() {
             </p>
           </div>
 
-          {/* NOVA IMAGEM */}
-          <div className="rounded-2xl overflow-hidden shadow-card relative h-[300px] md:h-[400px]">
+          <div className="rounded-2xl overflow-hidden shadow-card relative h-[300px] md:h-[400px] bg-gray-100 p-6">
             <Image
               src="/hero-posicionamento.png"
               alt="Clareza e direção estratégica"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
 
         </section>
 
         {/* PROBLEMA + QUANDO */}
-        <section className="container grid md:grid-cols-2 gap-10 mt-10">
+        <section className="container grid md:grid-cols-2 gap-12 mt-12">
 
-          {/* PROBLEMA */}
           <div>
             <h2 className="text-xl font-bold mb-3">
               O problema
@@ -59,7 +57,6 @@ export default function SistemaPosicionamento() {
             </p>
           </div>
 
-          {/* QUANDO FAZ SENTIDO */}
           <div>
             <h2 className="text-xl font-bold mb-3">
               Quando isso faz sentido
@@ -76,7 +73,7 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* TRANSFORMAÇÃO */}
-        <section className="container mt-14">
+        <section className="container mt-16">
 
           <h2 className="text-2xl md:text-3xl font-bold">
             O que muda com o trabalho
@@ -89,8 +86,8 @@ export default function SistemaPosicionamento() {
 
         </section>
 
-        {/* ENTREGA DESTACADA */}
-        <section className="container mt-10">
+        {/* ENTREGA */}
+        <section className="container mt-12">
 
           <div className="bg-gray-100 rounded-2xl p-8">
 
@@ -135,7 +132,7 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* CTA */}
-        <section className="container py-14 md:py-16">
+        <section className="container pt-12 pb-16 md:pt-14 md:pb-20">
 
           <div className="bg-orange-50 rounded-2xl p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
 
