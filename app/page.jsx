@@ -124,33 +124,31 @@ return (
   />
 </div>
       </section>
-
      {/* SERVIÇOS */}
 <section id="servicos" className="bg-gray-50 pt-8 pb-14 md:pt-10 md:pb-16 scroll-mt-28">
   <div className="container">
 
     {/* BLOCO DESTACADO – SISTEMA DE POSICIONAMENTO */}
-    <div className="bg-white rounded-2xl p-8 md:p-10 mb-6 shadow-sm border border-gray-200">
+<div className="bg-gray-100 rounded-2xl p-8 md:p-10 mb-6 shadow-sm border border-gray-200">
 
-      <span className="text-xs uppercase tracking-wide text-gray-500">
-        Comece por aqui
-      </span>
+  <span className="text-xs uppercase tracking-wide text-gray-500">
+    Comece por aqui
+  </span>
 
-      <h2 className="text-2xl md:text-3xl font-semibold mt-2">
-        Sistema de Posicionamento Estratégico
-      </h2>
+  <h2 className="text-2xl md:text-3xl font-bold mt-2">
+    Sistema de Posicionamento Estratégico
+  </h2>
 
-      <p className="mt-3 text-gray-700 max-w-2xl">
-        Estruturo o que sua empresa faz em uma comunicação clara, consistente e aplicável, com direção estratégica e uso inteligente de IA.
-      </p>
+  <p className="mt-3 text-gray-700 max-w-2xl">
+    Transformo o que sua empresa faz em uma comunicação clara, consistente e aplicável.
+  </p>
 
-      <Link
-        href="/sistema-de-posicionamento-estrategico"
-        className="inline-block mt-5 bg-[#FF4D00] text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition"
-      >
-        Ver como funciona
-      </Link>
-
+  <Link
+    href="/sistema-de-posicionamento-estrategico"
+    className="inline-block mt-5 bg-[#FF4D00] text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition"
+  >
+    Ver como funciona
+  </Link>
     </div>
 
     {/* TÍTULO CORRETO (FORA DO BLOCO) */}
