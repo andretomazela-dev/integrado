@@ -4,6 +4,12 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
+const Icon = ({ children }) => (
+  <div className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00]">
+    {children}
+  </div>
+);
+
 export default function SistemaPosicionamento() {
   return (
     <div>
@@ -12,7 +18,7 @@ export default function SistemaPosicionamento() {
       <main className="bg-white">
 
         {/* HERO */}
-        <section className="container pt-16 pb-16 grid md:grid-cols-2 gap-14 items-center">
+        <section className="container pt-16 pb-20 grid md:grid-cols-2 gap-14 items-center">
 
           <div>
             <p className="uppercase tracking-wide text-sm text-orange-600 font-semibold">
@@ -32,7 +38,7 @@ export default function SistemaPosicionamento() {
             </p>
           </div>
 
-          <div className="rounded-2xl overflow-hidden shadow-md relative h-[320px] md:h-[420px]">
+          <div className="rounded-2xl overflow-hidden shadow-md relative h-[340px] md:h-[440px]">
             <Image
               src="/hero-posicionamento.png"
               alt="Clareza e direção estratégica"
@@ -44,13 +50,11 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* PROBLEMA + QUANDO */}
-        <section className="container grid md:grid-cols-2 gap-16 mt-8">
+        <section className="container grid md:grid-cols-2 gap-16 mt-10">
 
           <div>
             <h2 className="text-xl font-bold mb-5 flex items-center gap-3">
-              <span className="w-9 h-9 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00]">
-                ?
-              </span>
+              <Icon>?</Icon>
               O problema
             </h2>
 
@@ -62,9 +66,7 @@ export default function SistemaPosicionamento() {
 
           <div>
             <h2 className="text-xl font-bold mb-5 flex items-center gap-3">
-              <span className="w-9 h-9 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00]">
-                ✓
-              </span>
+              <Icon>✓</Icon>
               Quando isso faz sentido
             </h2>
 
@@ -79,16 +81,14 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* TRANSFORMAÇÃO */}
-        <section className="container mt-20">
+        <section className="container mt-24">
 
           <h2 className="text-2xl md:text-3xl font-bold flex items-center gap-3">
-            <span className="w-9 h-9 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00]">
-              →
-            </span>
+            <Icon>→</Icon>
             O que muda com o trabalho
           </h2>
 
-          <p className="mt-5 text-gray-700 max-w-2xl leading-relaxed">
+          <p className="mt-6 text-gray-700 max-w-2xl leading-relaxed">
             A comunicação deixa de ser pontual e passa a ter direção.
             O que sua empresa faz se torna compreensível, consistente e aplicável em diferentes contextos.
           </p>
@@ -101,9 +101,7 @@ export default function SistemaPosicionamento() {
           <div className="bg-gray-100 rounded-2xl p-10">
 
             <h3 className="text-xl font-semibold mb-10 flex items-center gap-3">
-              <span className="w-9 h-9 flex items-center justify-center rounded-full border border-[#FF4D00] text-[#FF4D00]">
-                ★
-              </span>
+              <Icon>★</Icon>
               Você sai com isso estruturado
             </h3>
 
@@ -131,12 +129,12 @@ export default function SistemaPosicionamento() {
         </section>
 
         {/* CTA */}
-        <section className="container mt-16 mb-20">
+        <section className="container mt-20 mb-24">
 
-          <div className="bg-orange-50 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="bg-orange-50 rounded-2xl p-10 flex flex-col md:flex-row items-center justify-between gap-8">
 
             <div className="flex items-center gap-4">
-              <div className="bg-[#FF4D00] text-white rounded-full w-14 h-14 flex items-center justify-center text-xl">
+              <div className="bg-[#FF4D00] text-white rounded-full w-14 h-14 flex items-center justify-center">
                 💬
               </div>
 
