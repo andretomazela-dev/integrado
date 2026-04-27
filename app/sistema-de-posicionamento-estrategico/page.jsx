@@ -90,10 +90,11 @@ export default function SistemaPosicionamento() {
           </div>
         </section>
 
-        {/* TRANSFORMAÇÃO */}
+        {/* TRANSFORMAÇÃO + ENTREGA */}
         <section className="section-sm">
           <div className="container">
 
+            {/* TÍTULO */}
             <h2 className="text-2xl font-bold flex items-center gap-2 mb-3">
               <span className="text-orange-600">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -104,66 +105,80 @@ export default function SistemaPosicionamento() {
               O que muda com o trabalho
             </h2>
 
-            <p className="text-gray-700 mb-8 max-w-2xl">
+            <p className="text-gray-700 mb-10 max-w-2xl">
               A comunicação deixa de ser pontual e passa a ter direção.
               O que sua empresa faz se torna compreensível, consistente e aplicável.
             </p>
 
-            {/* ENTREGA */}
+            {/* BLOCO ENTREGA */}
             <div className="card-soft">
 
-              <h3 className="font-semibold mb-6 flex items-center gap-2">
-                <span className="text-orange-600">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M12 3l3 6 6 .5-4.5 4 .9 6L12 17l-5.4 2.5.9-6L3 9.5 9 9z"></path>
-                  </svg>
-                </span>
-                Você sai com isso estruturado
-              </h3>
+              {/* HEADER COM HIERARQUIA */}
+              <div className="mb-10">
+                <h3 className="text-2xl md:text-3xl font-bold mb-2">
+                  Você sai com isso estruturado
+                </h3>
+                <p className="text-gray-600 max-w-xl">
+                  Clareza estratégica aplicada ao seu negócio, com direcionamento e execução.
+                </p>
+              </div>
 
-              <div className="grid md:grid-cols-4 gap-6">
+              {/* GRID */}
+              <div className="grid md:grid-cols-4 gap-8">
 
                 {/* 1 */}
                 <div>
                   <div className="mb-3 text-orange-600">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <circle cx="12" cy="12" r="8"></circle>
                       <circle cx="12" cy="12" r="3"></circle>
                     </svg>
                   </div>
-                  <h4 className="font-semibold">Posicionamento claro</h4>
+                  <h4 className="font-semibold mb-1">Posicionamento claro</h4>
+                  <p className="text-sm text-gray-600">
+                    Definição do que torna sua empresa relevante.
+                  </p>
                 </div>
 
                 {/* 2 */}
                 <div>
                   <div className="mb-3 text-orange-600">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path>
                     </svg>
                   </div>
-                  <h4 className="font-semibold">Mensagens-chave</h4>
+                  <h4 className="font-semibold mb-1">Mensagens-chave</h4>
+                  <p className="text-sm text-gray-600">
+                    Narrativas alinhadas ao público e objetivos.
+                  </p>
                 </div>
 
                 {/* 3 */}
                 <div>
                   <div className="mb-3 text-orange-600">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M6 2h9l5 5v15H6z"></path>
                     </svg>
                   </div>
-                  <h4 className="font-semibold">Forma consistente</h4>
+                  <h4 className="font-semibold mb-1">Forma consistente</h4>
+                  <p className="text-sm text-gray-600">
+                    Discursos e conteúdos conectados ao posicionamento.
+                  </p>
                 </div>
 
                 {/* 4 */}
                 <div>
                   <div className="mb-3 text-orange-600">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M12 2l4 4-4 4-4-4 4-4z"></path>
                       <path d="M2 12l4-4 4 4-4 4-4-4z"></path>
                       <path d="M12 22l4-4-4-4-4 4 4 4z"></path>
                     </svg>
                   </div>
-                  <h4 className="font-semibold">Aplicações práticas</h4>
+                  <h4 className="font-semibold mb-1">Aplicações práticas</h4>
+                  <p className="text-sm text-gray-600">
+                    Materiais prontos para uso no dia a dia.
+                  </p>
                 </div>
 
               </div>
