@@ -60,47 +60,37 @@ html,body{
   color:#6b7280;
 }
 
-/* ===== SECTION SYSTEM (AJUSTADO) ===== */
+/* ===== SECTION SYSTEM (CORRIGIDO) ===== */
 
-/* padrão leve */
 .section{
   padding:3rem 0;
 }
 
-/* menor (para blocos próximos) */
 .section-sm{
   padding:2rem 0;
 }
 
-/* maior (hero / respiro final) */
 .section-lg{
   padding:4rem 0;
 }
 
-/* hero específico (evita buraco visual) */
 .section-hero{
   padding:3.5rem 0 2.5rem;
 }
 
-/* remove excesso de empilhamento */
+/* remove espaçamento duplicado */
 .section + .section{
   margin-top:0;
 }
 
-/* ===== ICON SYSTEM ===== */
+/* ===== ICON ===== */
 
-.icon-circle{
-  width:2.5rem;
-  height:2.5rem;
-  border-radius:9999px;
-  border:1px solid #FF4D00;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#FF4D00;
+.icon{
+  font-size:1.25rem;
+  line-height:1;
 }
 
-/* ===== LAB CONTENT ===== */
+/* ===== LAB ===== */
 
 .content h2{
   font-size:1.5rem;
