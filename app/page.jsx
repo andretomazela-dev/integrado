@@ -277,10 +277,10 @@ return (
               </div>
               <h3 className="font-semibold">O que mais você precisa?</h3>
               <p className="text-sm mt-2 opacity-95">
-                Desenvolvemos soluções sob medida e projetos especiais de acordo com o seu desafio atual.
+                Desenvolvo soluções sob medida e projetos especiais de acordo com o seu desafio atual.
               </p>
               <span className="mt-3 inline-block text-xs font-semibold bg-white/15 rounded-full px-3 py-1">
-                Clique para falar com a gente
+                Clique para falar comigo
               </span>
             </div>
           </div>
