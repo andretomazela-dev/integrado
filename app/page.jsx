@@ -129,61 +129,45 @@ return (
   <div className="container">
 
     {/* BLOCO DESTACADO – SISTEMA DE POSICIONAMENTO */}
-<div className="bg-gray-100 rounded-2xl p-8 md:p-10 mb-8 shadow-sm border border-gray-200 grid md:grid-cols-2 gap-8 items-center">
+    <div className="bg-gray-100 rounded-2xl p-8 md:p-10 mb-8 shadow-sm border border-gray-200 grid md:grid-cols-2 gap-8 items-center">
 
-  {/* TEXTO */}
-  <div>
-    <span className="text-xs uppercase tracking-wide text-gray-500">
-      Comece por aqui
-    </span>
+      {/* TEXTO */}
+      <div>
+        <span className="text-xs uppercase tracking-wide text-gray-500">
+          Comece por aqui
+        </span>
 
-    <h2 className="text-2xl md:text-3xl font-bold mt-2 leading-tight">
-      Sistema de Posicionamento Estratégico
-    </h2>
+        <h2 className="text-2xl md:text-3xl font-bold mt-2 leading-tight">
+          Sistema de Posicionamento Estratégico
+        </h2>
 
-    <p className="mt-4 text-gray-700 max-w-xl">
-      Transformo o que sua empresa faz em uma comunicação clara, consistente e aplicável.
-    </p>
+        <p className="mt-4 text-gray-700 max-w-xl">
+          Transformo o que sua empresa faz em uma comunicação clara, consistente e aplicável.
+        </p>
 
-    <Link
-      href="/sistema-de-posicionamento-estrategico"
-      className="inline-block mt-6 bg-[#FF4D00] text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition"
-    >
-      Ver como funciona
-    </Link>
-  </div>
+        <Link
+          href="/sistema-de-posicionamento-estrategico"
+          className="inline-block mt-6 bg-[#FF4D00] text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition"
+        >
+          Ver como funciona
+        </Link>
+      </div>
 
-  {/* IMAGEM */}
-  <div className="hidden md:flex justify-end">
-    <div className="relative w-full max-w-[420px] h-[240px] rounded-2xl overflow-hidden shadow-md">
-      <Image
-        src="/hero-posicionamento.png"
-        alt="Clareza e direção estratégica"
-        fill
-        className="object-cover"
-      />
-    </div>
-  </div>
+      {/* IMAGEM */}
+      <div className="hidden md:flex justify-end">
+        <div className="relative w-full max-w-[420px] h-[240px] rounded-2xl overflow-hidden shadow-md">
+          <Image
+            src="/hero-posicionamento.png"
+            alt="Clareza e direção estratégica"
+            fill
+            className="object-cover"
+          />
+        </div>
+      </div>
 
-</div>
-
-{/* TÍTULO CORRETO (FORA DO BLOCO) */}
-<h2 className="text-2xl md:text-3xl font-bold">
-  O que posso fazer por você
-</h2>
-
-  {/* IMAGEM */}
-  <div className="hidden md:flex justify-end">
-    <div className="relative w-full max-w-[420px] h-[240px] rounded-2xl overflow-hidden shadow-md">
-      <Image
-        src="/hero-posicionamento.png"
-        alt="Clareza e direção estratégica"
-        fill
-        className="object-cover"
-      />
     </div>
 
-    {/* TÍTULO CORRETO (FORA DO BLOCO) */}
+    {/* TÍTULO */}
     <h2 className="text-2xl md:text-3xl font-bold">
       O que posso fazer por você
     </h2>
@@ -195,127 +179,120 @@ return (
     </p>
 
     <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {/* 1 */}
-            <div className="card">
-              <div className="mb-3 text-orange-600">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="8"></circle>
-                  <circle cx="12" cy="12" r="3"></circle>
-                  <path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path>
-                </svg>
-              </div>
-              <h3 className="font-semibold">Posicionamento e narrativa de marca</h3>
-              <p className="text-sm text-gray-600 mt-2">
-                Definição de uma voz única e coerente. Ajudo a marca a encontrar 
-                seu lugar no mercado sem recorrer a fórmulas prontas ou clichês de setor.
-              </p>
-            </div>
 
-            {/* 2 */}
-            <div className="card">
-              <div className="mb-3 text-orange-600">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M3 11v2a4 4 0 0 0 4 4h1"></path>
-                  <path d="M21 8v8"></path>
-                  <path d="M7 15v-6"></path>
-                  <path d="M21 8l-13 4"></path>
-                  <path d="M21 16l-13-4"></path>
-                </svg>
-              </div>
-              <h3 className="font-semibold">Relações com a imprensa</h3>
-              <p className="text-sm text-gray-600 mt-2">
-                Curadoria de pautas e gestão de relacionamentos. 
-                O foco não é apenas o volume de menções, mas a construção 
-                de uma reputação sólida junto a formadores de opinião.
-              </p>
-            </div>
+      {/* 1 */}
+      <div className="card">
+        <div className="mb-3 text-orange-600">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="8"></circle>
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path>
+          </svg>
+        </div>
+        <h3 className="font-semibold">Posicionamento e narrativa de marca</h3>
+        <p className="text-sm text-gray-600 mt-2">
+          Definição de uma voz única e coerente. Ajudo a marca a encontrar 
+          seu lugar no mercado sem recorrer a fórmulas prontas ou clichês de setor.
+        </p>
+      </div>
 
-            {/* 3 */}
-            <div className="card">
-              <div className="mb-3 text-orange-600">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4Z"></path>
-                  <path d="M12 8l1.2 2.4 2.6.4-1.9 1.9.5 2.7L12 14.5 9.6 15.4l.5-2.7-1.9-1.9 2.6-.4L12 8Z"></path>
-                </svg>
-              </div>
-              <h3 className="font-semibold">Conselho e reputação</h3>
-              <p className="text-sm text-gray-600 mt-2">
-                Acompanhamento estratégico para lideranças. 
-                Um olhar externo e experiente para antecipar crises e 
-                proteger o valor institucional da organização.
-              </p>
-            </div>
+      {/* 2 */}
+      <div className="card">
+        <div className="mb-3 text-orange-600">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M3 11v2a4 4 0 0 0 4 4h1"></path>
+            <path d="M21 8v8"></path>
+            <path d="M7 15v-6"></path>
+            <path d="M21 8l-13 4"></path>
+            <path d="M21 16l-13-4"></path>
+          </svg>
+        </div>
+        <h3 className="font-semibold">Relações com a imprensa</h3>
+        <p className="text-sm text-gray-600 mt-2">
+          Curadoria de pautas e gestão de relacionamentos. 
+          O foco não é apenas o volume de menções, mas a construção 
+          de uma reputação sólida junto a formadores de opinião.
+        </p>
+      </div>
 
-            {/* 4 */}
-            <div className="card">
-              <div className="mb-3 text-orange-600">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1-4-4h10a4 4 0 0 1 4 4z"></path>
-                </svg>
-              </div>
-              <h3 className="font-semibold">Presença digital</h3>
-              <p className="text-sm text-gray-600 mt-2">
-                Estratégias de presença digital que privilegiam a qualidade da interação e 
-                a autoridade do discurso em vez do volume vazio de postagens.
-              </p>
-            </div>
+      {/* 3 */}
+      <div className="card">
+        <div className="mb-3 text-orange-600">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4Z"></path>
+            <path d="M12 8l1.2 2.4 2.6.4-1.9 1.9.5 2.7L12 14.5 9.6 15.4l.5-2.7-1.9-1.9 2.6-.4L12 8Z"></path>
+          </svg>
+        </div>
+        <h3 className="font-semibold">Conselho e reputação</h3>
+        <p className="text-sm text-gray-600 mt-2">
+          Acompanhamento estratégico para lideranças. 
+          Um olhar externo e experiente para antecipar crises e 
+          proteger o valor institucional da organização.
+        </p>
+      </div>
 
-            {/* 5 */}
-            <div className="card">
-              <div className="mb-3 text-orange-600">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-              </div>
-              <h3 className="font-semibold">Comunicação interna e cultura</h3>
-              <p className="text-sm text-gray-600 mt-2">
-                Alinhamento entre o discurso externo e a prática interna. 
-                Narrativas que engajam equipes e consolidam 
-                a identidade da empresa de dentro para fora.
-              </p>
-            </div>
+      {/* 4 */}
+      <div className="card">
+        <div className="mb-3 text-orange-600">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path>
+          </svg>
+        </div>
+        <h3 className="font-semibold">Presença digital</h3>
+        <p className="text-sm text-gray-600 mt-2">
+          Estratégias de presença digital que privilegiam a qualidade da interação e 
+          a autoridade do discurso em vez do volume vazio de postagens.
+        </p>
+      </div>
 
-            {/* 6 */}
-            <div className="card">
-              <div className="mb-3 text-orange-600">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 3l1.5 3.5L17 8l-3.5 1.5L12 13l-1.5-3.5L7 8l3.5-1.5L12 3Z"></path>
-                  <path d="M19 14l.8 1.8L22 16l-1.8.8L19 19l-.8-2.2L16 16l2.2-.2L19 14Z"></path>
-                </svg>
-              </div>
-              <h3 className="font-semibold">Criação de conteúdo</h3>
-              <p className="text-sm text-gray-600 mt-2">
-                Produção de material com rigor e ponto de vista, de artigos de opinião 
-                a relatórios anuais, desenhados para reforçar a credibilidade da marca.
-              </p>
-            </div>
-                                
-            {/* 7 — CTA invertido */}
-            <div
-              className="rounded-2xl p-6 bg-[#FF4D00] text-white shadow-lg hover:opacity-90 transition cursor-pointer ring-1 ring-black/5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FF4D00]"
-              role="button"
-              tabIndex={0}
-              onClick={() => scrollToId("#contato")}
-              onKeyDown={(e) => e.key === "Enter" && scrollToId("#contato")}
-              aria-label="Montamos um pacote sob medida — fale com a gente"
-            >
-              <div className="mb-3">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14M5 12h14"></path>
-                </svg>
-              </div>
-              <h3 className="font-semibold">O que mais você precisa?</h3>
-              <p className="text-sm mt-2 opacity-95">
-                Desenvolvo soluções sob medida e projetos especiais de acordo com o seu desafio atual.
-              </p>
-              <span className="mt-3 inline-block text-xs font-semibold bg-white/15 rounded-full px-3 py-1">
-                Clique para falar comigo
-              </span>
-            </div>
-          </div>
+      {/* 5 */}
+      <div className="card">
+        <div className="mb-3 text-orange-600">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <h3 className="font-semibold">Comunicação interna e cultura</h3>
+        <p className="text-sm text-gray-600 mt-2">
+          Alinhamento entre o discurso externo e a prática interna. 
+          Narrativas que engajam equipes e consolidam 
+          a identidade da empresa de dentro para fora.
+        </p>
+      </div>
+
+      {/* 6 */}
+      <div className="card">
+        <div className="mb-3 text-orange-600">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 3l1.5 3.5L17 8l-3.5 1.5L12 13l-1.5-3.5L7 8l3.5-1.5L12 3Z"></path>
+            <path d="M19 14l.8 1.8L22 16l-1.8.8L19 19l-.8-2.2L16 16l2.2-.2L19 14Z"></path>
+          </svg>
+        </div>
+        <h3 className="font-semibold">Criação de conteúdo</h3>
+        <p className="text-sm text-gray-600 mt-2">
+          Produção de material com rigor e ponto de vista, de artigos de opinião 
+          a relatórios anuais, desenhados para reforçar a credibilidade da marca.
+        </p>
+      </div>
+
+    </div>
+
+    <a
+      href="#contato"
+      onClick={(e) => {
+        e.preventDefault();
+        scrollToId("#contato");
+      }}
+      className="inline-block mt-8 btn btn-primary"
+    >
+      Falar sobre meu projeto
+    </a>
+
+  </div>
+</section>
 
           <a
             href="#contato"
