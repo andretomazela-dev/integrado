@@ -163,6 +163,25 @@ return (
         className="object-cover"
       />
     </div>
+  </div>
+
+</div>
+
+{/* TÍTULO CORRETO (FORA DO BLOCO) */}
+<h2 className="text-2xl md:text-3xl font-bold">
+  O que posso fazer por você
+</h2>
+
+  {/* IMAGEM */}
+  <div className="hidden md:flex justify-end">
+    <div className="relative w-full max-w-[420px] h-[240px] rounded-2xl overflow-hidden shadow-md">
+      <Image
+        src="/hero-posicionamento.png"
+        alt="Clareza e direção estratégica"
+        fill
+        className="object-cover"
+      />
+    </div>
 
     {/* TÍTULO CORRETO (FORA DO BLOCO) */}
     <h2 className="text-2xl md:text-3xl font-bold">
