@@ -97,7 +97,7 @@ export default function RepertorioPage() {
               </span>
 
               <h1 className="mt-5 text-5xl md:text-6xl leading-[1.02] font-bold text-[#0f172a] max-w-5xl">
-                Reportagens, investigações e projetos editoriais sobre temas complexos.
+                Reportagens investigativas, matérias e projetos editoriais sobre temas complexos.
               </h1>
 
               <p className="mt-8 text-xl leading-relaxed text-neutral-700 max-w-3xl">
