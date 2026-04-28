@@ -301,19 +301,8 @@ return (
             </div>
           </div>
 
-          <a
-            href="#contato"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToId("#contato");
-            }}
-            className="inline-block mt-8 btn btn-primary"
-          >
-            Falar sobre meu projeto
-          </a>
-        </div>
+       </div>
       </section>
-
 
 {/* Destaque do LAB (post mais recente) */}
 {latestLabPost ? (
