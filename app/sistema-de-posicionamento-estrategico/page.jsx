@@ -201,9 +201,14 @@ export default function SistemaPosicionamento() {
                 </p>
               </div>
 
-              <Link href="/#contato" className="btn btn-primary">
-                Solicitar análise inicial →
-              </Link>
+              <Link
+  href="https://wiry-ironclad-70b.notion.site/ae99670c396f4122abe80725faa36792?pvs=105"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn btn-primary"
+>
+  Solicitar análise inicial →
+</Link>
 
             </div>
 
