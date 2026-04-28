@@ -2,13 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
-import {
-  ArrowUpRight,
-  FileText,
-  Newspaper,
-  Globe,
-  Building2,
-} from "lucide-react";
 
 const reports = [
   {
@@ -148,7 +141,7 @@ export default function RepertorioPage() {
 
                 <div>
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-neutral-200 text-sm text-neutral-700">
-                    <Newspaper size={16} />
+                    <span>✦</span>
                     Reportagem em destaque
                   </div>
 
@@ -161,7 +154,7 @@ export default function RepertorioPage() {
                   </p>
 
                   <div className="mt-8 flex items-center gap-3 text-sm text-neutral-500">
-                    <Building2 size={16} />
+                    <span>•</span>
                     {featured.vehicle} • {featured.year}
                   </div>
 
@@ -171,7 +164,7 @@ export default function RepertorioPage() {
                     className="mt-10 inline-flex items-center gap-2 bg-[#FF4D00] hover:opacity-90 transition text-white px-6 py-4 rounded-2xl font-medium"
                   >
                     Ler reportagem
-                    <ArrowUpRight size={18} />
+                    <span>↗</span>
                   </Link>
                 </div>
               </div>
@@ -183,7 +176,7 @@ export default function RepertorioPage() {
         <section className="pb-28">
           <div className="container">
             <div className="flex items-center gap-3 mb-12">
-              <Globe className="text-[#FF4D00]" size={22} />
+              <span className="text-[#FF4D00] text-xl">✦</span>
 
               <h2 className="text-3xl font-bold text-[#0f172a]">
                 Reportagens selecionadas
@@ -209,7 +202,7 @@ export default function RepertorioPage() {
 
                   <div className="p-7">
                     <div className="flex items-center gap-2 text-sm text-neutral-500">
-                      <FileText size={15} />
+                      <span>•</span>
                       {report.vehicle} • {report.year}
                     </div>
 
@@ -223,7 +216,7 @@ export default function RepertorioPage() {
 
                     <div className="mt-6 inline-flex items-center gap-2 text-[#FF4D00] font-medium">
                       Ver matéria
-                      <ArrowUpRight size={17} />
+                      <span>↗</span>
                     </div>
                   </div>
                 </Link>
