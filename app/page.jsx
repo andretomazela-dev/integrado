@@ -129,26 +129,39 @@ return (
   <div className="container">
 
     {/* BLOCO DESTACADO – SISTEMA DE POSICIONAMENTO */}
-<div className="bg-gray-100 rounded-2xl p-8 md:p-10 mb-6 shadow-sm border border-gray-200">
+<div className="bg-gray-100 rounded-2xl p-8 md:p-10 mb-8 shadow-sm border border-gray-200 grid md:grid-cols-2 gap-8 items-center">
 
-  <span className="text-xs uppercase tracking-wide text-gray-500">
-    Comece por aqui
-  </span>
+  {/* TEXTO */}
+  <div>
+    <span className="text-xs uppercase tracking-wide text-gray-500">
+      Comece por aqui
+    </span>
 
-  <h2 className="text-2xl md:text-3xl font-bold mt-2">
-    Sistema de Posicionamento Estratégico
-  </h2>
+    <h2 className="text-2xl md:text-3xl font-bold mt-2 leading-tight">
+      Sistema de Posicionamento Estratégico
+    </h2>
 
-  <p className="mt-3 text-gray-700 max-w-2xl">
-    Transformo o que sua empresa faz em uma comunicação clara, consistente e aplicável.
-  </p>
+    <p className="mt-4 text-gray-700 max-w-xl">
+      Transformo o que sua empresa faz em uma comunicação clara, consistente e aplicável.
+    </p>
 
-  <Link
-    href="/sistema-de-posicionamento-estrategico"
-    className="inline-block mt-5 bg-[#FF4D00] text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition"
-  >
-    Ver como funciona
-  </Link>
+    <Link
+      href="/sistema-de-posicionamento-estrategico"
+      className="inline-block mt-6 bg-[#FF4D00] text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition"
+    >
+      Ver como funciona
+    </Link>
+  </div>
+
+  {/* IMAGEM */}
+  <div className="hidden md:flex justify-end">
+    <div className="relative w-full max-w-[420px] h-[240px] rounded-2xl overflow-hidden shadow-md">
+      <Image
+        src="/hero-posicionamento.png"
+        alt="Clareza e direção estratégica"
+        fill
+        className="object-cover"
+      />
     </div>
 
     {/* TÍTULO CORRETO (FORA DO BLOCO) */}
