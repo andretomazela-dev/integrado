@@ -367,7 +367,7 @@ return (
     {/* TEXTO */}
     <div className="max-w-lg">
       <h2 className="text-2xl md:text-3xl font-bold mb-5">
-        Sobre André Tomazela
+        André Tomazela
       </h2>
 
       <div className="text-gray-700 space-y-5 leading-relaxed">
