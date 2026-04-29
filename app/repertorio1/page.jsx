@@ -28,8 +28,8 @@ const trabalhos = [
     ano: "2025",
     titulo: "Adaptação urgente",
     descricao:
-      "Reportagem sobre infraestrutura resiliente, eventos climáticos extremos e os desafios de adaptação diante do avanço da crise climática.",
-    link: "/repertorio/adaptacao-urgente.jpg",
+      "Infraestrutura resiliente, eventos extremos e os desafios de adaptação diante do avanço da crise climática.",
+    link: "/repertorio/adaptacao-urgente.pdf",
   },
 ];
 
@@ -58,32 +58,33 @@ const depoimentos = [
 
 export default function Page() {
   return (
-    <div>
+    <div className="bg-white text-[#111827]">
+
       <Header />
 
-      <main className="bg-white">
+      <main>
 
         {/* HERO */}
 
-        <section className="container py-20 md:py-32">
+        <section className="container py-24 md:py-36">
 
-          <p className="uppercase tracking-[0.2em] text-sm text-orange-600 font-semibold">
+          <p className="uppercase tracking-[0.25em] text-xs text-[#FF4D00] font-bold">
             REPERTÓRIO
           </p>
 
-          <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[0.95] tracking-tight max-w-5xl text-[#111827]">
+          <h1 className="mt-5 text-5xl md:text-7xl font-extrabold leading-[0.92] tracking-tight max-w-6xl text-[#0f172a]">
             Comunicação, estratégia e repertório construídos ao longo de mais de 20 anos.
           </h1>
 
-          <p className="mt-10 text-xl text-gray-700 leading-relaxed max-w-3xl">
+          <p className="mt-10 text-xl md:text-2xl text-[#334155] leading-relaxed max-w-4xl">
             Meu repertório reúne mais de 20 anos de experiência em comunicação,
             entre empresas, agências e o trabalho como repórter. Aqui, alguns
             trabalhos publicados e relatos de pessoas com quem já trabalhei.
           </p>
 
-          {/* Logos / áreas */}
+          {/* Áreas / veículos */}
 
-          <div className="mt-14 flex flex-wrap items-center gap-x-10 gap-y-4 text-gray-300 text-sm tracking-wide uppercase">
+          <div className="mt-16 flex flex-wrap gap-x-10 gap-y-5 text-sm uppercase tracking-[0.15em] text-[#64748b] font-medium">
 
             <span>Valor Econômico</span>
             <span>Gênero & Número</span>
@@ -97,43 +98,45 @@ export default function Page() {
 
         {/* PUBLICAÇÕES */}
 
-        <section className="container pb-28">
+        <section className="container pb-32">
 
-          <div className="flex items-center gap-3 mb-12">
+          <div className="flex items-center gap-4 mb-14">
 
-            <span className="text-orange-500">✦</span>
+            <span className="text-[#FF4D00] text-xl">✦</span>
 
-            <h2 className="text-3xl font-bold text-[#111827]">
+            <h2 className="text-4xl font-extrabold text-[#0f172a]">
               Publicações
             </h2>
 
           </div>
 
-          <div className="space-y-8">
+          {/* GRID 3 COLUNAS */}
+
+          <div className="grid gap-8 lg:grid-cols-3">
 
             {trabalhos.map((item) => (
 
               <article
                 key={item.titulo}
-                className="border border-gray-200 rounded-[2rem] p-10 hover:shadow-lg transition-all duration-300 bg-white"
+                className="border border-[#dbe1e8] rounded-[2rem] p-8 bg-white hover:shadow-xl transition-all duration-300"
               >
 
-                <div className="text-sm uppercase tracking-wide text-gray-400">
+                <div className="text-xs uppercase tracking-[0.15em] text-[#64748b] font-semibold">
                   {item.veiculo} • {item.ano}
                 </div>
 
-                <h3 className="mt-4 text-2xl md:text-3xl font-bold leading-tight text-[#111827]">
+                <h3 className="mt-5 text-2xl font-extrabold leading-tight text-[#0f172a]">
                   {item.titulo}
                 </h3>
 
-                <p className="mt-5 text-lg text-gray-700 leading-relaxed max-w-3xl">
+                <p className="mt-5 text-[17px] text-[#334155] leading-relaxed">
                   {item.descricao}
                 </p>
 
                 <Link
                   href={item.link}
                   target="_blank"
-                  className="inline-flex items-center gap-2 mt-8 text-orange-600 font-medium hover:opacity-80 transition-opacity"
+                  className="inline-flex items-center gap-2 mt-8 text-[#FF4D00] font-semibold hover:opacity-80 transition-opacity"
                 >
                   Ler trabalho ↗
                 </Link>
@@ -148,29 +151,29 @@ export default function Page() {
 
         {/* EXPERIÊNCIA */}
 
-        <section className="bg-[#f7f7f5] border-y border-gray-200 mt-20">
+        <section className="bg-[#f8fafc] border-y border-[#dbe1e8]">
 
-          <div className="container py-28">
+          <div className="container py-32">
 
-            <div className="flex items-center gap-3 mb-14">
+            <div className="flex items-center gap-4 mb-16">
 
-              <span className="text-orange-500">✦</span>
+              <span className="text-[#FF4D00] text-xl">✦</span>
 
-              <h2 className="text-3xl font-bold text-[#111827]">
+              <h2 className="text-4xl font-extrabold text-[#0f172a]">
                 Experiência
               </h2>
 
             </div>
 
-            <div className="grid gap-8 md:grid-cols-2">
+            <div className="grid gap-10 md:grid-cols-2">
 
-              <div className="bg-white border border-gray-200 rounded-[2rem] p-8">
+              <div className="bg-white border border-[#dbe1e8] rounded-[2rem] p-10">
 
-                <h3 className="text-2xl font-bold text-[#111827]">
+                <h3 className="text-3xl font-bold text-[#0f172a]">
                   Comunicação institucional
                 </h3>
 
-                <p className="mt-5 text-gray-700 leading-relaxed">
+                <p className="mt-8 text-lg text-[#334155] leading-loose">
                   Atuação em empresas e organizações com foco em comunicação
                   corporativa, conteúdo institucional, relacionamento com públicos
                   estratégicos e posicionamento.
@@ -178,13 +181,13 @@ export default function Page() {
 
               </div>
 
-              <div className="bg-white border border-gray-200 rounded-[2rem] p-8">
+              <div className="bg-white border border-[#dbe1e8] rounded-[2rem] p-10">
 
-                <h3 className="text-2xl font-bold text-[#111827]">
+                <h3 className="text-3xl font-bold text-[#0f172a]">
                   Jornalismo e conteúdo
                 </h3>
 
-                <p className="mt-5 text-gray-700 leading-relaxed">
+                <p className="mt-8 text-lg text-[#334155] leading-loose">
                   Produção de reportagens, especiais e conteúdos sobre temas
                   complexos ligados a economia, clima, diversidade,
                   infraestrutura e transformação social.
@@ -192,26 +195,26 @@ export default function Page() {
 
               </div>
 
-              <div className="bg-white border border-gray-200 rounded-[2rem] p-8">
+              <div className="bg-white border border-[#dbe1e8] rounded-[2rem] p-10">
 
-                <h3 className="text-2xl font-bold text-[#111827]">
+                <h3 className="text-3xl font-bold text-[#0f172a]">
                   Estratégia e posicionamento
                 </h3>
 
-                <p className="mt-5 text-gray-700 leading-relaxed">
+                <p className="mt-8 text-lg text-[#334155] leading-loose">
                   Estruturação de narrativas, clareza de comunicação e direção
                   estratégica para negócios, profissionais e organizações.
                 </p>
 
               </div>
 
-              <div className="bg-white border border-gray-200 rounded-[2rem] p-8">
+              <div className="bg-white border border-[#dbe1e8] rounded-[2rem] p-10">
 
-                <h3 className="text-2xl font-bold text-[#111827]">
+                <h3 className="text-3xl font-bold text-[#0f172a]">
                   Comunicação digital
                 </h3>
 
-                <p className="mt-5 text-gray-700 leading-relaxed">
+                <p className="mt-8 text-lg text-[#334155] leading-loose">
                   Experiência com conteúdo multiplataforma, redes sociais,
                   newsletters, sites institucionais e projetos digitais.
                 </p>
@@ -226,38 +229,38 @@ export default function Page() {
 
         {/* DEPOIMENTOS */}
 
-        <section className="container pt-32 pb-28">
+        <section className="container py-32">
 
-          <div className="flex items-center gap-3 mb-14">
+          <div className="flex items-center gap-4 mb-16">
 
-            <span className="text-orange-500">✦</span>
+            <span className="text-[#FF4D00] text-xl">✦</span>
 
-            <h2 className="text-3xl font-bold text-[#111827]">
+            <h2 className="text-4xl font-extrabold text-[#0f172a]">
               Depoimentos
             </h2>
 
           </div>
 
-          <div className="grid gap-8 lg:grid-cols-2">
+          <div className="grid gap-8 lg:grid-cols-3">
 
             {depoimentos.map((item) => (
 
               <article
                 key={item.texto}
-                className="bg-white border border-gray-200 rounded-[2rem] p-10"
+                className="bg-white border border-[#dbe1e8] rounded-[2rem] p-10"
               >
 
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg text-[#334155] leading-loose">
                   “{item.texto}”
                 </p>
 
-                <div className="mt-8">
+                <div className="mt-10">
 
-                  <p className="font-semibold text-[#111827]">
+                  <p className="font-bold text-[#0f172a] text-lg">
                     {item.autor}
                   </p>
 
-                  <p className="text-sm text-gray-500 mt-1">
+                  <p className="text-sm text-[#64748b] mt-2">
                     {item.cargo}
                   </p>
 
@@ -273,22 +276,22 @@ export default function Page() {
 
         {/* CTA */}
 
-        <section className="container pb-28">
+        <section className="container pb-32">
 
-          <div className="rounded-[2.5rem] border border-gray-200 bg-[#f7f7f5] p-10 md:p-16">
+          <div className="rounded-[2.5rem] border border-[#dbe1e8] bg-[#f8fafc] p-12 md:p-20">
 
-            <h2 className="text-3xl md:text-5xl font-bold leading-tight text-[#111827] max-w-4xl">
+            <h2 className="text-4xl md:text-6xl font-extrabold leading-[1.05] text-[#0f172a] max-w-5xl">
               Precisa organizar a comunicação do seu negócio, projeto ou marca pessoal?
             </h2>
 
-            <p className="mt-6 text-xl text-gray-700 max-w-2xl leading-relaxed">
+            <p className="mt-8 text-xl text-[#334155] max-w-3xl leading-relaxed">
               Posso ajudar com posicionamento, clareza de comunicação,
               conteúdo estratégico e estruturação narrativa.
             </p>
 
             <Link
               href="/contato"
-              className="inline-flex items-center justify-center mt-10 bg-[#FF4D00] hover:opacity-90 text-white font-semibold px-7 py-4 rounded-2xl transition-all"
+              className="inline-flex items-center justify-center mt-12 bg-[#FF4D00] hover:opacity-90 text-white font-bold px-8 py-5 rounded-2xl transition-all"
             >
               Vamos conversar
             </Link>
@@ -300,6 +303,7 @@ export default function Page() {
       </main>
 
       <Footer />
+
     </div>
   );
 }
