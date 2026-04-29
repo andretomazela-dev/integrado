@@ -326,43 +326,57 @@ export default function RepertorioPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="py-24">
-          <div className="container">
-            <div className="rounded-[36px] border border-[#E7E8EA] bg-[#FBFBFA] px-10 py-14 md:px-14">
-              <div className="max-w-3xl">
-                <h2 className="text-[34px] md:text-[46px] leading-[1.03] tracking-[-0.05em] font-[750] text-[#0F172A]">
-                  Precisa organizar a comunicação do seu negócio, projeto ou marca pessoal?
-                </h2>
+       {/* CTA */}
+<section className="py-24">
+  <div className="container">
+    <div
+      className="
+        grid items-center gap-12
+        rounded-[36px]
+        border border-[#E7E8EA]
+        bg-[#FBFBFA]
+        px-8 py-10
+        md:px-14 md:py-14
+        lg:grid-cols-2
+      "
+    >
+      {/* TEXTO */}
+      <div className="max-w-[620px]">
+        <h2 className="text-[32px] md:text-[44px] leading-[1.04] tracking-[-0.045em] font-[720] text-[#0F172A]">
+          Precisa organizar a comunicação do seu negócio, projeto ou marca pessoal?
+        </h2>
 
-                <p className="mt-6 text-[17px] leading-[1.9] text-[#475569]">
-                  Posso ajudar com posicionamento, clareza de comunicação,
-                  conteúdo estratégico e estruturação narrativa.
-                </p>
+        <p className="mt-6 text-[17px] leading-[1.9] text-[#475569] max-w-[540px]">
+          Posso ajudar com posicionamento, clareza de comunicação,
+          conteúdo estratégico e estruturação narrativa.
+        </p>
 
-                <a
-                  href="/#contato"
-                  className="
-                    mt-9 inline-flex
-                    rounded-full
-                    bg-[#FF4D00]
-                    px-7 py-3.5
-                    text-[14px]
-                    font-medium
-                    text-white
-                    transition
-                    hover:opacity-90
-                  "
-                >
-                  Vamos conversar
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+        <a
+          href="/#contato"
+          className="
+            mt-9 inline-flex items-center justify-center
+            rounded-full
+            bg-[#FF4D00]
+            px-7 py-3.5
+            text-[14px]
+            font-medium
+            text-white
+            transition
+            hover:opacity-90
+          "
+        >
+          Vamos conversar
+        </a>
+      </div>
 
-      <Footer />
-    </>
-  );
-}
+      {/* IMAGEM */}
+      <div className="flex justify-center lg:justify-end">
+        <img
+          src="/repertorio/cta-repertorio.png"
+          alt="Comunicação estratégica"
+          className="w-full max-w-[430px] h-auto object-contain"
+        />
+      </div>
+    </div>
+  </div>
+</section>
