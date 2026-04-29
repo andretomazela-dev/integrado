@@ -21,6 +21,7 @@ export default function Header() {
       }`}
     >
       <div className="container flex items-center justify-between py-3">
+        {/* LOGO */}
         <Link href="/" className="flex items-center">
           <Image
             src="/logo-tomazela.png"
@@ -34,30 +35,49 @@ export default function Header() {
           />
         </Link>
 
+        {/* MENU DESKTOP */}
         <nav className="hidden md:flex items-center gap-6">
-          <a href="/#servicos" className="hover:text-brand">
+          <a href="/#servicos" className="hover:text-brand transition">
             Serviços
           </a>
-          <Link href="/manifesto" className="hover:text-brand">
+
+          <Link href="/manifesto" className="hover:text-brand transition">
             Manifesto
           </Link>
-          <Link href="/lab" className="hover:text-brand">
+
+          <Link href="/lab" className="hover:text-brand transition">
             Conteúdo
           </Link>
-          <a href="/#sobre" className="hover:text-brand">
+
+          <Link href="/repertorio1" className="hover:text-brand transition">
+            Repertório
+          </Link>
+
+          <a href="/#sobre" className="hover:text-brand transition">
             Sobre
           </a>
-          <a href="/#contato" className="btn btn-primary rounded-2xl">
+
+          <a
+            href="/#contato"
+            className="btn btn-primary rounded-2xl"
+          >
             Vamos conversar
           </a>
 
-          {/* Instagram */}
+          {/* INSTAGRAM */}
           <a
             href="https://www.instagram.com/andre.tomazela/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram Tomazela"
-            className="ml-2 inline-flex items-center justify-center w-9 h-9 rounded-full border border-transparent hover:border-orange-500 hover:bg-orange-50 transition"
+            className="
+              ml-2 inline-flex items-center justify-center
+              w-9 h-9 rounded-full
+              border border-transparent
+              hover:border-orange-500
+              hover:bg-orange-50
+              transition
+            "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +97,7 @@ export default function Header() {
           </a>
         </nav>
 
-        {/* Botão mobile */}
+        {/* BOTÃO MOBILE */}
         <button
           className="md:hidden inline-flex items-center justify-center rounded-xl border px-3 py-2"
           aria-label="Abrir menu"
@@ -101,39 +121,69 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Menu mobile */}
+      {/* MENU MOBILE */}
       <div
         className={`fixed inset-0 z-40 md:hidden ${
           menuOpen ? "" : "pointer-events-none"
         }`}
       >
+        {/* BACKDROP */}
         <div
           className={`absolute inset-0 bg-black/50 transition-opacity duration-200 ${
             menuOpen ? "opacity-100" : "opacity-0"
           }`}
           onClick={() => setMenuOpen(false)}
         />
+
+        {/* DRAWER */}
         <div
           className={`absolute right-0 top-0 h-full w-72 bg-white shadow-xl p-6 transition-transform duration-200 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <button className="mb-4" onClick={() => setMenuOpen(false)}>
+          <button
+            className="mb-6 text-sm text-gray-500"
+            onClick={() => setMenuOpen(false)}
+          >
             Fechar
           </button>
-          <nav className="flex flex-col gap-4">
-            <a href="/#servicos" onClick={() => setMenuOpen(false)}>
+
+          <nav className="flex flex-col gap-5">
+            <a
+              href="/#servicos"
+              onClick={() => setMenuOpen(false)}
+            >
               Serviços
             </a>
-            <Link href="/manifesto" onClick={() => setMenuOpen(false)}>
+
+            <Link
+              href="/manifesto"
+              onClick={() => setMenuOpen(false)}
+            >
               Manifesto
             </Link>
-            <Link href="/lab" onClick={() => setMenuOpen(false)}>
+
+            <Link
+              href="/lab"
+              onClick={() => setMenuOpen(false)}
+            >
               Conteúdo
             </Link>
-            <a href="/#sobre" onClick={() => setMenuOpen(false)}>
+
+            <Link
+              href="/repertorio1"
+              onClick={() => setMenuOpen(false)}
+            >
+              Repertório
+            </Link>
+
+            <a
+              href="/#sobre"
+              onClick={() => setMenuOpen(false)}
+            >
               Sobre
             </a>
+
             <a
               href="/#contato"
               className="btn btn-primary rounded-2xl"
