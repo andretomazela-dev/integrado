@@ -54,17 +54,17 @@ export default function RepertorioPage() {
     {
       titulo: "Comunicação institucional",
       texto:
-        "Atuação em empresas e organizações com foco em posicionamento, conteúdo institucional e relacionamento com públicos estratégicos.",
+        "Atuação em posicionamento, conteúdo institucional e relacionamento com públicos estratégicos.",
     },
     {
       titulo: "Jornalismo e conteúdo",
       texto:
-        "Produção de reportagens, especiais e conteúdos sobre economia, clima, diversidade e transformação social.",
+        "Produção de reportagens e conteúdos sobre economia, clima e transformação social.",
     },
     {
       titulo: "Estratégia e posicionamento",
       texto:
-        "Estruturação de narrativas, clareza estratégica e direção de comunicação para marcas e profissionais.",
+        "Estruturação de narrativas e direção de comunicação para marcas e profissionais.",
     },
     {
       titulo: "Comunicação digital",
@@ -100,24 +100,26 @@ export default function RepertorioPage() {
 
       <main className="bg-[#F7F7F5] text-[#0F172A]">
         {/* HERO */}
-        <section className="container pt-14 pb-12 md:pt-20 md:pb-14">
-          <span className="text-[11px] uppercase tracking-[0.22em] text-[#FF4D00] font-semibold">
+        <section className="container pt-16 pb-14 md:pt-20 md:pb-16">
+          <span className="text-[10px] uppercase tracking-[0.24em] text-[#FF4D00] font-semibold">
             Repertório
           </span>
 
-          <h1 className="mt-5 max-w-4xl text-[40px] md:text-[58px] font-black leading-[1.02] tracking-[-0.045em] text-[#0F172A]">
-            Reportagens, projetos e repertório em comunicação
-          </h1>
+          <div className="mt-5 max-w-3xl">
+            <h1 className="text-[36px] md:text-[54px] leading-[1.02] tracking-[-0.05em] font-[750] text-[#0F172A]">
+              Reportagens, projetos e repertório em comunicação
+            </h1>
 
-          <p className="mt-6 max-w-2xl text-[17px] leading-[1.85] text-[#475569]">
-            Meu repertório reúne mais de 20 anos de experiência em
-            comunicação, entre empresas, agências e o trabalho como
-            repórter. Aqui, alguns trabalhos publicados e relatos de
-            pessoas com quem já trabalhei.
-          </p>
+            <p className="mt-7 max-w-2xl text-[17px] leading-[1.9] text-[#475569]">
+              Meu repertório reúne mais de 20 anos de experiência em
+              comunicação, entre empresas, agências e o trabalho como
+              repórter. Aqui, alguns trabalhos publicados e relatos de
+              pessoas com quem já trabalhei.
+            </p>
+          </div>
 
           {/* FILTROS */}
-          <div className="mt-9 flex flex-wrap gap-3">
+          <div className="mt-10 flex flex-wrap gap-3">
             {[
               { label: "Valor Econômico", id: "valor" },
               { label: "Gênero & Número", id: "genero" },
@@ -131,16 +133,16 @@ export default function RepertorioPage() {
                 className="
                   inline-flex items-center
                   rounded-full
-                  border border-gray-300
+                  border border-[#D9DDE3]
                   bg-white
-                  px-5 py-3
-                  text-[12px]
+                  px-5 py-2.5
+                  text-[11px]
                   uppercase
                   tracking-[0.08em]
-                  text-gray-600
+                  text-[#64748B]
+                  transition
                   hover:border-[#FF4D00]
                   hover:text-[#FF4D00]
-                  transition
                 "
               >
                 {item.label}
@@ -150,38 +152,47 @@ export default function RepertorioPage() {
         </section>
 
         {/* PUBLICAÇÕES */}
-        <section className="border-t border-gray-200 py-20">
+        <section className="border-t border-[#E7E8EA] py-20">
           <div className="container">
             <div className="mb-10 flex items-center gap-3">
-              <span className="text-[#FF4D00] text-xl">✦</span>
-              <h2 className="text-[32px] font-black tracking-[-0.03em]">
+              <span className="text-[#FF4D00] text-sm">✦</span>
+
+              <h2 className="text-[28px] tracking-[-0.03em] font-[750] text-[#0F172A]">
                 Publicações
               </h2>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+            <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-3">
               {trabalhos.map((item, index) => (
                 <article
                   key={index}
                   id={item.id}
-                  className="rounded-[30px] border border-gray-200 bg-white p-8 transition hover:-translate-y-1 hover:shadow-xl"
+                  className="
+                    rounded-[28px]
+                    border border-[#E7E8EA]
+                    bg-white
+                    p-8
+                    transition
+                    hover:-translate-y-1
+                    hover:shadow-lg
+                  "
                 >
-                  <span className="text-[11px] uppercase tracking-[0.14em] text-gray-500">
+                  <span className="text-[10px] uppercase tracking-[0.14em] text-[#64748B]">
                     {item.categoria} • {item.ano}
                   </span>
 
-                  <h3 className="mt-5 text-[24px] md:text-[26px] leading-[1.1] font-black tracking-[-0.04em]">
+                  <h3 className="mt-5 text-[18px] md:text-[20px] leading-[1.15] tracking-[-0.03em] font-[720] text-[#0F172A]">
                     {item.titulo}
                   </h3>
 
-                  <p className="mt-5 text-[16px] leading-[1.8] text-[#475569]">
+                  <p className="mt-5 text-[15px] leading-[1.85] text-[#475569]">
                     {item.descricao}
                   </p>
 
                   <a
                     href={item.link}
                     target="_blank"
-                    className="mt-8 inline-flex items-center gap-2 text-[15px] font-semibold text-[#FF4D00] hover:opacity-80"
+                    className="mt-7 inline-flex items-center gap-2 text-[14px] font-medium text-[#FF4D00] hover:opacity-80"
                   >
                     Ler trabalho ↗
                   </a>
@@ -189,19 +200,19 @@ export default function RepertorioPage() {
               ))}
 
               {/* CARD PORTFÓLIO */}
-              <article className="rounded-[30px] bg-[#FF4D00] p-8 text-white shadow-xl">
-                <span className="text-[11px] uppercase tracking-[0.18em] text-white/70">
+              <article className="rounded-[28px] bg-[#FF4D00] p-8 text-white shadow-lg">
+                <span className="text-[10px] uppercase tracking-[0.18em] text-white/70">
                   Portfólio completo
                 </span>
 
-                <h3 className="mt-5 text-[20px] md:text-[24px] leading-[1.15] font-bold tracking-[-0.03em]">
+                <h3 className="mt-5 text-[24px] leading-[1.12] tracking-[-0.03em] font-[720]">
                   Quer ver mais projetos desenvolvidos ao longo da carreira?
                 </h3>
 
                 <a
                   href="https://drive.google.com/drive/folders/1ZSttp2dvNJzzaAQVb8IXh6YnRX-i0CcB?usp=sharing"
                   target="_blank"
-                  className="mt-10 inline-flex items-center gap-2 text-[15px] font-semibold text-white"
+                  className="mt-10 inline-flex items-center gap-2 text-[14px] font-medium text-white"
                 >
                   Acessar portfólio completo ↗
                 </a>
@@ -211,26 +222,32 @@ export default function RepertorioPage() {
         </section>
 
         {/* EXPERIÊNCIA */}
-        <section className="py-20 bg-white">
+        <section className="bg-white py-20">
           <div className="container">
             <div className="mb-10 flex items-center gap-3">
-              <span className="text-[#FF4D00] text-xl">✦</span>
-              <h2 className="text-[32px] font-black tracking-[-0.03em]">
+              <span className="text-[#FF4D00] text-sm">✦</span>
+
+              <h2 className="text-[28px] tracking-[-0.03em] font-[750] text-[#0F172A]">
                 Experiência
               </h2>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
               {experiencias.map((item, index) => (
                 <div
                   key={index}
-                  className="rounded-[24px] border border-gray-200 bg-[#FAFAF8] p-7"
+                  className="
+                    rounded-[24px]
+                    border border-[#E7E8EA]
+                    bg-[#FAFAF8]
+                    p-6
+                  "
                 >
-                  <h3 className="text-[22px] leading-[1.15] font-black tracking-[-0.03em]">
+                  <h3 className="text-[18px] leading-[1.2] tracking-[-0.03em] font-[700] text-[#0F172A]">
                     {item.titulo}
                   </h3>
 
-                  <p className="mt-4 text-[15px] leading-[1.8] text-[#475569]">
+                  <p className="mt-4 text-[14px] leading-[1.9] text-[#64748B]">
                     {item.texto}
                   </p>
                 </div>
@@ -242,38 +259,43 @@ export default function RepertorioPage() {
         {/* DEPOIMENTOS */}
         <section className="bg-[#EEF2F5] py-20">
           <div className="container">
-            <div className="mb-10 flex items-center gap-3">
-              <span className="text-[#FF4D00] text-xl">✦</span>
+            <div className="mb-10">
+              <div className="flex items-center gap-3">
+                <span className="text-[#FF4D00] text-sm">✦</span>
 
-              <div>
-                <h2 className="text-[32px] font-black tracking-[-0.03em]">
+                <h2 className="text-[28px] tracking-[-0.03em] font-[750] text-[#0F172A]">
                   Depoimentos
                 </h2>
-
-                <p className="mt-3 max-w-3xl text-[16px] leading-[1.8] text-[#475569]">
-                  Recomendações de profissionais que acompanharam meu
-                  trabalho em comunicação corporativa, conteúdo e
-                  posicionamento institucional.
-                </p>
               </div>
+
+              <p className="mt-4 max-w-2xl text-[15px] leading-[1.9] text-[#64748B]">
+                Recomendações de profissionais que acompanharam meu
+                trabalho em comunicação corporativa, conteúdo e
+                posicionamento institucional.
+              </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-3">
+            <div className="grid gap-7 md:grid-cols-3">
               {depoimentos.map((item, index) => (
                 <div
                   key={index}
-                  className="rounded-[28px] bg-white p-10 shadow-sm"
+                  className="
+                    rounded-[28px]
+                    bg-white
+                    p-8
+                    border border-[#E7E8EA]
+                  "
                 >
-                  <p className="text-[18px] leading-[1.9] text-[#0F172A]">
+                  <p className="text-[16px] leading-[1.95] text-[#334155]">
                     “{item.texto}”
                   </p>
 
-                  <div className="mt-8 border-t border-gray-200 pt-6">
-                    <strong className="block text-[18px]">
+                  <div className="mt-7 border-t border-[#E7E8EA] pt-5">
+                    <strong className="block text-[15px] font-semibold text-[#0F172A]">
                       {item.nome}
                     </strong>
 
-                    <span className="mt-1 block text-[15px] text-[#64748B]">
+                    <span className="mt-1 block text-[13px] text-[#64748B]">
                       {item.cargo}
                     </span>
                   </div>
@@ -284,7 +306,18 @@ export default function RepertorioPage() {
             <a
               href="https://www.linkedin.com/in/tomazela/details/recommendations/"
               target="_blank"
-              className="mt-10 inline-flex items-center gap-2 rounded-full border border-[#FF4D00]/20 bg-white px-5 py-3 text-[15px] font-semibold text-[#FF4D00] transition hover:bg-[#FFF1E8]"
+              className="
+                mt-8 inline-flex items-center gap-2
+                rounded-full
+                border border-[#FFD7C2]
+                bg-white
+                px-5 py-2.5
+                text-[13px]
+                font-medium
+                text-[#FF4D00]
+                transition
+                hover:bg-[#FFF4EE]
+              "
             >
               Ver recomendações no LinkedIn ↗
             </a>
@@ -294,20 +327,30 @@ export default function RepertorioPage() {
         {/* CTA */}
         <section className="py-24">
           <div className="container">
-            <div className="rounded-[36px] border border-gray-200 bg-[#FBFBFA] px-10 py-14 md:px-16">
+            <div className="rounded-[36px] border border-[#E7E8EA] bg-[#FBFBFA] px-10 py-14 md:px-14">
               <div className="max-w-3xl">
-                <h2 className="text-[40px] md:text-[52px] leading-[1.02] tracking-[-0.045em] font-black text-[#0F172A]">
+                <h2 className="text-[34px] md:text-[46px] leading-[1.03] tracking-[-0.05em] font-[750] text-[#0F172A]">
                   Precisa organizar a comunicação do seu negócio, projeto ou marca pessoal?
                 </h2>
 
-                <p className="mt-6 text-[18px] leading-[1.9] text-[#475569]">
+                <p className="mt-6 text-[17px] leading-[1.9] text-[#475569]">
                   Posso ajudar com posicionamento, clareza de comunicação,
                   conteúdo estratégico e estruturação narrativa.
                 </p>
 
                 <a
                   href="/#contato"
-                  className="mt-10 inline-flex rounded-full bg-[#FF4D00] px-7 py-4 text-[15px] font-semibold text-white transition hover:opacity-90"
+                  className="
+                    mt-9 inline-flex
+                    rounded-full
+                    bg-[#FF4D00]
+                    px-7 py-3.5
+                    text-[14px]
+                    font-medium
+                    text-white
+                    transition
+                    hover:opacity-90
+                  "
                 >
                   Vamos conversar
                 </a>
