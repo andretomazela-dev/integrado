@@ -1,8 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ArrowUpRight } from "lucide-react";
 
 const trabalhos = [
   {
@@ -99,7 +97,7 @@ export default function RepertorioPage() {
                   className="mt-10 inline-flex items-center gap-2 text-[#ff4d00] font-bold hover:opacity-80 transition-opacity"
                 >
                   Ler trabalho
-                  <ArrowUpRight size={16} />
+                  <span>↗</span>
                 </Link>
               </article>
             ))}
