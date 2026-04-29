@@ -32,7 +32,6 @@ const trabalhos = [
       "Infraestrutura resiliente, eventos extremos e adaptação diante do avanço da crise climática.",
     link: "/repertorio/mudancas-climaticas.pdf",
   },
-];
 
 {
   id: "oglobo",
@@ -53,7 +52,8 @@ const trabalhos = [
     "Queda do desmatamento na Amazônia, fiscalização ambiental e ações dos governos federal e estaduais.",
   link: "/repertorio/sustentabilidade-valor-2023.pdf",
 },
-
+];
+  
 const experiencias = [
   {
     titulo: "Comunicação institucional",
