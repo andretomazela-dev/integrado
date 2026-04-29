@@ -34,6 +34,26 @@ const trabalhos = [
   },
 ];
 
+{
+  id: "oglobo",
+  categoria: "O Globo",
+  ano: "2024",
+  titulo: "Brasil quer seguir exemplo do G20",
+  descricao:
+    "COP30, financiamento climático e o papel do Brasil nas negociações internacionais.",
+  link: "/repertorio/turismo-clima-oglobo.jpg",
+},
+
+{
+  id: "valor",
+  categoria: "Valor Econômico",
+  ano: "2023",
+  titulo: "Caem os alertas de desmatamento",
+  descricao:
+    "Queda do desmatamento na Amazônia, fiscalização ambiental e ações dos governos federal e estaduais.",
+  link: "/repertorio/sustentabilidade-valor-2023.pdf",
+},
+
 const experiencias = [
   {
     titulo: "Comunicação institucional",
