@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 
 const trabalhos = [
   {
+    id: "genero",
     categoria: "Gênero & Número",
     ano: "2025",
     titulo: "Idosos LGBTQIA+ são empurrados de volta para o armário",
@@ -14,6 +15,7 @@ const trabalhos = [
     link: "https://www.generonumero.media/reportagens/idosos-lgbtqia-empurrados-armario/",
   },
   {
+    id: "valor",
     categoria: "Valor Econômico",
     ano: "2025",
     titulo: "Clima encarece prêmios e muda lógica do resseguro",
@@ -22,6 +24,7 @@ const trabalhos = [
     link: "/repertorio/seguros-clima-resseguro.jpg",
   },
   {
+    id: "projetos",
     categoria: "Infraestrutura & Logística",
     ano: "2025",
     titulo: "Adaptação urgente",
@@ -91,12 +94,36 @@ export default function RepertorioPage() {
           trabalhos publicados e relatos de pessoas com quem já trabalhei.
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-[11px] uppercase tracking-wide text-gray-500">
-          <span>Valor Econômico</span>
-          <span>Gênero & Número</span>
-          <span>O Globo</span>
-          <span>Comunicação institucional</span>
-          <span>Projetos especiais</span>
+        {/* FILTROS */}
+        <div className="mt-10 flex flex-wrap gap-3">
+          {[
+            { label: "Valor Econômico", id: "valor" },
+            { label: "Gênero & Número", id: "genero" },
+            { label: "O Globo", id: "oglobo" },
+            { label: "Comunicação institucional", id: "institucional" },
+            { label: "Projetos especiais", id: "projetos" },
+          ].map((item) => (
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              className="
+                inline-flex items-center
+                rounded-full
+                border border-gray-300
+                bg-white
+                px-4 py-2
+                text-[11px]
+                uppercase
+                tracking-wide
+                text-gray-600
+                hover:border-[#FF4D00]
+                hover:text-[#FF4D00]
+                transition
+              "
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
       </section>
 
@@ -115,7 +142,8 @@ export default function RepertorioPage() {
             {trabalhos.map((item, index) => (
               <article
                 key={index}
-                className="bg-white border border-gray-200 rounded-3xl p-7 shadow-sm hover:shadow-md transition"
+                id={item.id}
+                className="scroll-mt-32 bg-white border border-gray-200 rounded-3xl p-7 shadow-sm hover:shadow-md transition"
               >
                 <span className="text-[10px] uppercase tracking-wide text-gray-500 font-medium">
                   {item.categoria} • {item.ano}
@@ -143,7 +171,10 @@ export default function RepertorioPage() {
       </section>
 
       {/* EXPERIÊNCIA */}
-      <section className="py-14 md:py-16 bg-[#F2F3F5] border-t border-gray-200">
+      <section
+        id="institucional"
+        className="py-14 md:py-16 bg-[#F2F3F5] border-t border-gray-200 scroll-mt-32"
+      >
         <div className="container">
           <div className="flex items-center gap-3 mb-10">
             <span className="text-[#FF4D00]">✦</span>
@@ -208,32 +239,31 @@ export default function RepertorioPage() {
         </div>
       </section>
 
-     {/* CTA */}
-<section className="py-14 md:py-16">
-  <div className="container">
-    <div className="bg-[#F2F3F5] border border-gray-200 rounded-[32px] p-8 md:p-10">
-      
-      <div className="max-w-2xl">
-        <h2 className="text-2xl md:text-4xl font-extrabold leading-tight tracking-[-0.03em] text-[#0F172A]">
-          Precisa organizar a comunicação do seu negócio, projeto ou marca pessoal?
-        </h2>
+      {/* CTA */}
+      <section className="py-14 md:py-16">
+        <div className="container">
+          <div className="bg-[#F2F3F5] border border-gray-200 rounded-[32px] p-8 md:p-10">
+            <div className="max-w-2xl">
+              <h2 className="text-2xl md:text-4xl font-extrabold leading-tight tracking-[-0.03em] text-[#0F172A]">
+                Precisa organizar a comunicação do seu negócio, projeto ou marca
+                pessoal?
+              </h2>
 
-        <p className="mt-5 text-base md:text-lg text-gray-700 leading-relaxed">
-          Posso ajudar com posicionamento, clareza de comunicação,
-          conteúdo estratégico e estruturação narrativa.
-        </p>
+              <p className="mt-5 text-base md:text-lg text-gray-700 leading-relaxed">
+                Posso ajudar com posicionamento, clareza de comunicação,
+                conteúdo estratégico e estruturação narrativa.
+              </p>
 
-        <Link
-          href="/#contato"
-          className="inline-flex items-center rounded-2xl px-6 py-3 mt-7 text-sm font-medium bg-[#FF4D00] text-white hover:opacity-90 transition"
-        >
-          Vamos conversar
-        </Link>
-      </div>
-
-    </div>
-  </div>
-</section>
+              <Link
+                href="/#contato"
+                className="inline-flex items-center rounded-2xl px-6 py-3 mt-7 text-sm font-medium bg-[#FF4D00] text-white hover:opacity-90 transition"
+              >
+                Vamos conversar
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>
