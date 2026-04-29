@@ -267,89 +267,140 @@ export default function RepertorioPage() {
         </div>
       </section>
 
-   {/* =========================
+  {/* =========================
    DEPOIMENTOS
 ========================= */}
 
-<section className="mt-28 border-t border-[#E5E7EB] pt-16">
-  <div className="max-w-[1280px] mx-auto px-6 md:px-10">
-    
-    <div className="flex items-center gap-3 mb-8">
-      <span className="text-[#FF4D00] text-xl">✦</span>
+<section className="py-16 md:py-20 bg-[#F2F3F5] border-t border-gray-200">
+  <div className="container">
 
-      <h2 className="text-[32px] md:text-[40px] leading-[1.05] tracking-[-0.03em] font-bold text-[#0F172A]">
+    {/* TÍTULO */}
+    <div className="flex items-center gap-3 mb-6">
+      <span className="text-[#FF4D00]">✦</span>
+
+      <h2 className="text-2xl md:text-3xl font-bold text-[#0F172A]">
         Depoimentos
       </h2>
     </div>
 
-    <p className="text-[17px] leading-[1.7] text-[#475569] max-w-[760px] mb-12">
+    <p className="max-w-3xl text-[16px] md:text-[17px] leading-relaxed text-[#475569]">
       Recomendações de profissionais que acompanharam meu trabalho em
       comunicação corporativa, conteúdo e posicionamento institucional.
     </p>
 
-    <div className="grid md:grid-cols-3 gap-6">
+    {/* GRID */}
+    <div className="mt-12 grid md:grid-cols-3 gap-6">
 
       {/* CARD 1 */}
-      <div className="rounded-[28px] border border-[#E5E7EB] bg-white p-8">
-        <p className="text-[20px] leading-[1.7] text-[#0F172A] mb-8">
+      <div
+        className="
+          bg-white
+          border
+          border-gray-200
+          rounded-[28px]
+          p-7
+          flex
+          flex-col
+          min-h-[280px]
+        "
+      >
+        <p className="text-[17px] leading-[1.8] text-[#0F172A]">
           “Profissional competente, ágil e estratégico, com forte capacidade
           de integrar comunicação, conteúdo e relacionamento.”
         </p>
 
-        <div className="pt-6 border-t border-[#E5E7EB]">
-          <h3 className="font-semibold text-[#0F172A]">
+        <div className="mt-auto pt-7 border-t border-gray-200">
+          <h3 className="font-semibold text-[#0F172A] text-[16px]">
             Erika Martins de Figueiredo
           </h3>
 
-          <p className="text-sm text-[#64748B] mt-1">
+          <p className="mt-1 text-sm text-[#64748B] leading-relaxed">
             Gerente de Comunicação & Relacionamento
           </p>
         </div>
       </div>
 
       {/* CARD 2 */}
-      <div className="rounded-[28px] border border-[#E5E7EB] bg-white p-8">
-        <p className="text-[20px] leading-[1.7] text-[#0F172A] mb-8">
+      <div
+        className="
+          bg-white
+          border
+          border-gray-200
+          rounded-[28px]
+          p-7
+          flex
+          flex-col
+          min-h-[280px]
+        "
+      >
+        <p className="text-[17px] leading-[1.8] text-[#0F172A]">
           “Extremamente competente, ágil e determinado. Um profissional
           colaborativo e muito respeitado no trabalho em equipe.”
         </p>
 
-        <div className="pt-6 border-t border-[#E5E7EB]">
-          <h3 className="font-semibold text-[#0F172A]">
+        <div className="mt-auto pt-7 border-t border-gray-200">
+          <h3 className="font-semibold text-[#0F172A] text-[16px]">
             Elaine Nishiwaki
           </h3>
 
-          <p className="text-sm text-[#64748B] mt-1">
+          <p className="mt-1 text-sm text-[#64748B] leading-relaxed">
             Diretora de Comunicação Corporativa
           </p>
         </div>
       </div>
 
       {/* CARD 3 */}
-      <div className="rounded-[28px] border border-[#E5E7EB] bg-white p-8">
-        <p className="text-[20px] leading-[1.7] text-[#0F172A] mb-8">
+      <div
+        className="
+          bg-white
+          border
+          border-gray-200
+          rounded-[28px]
+          p-7
+          flex
+          flex-col
+          min-h-[280px]
+        "
+      >
+        <p className="text-[17px] leading-[1.8] text-[#0F172A]">
           “Profissional proativo, criativo e comprometido, com visão sistêmica,
           excelente texto e forte responsabilidade com prazos.”
         </p>
 
-        <div className="pt-6 border-t border-[#E5E7EB]">
-          <h3 className="font-semibold text-[#0F172A]">
+        <div className="mt-auto pt-7 border-t border-gray-200">
+          <h3 className="font-semibold text-[#0F172A] text-[16px]">
             Silvia Alves Paz
           </h3>
 
-          <p className="text-sm text-[#64748B] mt-1">
+          <p className="mt-1 text-sm text-[#64748B] leading-relaxed">
             Marketing e Comunicação em Saúde
           </p>
         </div>
       </div>
     </div>
 
-    <div className="mt-10">
+    {/* CTA */}
+    <div className="mt-10 flex justify-start">
       <a
         href="https://www.linkedin.com/in/tomazela/details/recommendations/"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 text-[#FF4D00] font-semibold hover:opacity-80 transition"
+        className="
+          inline-flex
+          items-center
+          gap-2
+          rounded-full
+          border
+          border-[#FF4D00]/20
+          bg-white
+          px-5
+          py-3
+          text-sm
+          font-medium
+          text-[#FF4D00]
+          hover:bg-[#FFF4EE]
+          transition
+        "
       >
         Ver recomendações no LinkedIn ↗
       </a>
