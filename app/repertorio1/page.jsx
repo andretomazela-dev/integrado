@@ -24,8 +24,8 @@ const trabalhos = [
     link: "/repertorio/seguros-clima-resseguro.jpg",
   },
   {
-    id: "valor",
-    categoria: "Valor Econômico",
+    id: "infra",
+    categoria: "Infraestrutura & Logística",
     ano: "2024",
     titulo: "Adaptação urgente",
     descricao:
@@ -75,24 +75,9 @@ const experiencias = [
   },
 ];
 
-const depoimentos = [
-  {
-    texto:
-      "André alia visão estratégica, clareza de comunicação e profundidade editorial.",
-  },
-  {
-    texto:
-      "Tem facilidade para transformar temas complexos em comunicação acessível.",
-  },
-  {
-    texto:
-      "Une pensamento estratégico, repertório jornalístico e visão institucional.",
-  },
-];
-
 export default function RepertorioPage() {
   return (
-    <div className="bg-[#F7F7F5] text-[#0F172A]">
+    <div className="bg-[#F7F7F5] text-[#0F172A] antialiased">
       <Header />
 
       {/* HERO */}
@@ -101,11 +86,11 @@ export default function RepertorioPage() {
           Repertório
         </span>
 
-        <h1 className="mt-5 max-w-5xl text-4xl md:text-6xl font-extrabold leading-[0.98] tracking-[-0.04em]">
-          Reportagens, comunicação institucional e projetos especiais
+        <h1 className="mt-5 max-w-5xl text-[48px] md:text-[72px] font-extrabold leading-[0.96] tracking-[-0.05em] text-[#0F172A]">
+          Reportagens, projetos e repertório em comunicação
         </h1>
 
-        <p className="mt-7 max-w-3xl text-lg leading-relaxed text-gray-700">
+        <p className="mt-7 max-w-3xl text-[18px] leading-[1.8] text-[#475569]">
           Meu repertório reúne mais de 20 anos de experiência em comunicação,
           entre empresas, agências e o trabalho como repórter. Aqui, alguns
           trabalhos publicados e relatos de pessoas com quem já trabalhei.
@@ -128,8 +113,8 @@ export default function RepertorioPage() {
                 rounded-full
                 border border-gray-300
                 bg-white
-                px-5 py-2.5
-                text-[11px]
+                px-5 py-3
+                text-[12px]
                 uppercase
                 tracking-[0.08em]
                 text-gray-600
@@ -145,12 +130,12 @@ export default function RepertorioPage() {
       </section>
 
       {/* PUBLICAÇÕES */}
-      <section className="py-16 md:py-20 border-t border-gray-200 bg-[#FAFAF8]">
+      <section className="py-20 md:py-24 border-t border-gray-200 bg-[#FAFAF8]">
         <div className="container">
-          <div className="flex items-center gap-3 mb-12">
+          <div className="flex items-center gap-3 mb-14">
             <span className="text-[#FF4D00]">✦</span>
 
-            <h2 className="text-2xl md:text-3xl font-bold">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0F172A]">
               Publicações
             </h2>
           </div>
@@ -165,12 +150,12 @@ export default function RepertorioPage() {
                   bg-white
                   border
                   border-gray-200
-                  rounded-3xl
+                  rounded-[32px]
                   p-8
                   shadow-sm
                   hover:shadow-md
                   transition
-                  min-h-[320px]
+                  min-h-[290px]
                   flex
                   flex-col
                 "
@@ -179,11 +164,11 @@ export default function RepertorioPage() {
                   {item.categoria} • {item.ano}
                 </span>
 
-                <h3 className="mt-5 text-[34px] leading-[1.05] tracking-[-0.04em] font-extrabold">
+                <h3 className="mt-5 text-[30px] md:text-[32px] leading-[1.08] tracking-[-0.04em] font-extrabold text-[#0F172A]">
                   {item.titulo}
                 </h3>
 
-                <p className="mt-5 text-gray-600 leading-relaxed text-[15px]">
+                <p className="mt-5 text-[#475569] leading-[1.8] text-[15px]">
                   {item.descricao}
                 </p>
 
@@ -197,39 +182,39 @@ export default function RepertorioPage() {
               </article>
             ))}
 
+            {/* CARD LARANJA */}
             <a
-  href="https://drive.google.com/drive/folders/1ZSttp2dvNJzzaAQVb8IXh6YnRX-i0CcB?usp=sharing"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="
-    group
-    rounded-3xl
-    bg-[#FF4D00]
-    p-8
-    text-white
-    flex
-    flex-col
-    justify-between
-    min-h-[320px]
-    hover:scale-[1.01]
-    hover:shadow-xl
-    transition
-  "
->
-  <div>
-    <span className="text-[10px] uppercase tracking-[0.18em] text-white/70 font-medium">
-      Portfólio completo
-    </span>
+              href="https://drive.google.com/drive/folders/1ZSttp2dvNJzzaAQVb8IXh6YnRX-i0CcB?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                group
+                rounded-[32px]
+                bg-[#FF4D00]
+                p-8
+                text-white
+                flex
+                flex-col
+                justify-between
+                min-h-[290px]
+                hover:shadow-xl
+                transition
+              "
+            >
+              <div>
+                <span className="text-[10px] uppercase tracking-[0.18em] text-white/70 font-medium">
+                  Portfólio completo
+                </span>
 
-    <h3 className="mt-5 text-[26px] md:text-[32px] leading-[1.08] tracking-[-0.03em] font-bold max-w-[420px]">
-      Quer ver mais projetos desenvolvidos ao longo da carreira?
-    </h3>
-  </div>
+                <h3 className="mt-5 text-[22px] md:text-[28px] leading-[1.12] tracking-[-0.03em] font-semibold max-w-[360px]">
+                  Quer ver mais projetos desenvolvidos ao longo da carreira?
+                </h3>
+              </div>
 
-  <div className="mt-8 inline-flex items-center text-sm font-semibold">
-    Acessar portfólio completo ↗
-  </div>
-</a>
+              <div className="mt-8 inline-flex items-center text-sm font-semibold">
+                Acessar portfólio completo ↗
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -237,13 +222,13 @@ export default function RepertorioPage() {
       {/* EXPERIÊNCIA */}
       <section
         id="institucional"
-        className="py-16 md:py-20 bg-[#F2F3F5] border-t border-gray-200 scroll-mt-32"
+        className="py-20 md:py-24 bg-[#FAFAF8] border-t border-gray-200 scroll-mt-32"
       >
         <div className="container">
-          <div className="flex items-center gap-3 mb-12">
+          <div className="flex items-center gap-3 mb-14">
             <span className="text-[#FF4D00]">✦</span>
 
-            <h2 className="text-2xl md:text-3xl font-bold">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0F172A]">
               Experiência
             </h2>
           </div>
@@ -252,13 +237,19 @@ export default function RepertorioPage() {
             {experiencias.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl border border-gray-200 p-6"
+                className="
+                  rounded-[24px]
+                  border
+                  border-gray-200
+                  bg-white
+                  p-5
+                "
               >
-                <h3 className="text-xl font-bold leading-snug">
+                <h3 className="text-[22px] font-bold leading-[1.2] tracking-[-0.03em] text-[#0F172A]">
                   {item.titulo}
                 </h3>
 
-                <p className="mt-4 text-sm text-gray-600 leading-relaxed">
+                <p className="mt-3 text-[14px] text-[#475569] leading-[1.8]">
                   {item.texto}
                 </p>
               </div>
@@ -267,165 +258,168 @@ export default function RepertorioPage() {
         </div>
       </section>
 
-  {/* =========================
-   DEPOIMENTOS
-========================= */}
-
-<section className="py-16 md:py-20 bg-[#F2F3F5] border-t border-gray-200">
-  <div className="container">
-
-    {/* TÍTULO */}
-    <div className="flex items-center gap-3 mb-6">
-      <span className="text-[#FF4D00]">✦</span>
-
-      <h2 className="text-2xl md:text-3xl font-bold text-[#0F172A]">
-        Depoimentos
-      </h2>
-    </div>
-
-    <p className="max-w-3xl text-[16px] md:text-[17px] leading-relaxed text-[#475569]">
-      Recomendações de profissionais que acompanharam meu trabalho em
-      comunicação corporativa, conteúdo e posicionamento institucional.
-    </p>
-
-    {/* GRID */}
-    <div className="mt-12 grid md:grid-cols-3 gap-6">
-
-      {/* CARD 1 */}
-      <div
-        className="
-          bg-white
-          border
-          border-gray-200
-          rounded-[28px]
-          p-7
-          flex
-          flex-col
-          min-h-[280px]
-        "
-      >
-        <p className="text-[17px] leading-[1.8] text-[#0F172A]">
-          “Profissional competente, ágil e estratégico, com forte capacidade
-          de integrar comunicação, conteúdo e relacionamento.”
-        </p>
-
-        <div className="mt-auto pt-7 border-t border-gray-200">
-          <h3 className="font-semibold text-[#0F172A] text-[16px]">
-            Erika Martins de Figueiredo
-          </h3>
-
-          <p className="mt-1 text-sm text-[#64748B] leading-relaxed">
-            Gerente de Comunicação & Relacionamento
-          </p>
-        </div>
-      </div>
-
-      {/* CARD 2 */}
-      <div
-        className="
-          bg-white
-          border
-          border-gray-200
-          rounded-[28px]
-          p-7
-          flex
-          flex-col
-          min-h-[280px]
-        "
-      >
-        <p className="text-[17px] leading-[1.8] text-[#0F172A]">
-          “Extremamente competente, ágil e determinado. Um profissional
-          colaborativo e muito respeitado no trabalho em equipe.”
-        </p>
-
-        <div className="mt-auto pt-7 border-t border-gray-200">
-          <h3 className="font-semibold text-[#0F172A] text-[16px]">
-            Elaine Nishiwaki
-          </h3>
-
-          <p className="mt-1 text-sm text-[#64748B] leading-relaxed">
-            Diretora de Comunicação Corporativa
-          </p>
-        </div>
-      </div>
-
-      {/* CARD 3 */}
-      <div
-        className="
-          bg-white
-          border
-          border-gray-200
-          rounded-[28px]
-          p-7
-          flex
-          flex-col
-          min-h-[280px]
-        "
-      >
-        <p className="text-[17px] leading-[1.8] text-[#0F172A]">
-          “Profissional proativo, criativo e comprometido, com visão sistêmica,
-          excelente texto e forte responsabilidade com prazos.”
-        </p>
-
-        <div className="mt-auto pt-7 border-t border-gray-200">
-          <h3 className="font-semibold text-[#0F172A] text-[16px]">
-            Silvia Alves Paz
-          </h3>
-
-          <p className="mt-1 text-sm text-[#64748B] leading-relaxed">
-            Marketing e Comunicação em Saúde
-          </p>
-        </div>
-      </div>
-    </div>
-
-    {/* CTA */}
-    <div className="mt-10 flex justify-start">
-      <a
-        href="https://www.linkedin.com/in/tomazela/details/recommendations/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="
-          inline-flex
-          items-center
-          gap-2
-          rounded-full
-          border
-          border-[#FF4D00]/20
-          bg-white
-          px-5
-          py-3
-          text-sm
-          font-medium
-          text-[#FF4D00]
-          hover:bg-[#FFF4EE]
-          transition
-        "
-      >
-        Ver recomendações no LinkedIn ↗
-      </a>
-    </div>
-
-  </div>
-</section>
-
-      {/* CTA */}
-      <section className="py-16 md:py-20">
+      {/* DEPOIMENTOS */}
+      <section className="py-20 md:py-24 bg-[#EEF1F4] border-t border-gray-200">
         <div className="container">
-          <div className="bg-[#F2F3F5] border border-gray-200 rounded-[32px] p-8 md:p-10">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-[#FF4D00]">✦</span>
+
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0F172A]">
+              Depoimentos
+            </h2>
+          </div>
+
+          <p className="max-w-3xl text-[16px] md:text-[17px] leading-[1.8] text-[#475569]">
+            Recomendações de profissionais que acompanharam meu trabalho em
+            comunicação corporativa, conteúdo e posicionamento institucional.
+          </p>
+
+          <div className="mt-12 grid md:grid-cols-3 gap-6">
+            <div
+              className="
+                bg-white
+                border
+                border-gray-200
+                rounded-[32px]
+                p-7
+                flex
+                flex-col
+                min-h-[300px]
+              "
+            >
+              <p className="text-[18px] leading-[1.9] text-[#0F172A]">
+                “Profissional competente, ágil e estratégico, com forte
+                capacidade de integrar comunicação, conteúdo e relacionamento.”
+              </p>
+
+              <div className="mt-auto pt-7 border-t border-gray-200">
+                <h3 className="font-semibold text-[#0F172A] text-[16px]">
+                  Erika Martins de Figueiredo
+                </h3>
+
+                <p className="mt-1 text-sm text-[#64748B] leading-relaxed">
+                  Gerente de Comunicação & Relacionamento
+                </p>
+              </div>
+            </div>
+
+            <div
+              className="
+                bg-white
+                border
+                border-gray-200
+                rounded-[32px]
+                p-7
+                flex
+                flex-col
+                min-h-[300px]
+              "
+            >
+              <p className="text-[18px] leading-[1.9] text-[#0F172A]">
+                “Extremamente competente, ágil e determinado. Um profissional
+                colaborativo e muito respeitado no trabalho em equipe.”
+              </p>
+
+              <div className="mt-auto pt-7 border-t border-gray-200">
+                <h3 className="font-semibold text-[#0F172A] text-[16px]">
+                  Elaine Nishiwaki
+                </h3>
+
+                <p className="mt-1 text-sm text-[#64748B] leading-relaxed">
+                  Diretora de Comunicação Corporativa
+                </p>
+              </div>
+            </div>
+
+            <div
+              className="
+                bg-white
+                border
+                border-gray-200
+                rounded-[32px]
+                p-7
+                flex
+                flex-col
+                min-h-[300px]
+              "
+            >
+              <p className="text-[18px] leading-[1.9] text-[#0F172A]">
+                “Profissional proativo, criativo e comprometido, com visão
+                sistêmica, excelente texto e forte responsabilidade com
+                prazos.”
+              </p>
+
+              <div className="mt-auto pt-7 border-t border-gray-200">
+                <h3 className="font-semibold text-[#0F172A] text-[16px]">
+                  Silvia Alves Paz
+                </h3>
+
+                <p className="mt-1 text-sm text-[#64748B] leading-relaxed">
+                  Marketing e Comunicação em Saúde
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA LINKEDIN */}
+          <div className="mt-10">
+            <a
+              href="https://www.linkedin.com/in/tomazela/details/recommendations/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                inline-flex
+                items-center
+                gap-2
+                rounded-full
+                border
+                border-[#FF4D00]/20
+                bg-white
+                px-5
+                py-3
+                text-sm
+                font-medium
+                text-[#FF4D00]
+                hover:bg-[#FFF4EE]
+                transition
+              "
+            >
+              Ver recomendações no LinkedIn ↗
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA FINAL */}
+      <section className="py-20 md:py-24">
+        <div className="container">
+          <div className="bg-[#F2F3F5] border border-gray-200 rounded-[36px] p-8 md:p-12">
             <div className="max-w-2xl">
-              <h2 className="text-2xl md:text-4xl font-extrabold leading-tight tracking-[-0.03em] text-[#0F172A]">
+              <h2 className="text-[32px] md:text-[44px] font-extrabold leading-[1.05] tracking-[-0.04em] text-[#0F172A]">
                 Precisa organizar a comunicação do seu negócio, projeto ou marca pessoal?
               </h2>
 
-              <p className="mt-5 text-base md:text-lg text-gray-700 leading-relaxed">
+              <p className="mt-5 text-[17px] text-[#475569] leading-[1.8]">
                 Posso ajudar com posicionamento, clareza de comunicação,
                 conteúdo estratégico e estruturação narrativa.
               </p>
 
               <Link
                 href="/#contato"
-                className="inline-flex items-center rounded-2xl px-6 py-3 mt-7 text-sm font-medium bg-[#FF4D00] text-white hover:opacity-90 transition"
+                className="
+                  inline-flex
+                  items-center
+                  rounded-2xl
+                  px-6
+                  py-3
+                  mt-8
+                  text-sm
+                  font-medium
+                  bg-[#FF4D00]
+                  text-white
+                  hover:opacity-90
+                  transition
+                "
               >
                 Vamos conversar
               </Link>
