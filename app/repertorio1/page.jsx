@@ -208,31 +208,32 @@ export default function RepertorioPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-14 md:py-16">
-        <div className="container">
-          <div className="bg-[#F2F3F5] border border-gray-200 rounded-[32px] p-10 md:p-14">
-            <div className="max-w-3xl">
-              <h2 className="text-3xl md:text-5xl font-extrabold leading-tight tracking-[-0.03em]">
-                Precisa organizar a comunicação do seu negócio, projeto ou marca
-                pessoal?
-              </h2>
+     {/* CTA */}
+<section className="py-14 md:py-16">
+  <div className="container">
+    <div className="bg-[#F2F3F5] border border-gray-200 rounded-[32px] p-8 md:p-10">
+      
+      <div className="max-w-2xl">
+        <h2 className="text-2xl md:text-4xl font-extrabold leading-tight tracking-[-0.03em] text-[#0F172A]">
+          Precisa organizar a comunicação do seu negócio, projeto ou marca pessoal?
+        </h2>
 
-              <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-                Posso ajudar com posicionamento, clareza de comunicação,
-                conteúdo estratégico e estruturação narrativa.
-              </p>
+        <p className="mt-5 text-base md:text-lg text-gray-700 leading-relaxed">
+          Posso ajudar com posicionamento, clareza de comunicação,
+          conteúdo estratégico e estruturação narrativa.
+        </p>
 
-              <Link
-                href="/contato"
-                className="inline-flex items-center rounded-2xl px-6 py-3 mt-8 text-sm font-medium bg-[#FF4D00] text-white hover:opacity-90 transition"
-              >
-                Vamos conversar
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+        <Link
+          href="/#contato"
+          className="inline-flex items-center rounded-2xl px-6 py-3 mt-7 text-sm font-medium bg-[#FF4D00] text-white hover:opacity-90 transition"
+        >
+          Vamos conversar
+        </Link>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       <Footer />
     </div>
