@@ -197,40 +197,39 @@ export default function RepertorioPage() {
               </article>
             ))}
 
-            {/* CARD PORTFÓLIO */}
             <a
-              href="https://drive.google.com/drive/folders/1ZSttp2dvNJzzaAQVb8IXh6YnRX-i0CcB?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="
-                group
-                rounded-3xl
-                bg-[#FF4D00]
-                p-8
-                text-white
-                flex
-                flex-col
-                justify-between
-                min-h-[320px]
-                hover:scale-[1.01]
-                hover:shadow-xl
-                transition
-              "
-            >
-              <div>
-                <span className="text-[10px] uppercase tracking-[0.18em] text-white/70 font-medium">
-                  Portfólio completo
-                </span>
+  href="https://drive.google.com/drive/folders/1ZSttp2dvNJzzaAQVb8IXh6YnRX-i0CcB?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    group
+    rounded-3xl
+    bg-[#FF4D00]
+    p-8
+    text-white
+    flex
+    flex-col
+    justify-between
+    min-h-[320px]
+    hover:scale-[1.01]
+    hover:shadow-xl
+    transition
+  "
+>
+  <div>
+    <span className="text-[10px] uppercase tracking-[0.18em] text-white/70 font-medium">
+      Portfólio completo
+    </span>
 
-                <h3 className="mt-5 text-[34px] leading-[1.05] tracking-[-0.04em] font-extrabold">
-                  Quer ver mais projetos desenvolvidos por mim ao longo da carreira?
-                </h3>
-                </div>
+    <h3 className="mt-5 text-[26px] md:text-[32px] leading-[1.08] tracking-[-0.03em] font-bold max-w-[420px]">
+      Quer ver mais projetos desenvolvidos ao longo da carreira?
+    </h3>
+  </div>
 
-              <div className="mt-8 inline-flex items-center text-sm font-semibold">
-                Acessar portfólio completo ↗
-              </div>
-            </a>
+  <div className="mt-8 inline-flex items-center text-sm font-semibold">
+    Acessar portfólio completo ↗
+  </div>
+</a>
           </div>
         </div>
       </section>
