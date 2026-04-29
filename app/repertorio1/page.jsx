@@ -24,12 +24,12 @@ const trabalhos = [
   },
 
   {
-    veiculo: "Valor Econômico",
-    ano: "2024",
-    titulo: "Brasil quer seguir exemplo do G20",
+    veiculo: "Infraestrutura & Logística",
+    ano: "2025",
+    titulo: "Adaptação urgente",
     descricao:
-      "COP30, financiamento climático e o papel do Brasil nas negociações internacionais.",
-    link: "/repertorio/mudancas-climaticas.pdf",
+      "Reportagem sobre infraestrutura resiliente, eventos climáticos extremos e os desafios de adaptação diante do avanço da crise climática.",
+    link: "/repertorio/adaptacao-urgente.jpg",
   },
 ];
 
@@ -148,7 +148,7 @@ export default function Page() {
 
         {/* EXPERIÊNCIA */}
 
-        <section className="bg-[#f7f7f5] border-y border-gray-200 mt-10">
+        <section className="bg-[#f7f7f5] border-y border-gray-200 mt-20">
 
           <div className="container py-28">
 
@@ -226,7 +226,7 @@ export default function Page() {
 
         {/* DEPOIMENTOS */}
 
-        <section className="container py-28">
+        <section className="container pt-32 pb-28">
 
           <div className="flex items-center gap-3 mb-14">
 
