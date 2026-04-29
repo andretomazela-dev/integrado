@@ -225,12 +225,7 @@ export default function RepertorioPage() {
                 <h3 className="mt-5 text-[34px] leading-[1.05] tracking-[-0.04em] font-extrabold">
                   Quer ver mais projetos desenvolvidos por mim ao longo da carreira?
                 </h3>
-
-                <p className="mt-5 text-white/85 leading-relaxed text-[15px]">
-                  Reportagens, projetos editoriais, comunicação institucional,
-                  posicionamento e outros trabalhos realizados ao longo da minha trajetória.
-                </p>
-              </div>
+                </div>
 
               <div className="mt-8 inline-flex items-center text-sm font-semibold">
                 Acessar portfólio completo ↗
