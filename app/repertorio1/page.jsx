@@ -17,7 +17,7 @@ const trabalhos = [
   {
     id: "valor",
     categoria: "Valor Econômico",
-    ano: "2025",
+    ano: "2026",
     titulo: "Clima encarece prêmios e muda lógica do resseguro",
     descricao:
       "Especial sobre crise climática, perdas bilionárias e transformação do mercado de seguros.",
@@ -26,7 +26,7 @@ const trabalhos = [
   {
     id: "valor",
     categoria: "Valor Econômico",
-    ano: "2025",
+    ano: "2024",
     titulo: "Adaptação urgente",
     descricao:
       "Infraestrutura resiliente, eventos extremos e adaptação diante do avanço da crise climática.",
