@@ -102,7 +102,7 @@ export default function RepertorioPage() {
         </span>
 
         <h1 className="mt-5 max-w-5xl text-4xl md:text-6xl font-extrabold leading-[0.98] tracking-[-0.04em]">
-          Reportagens, projetos e experiências em comunicação
+          Reportagens, comunicação institucional e projetos especiais
         </h1>
 
         <p className="mt-7 max-w-3xl text-lg leading-relaxed text-gray-700">
