@@ -56,7 +56,7 @@ const depoimentos = [
   },
 ];
 
-export default function Page() {
+export default function RepertorioPage() {
   return (
     <div className="bg-white text-[#111827]">
 
@@ -72,7 +72,7 @@ export default function Page() {
             REPERTÓRIO
           </p>
 
-          <h1 className="mt-5 text-5xl md:text-7xl font-extrabold leading-[0.92] tracking-tight max-w-6xl text-[#0f172a]">
+          <h1 className="mt-6 text-5xl md:text-7xl font-extrabold leading-[0.92] tracking-tight max-w-6xl text-[#0f172a]">
             Comunicação, estratégia e repertório construídos ao longo de mais de 20 anos.
           </h1>
 
@@ -104,13 +104,11 @@ export default function Page() {
 
             <span className="text-[#FF4D00] text-xl">✦</span>
 
-            <h2 className="text-4xl font-extrabold text-[#0f172a]">
+            <h2 className="text-4xl font-extrabold text-[#0f172a] leading-none">
               Publicações
             </h2>
 
           </div>
-
-          {/* GRID 3 COLUNAS */}
 
           <div className="grid gap-8 lg:grid-cols-3">
 
@@ -151,72 +149,74 @@ export default function Page() {
 
         {/* EXPERIÊNCIA */}
 
-        <section className="bg-[#f8fafc] border-y border-[#dbe1e8]">
+        <section className="bg-[#f8fafc] border-y border-[#dbe1e8] mt-24">
 
-          <div className="container py-32">
+          <div className="container py-28">
 
-            <div className="flex items-center gap-4 mb-16">
+            {/* título */}
+
+            <div className="flex items-center gap-4 mb-20">
 
               <span className="text-[#FF4D00] text-xl">✦</span>
 
-              <h2 className="text-4xl font-extrabold text-[#0f172a]">
+              <h2 className="text-4xl font-extrabold text-[#0f172a] leading-none">
                 Experiência
               </h2>
 
             </div>
 
-            <div className="grid gap-10 md:grid-cols-2">
+            {/* cards */}
 
-              <div className="bg-white border border-[#dbe1e8] rounded-[2rem] p-10">
+            <div className="grid gap-6 lg:grid-cols-4">
 
-                <h3 className="text-3xl font-bold text-[#0f172a]">
+              <div className="bg-white border border-[#dbe1e8] rounded-[1.75rem] p-7">
+
+                <h3 className="text-2xl font-bold text-[#0f172a] leading-tight">
                   Comunicação institucional
                 </h3>
 
-                <p className="mt-8 text-lg text-[#334155] leading-loose">
-                  Atuação em empresas e organizações com foco em comunicação
-                  corporativa, conteúdo institucional, relacionamento com públicos
-                  estratégicos e posicionamento.
+                <p className="mt-5 text-[16px] text-[#334155] leading-relaxed">
+                  Atuação em empresas e organizações com foco em comunicação corporativa,
+                  conteúdo institucional, relacionamento com públicos estratégicos e posicionamento.
                 </p>
 
               </div>
 
-              <div className="bg-white border border-[#dbe1e8] rounded-[2rem] p-10">
+              <div className="bg-white border border-[#dbe1e8] rounded-[1.75rem] p-7">
 
-                <h3 className="text-3xl font-bold text-[#0f172a]">
+                <h3 className="text-2xl font-bold text-[#0f172a] leading-tight">
                   Jornalismo e conteúdo
                 </h3>
 
-                <p className="mt-8 text-lg text-[#334155] leading-loose">
-                  Produção de reportagens, especiais e conteúdos sobre temas
-                  complexos ligados a economia, clima, diversidade,
-                  infraestrutura e transformação social.
+                <p className="mt-5 text-[16px] text-[#334155] leading-relaxed">
+                  Produção de reportagens, especiais e conteúdos sobre temas complexos ligados
+                  a economia, clima, diversidade, infraestrutura e transformação social.
                 </p>
 
               </div>
 
-              <div className="bg-white border border-[#dbe1e8] rounded-[2rem] p-10">
+              <div className="bg-white border border-[#dbe1e8] rounded-[1.75rem] p-7">
 
-                <h3 className="text-3xl font-bold text-[#0f172a]">
+                <h3 className="text-2xl font-bold text-[#0f172a] leading-tight">
                   Estratégia e posicionamento
                 </h3>
 
-                <p className="mt-8 text-lg text-[#334155] leading-loose">
-                  Estruturação de narrativas, clareza de comunicação e direção
-                  estratégica para negócios, profissionais e organizações.
+                <p className="mt-5 text-[16px] text-[#334155] leading-relaxed">
+                  Estruturação de narrativas, clareza de comunicação e direção estratégica
+                  para negócios, profissionais e organizações.
                 </p>
 
               </div>
 
-              <div className="bg-white border border-[#dbe1e8] rounded-[2rem] p-10">
+              <div className="bg-white border border-[#dbe1e8] rounded-[1.75rem] p-7">
 
-                <h3 className="text-3xl font-bold text-[#0f172a]">
+                <h3 className="text-2xl font-bold text-[#0f172a] leading-tight">
                   Comunicação digital
                 </h3>
 
-                <p className="mt-8 text-lg text-[#334155] leading-loose">
-                  Experiência com conteúdo multiplataforma, redes sociais,
-                  newsletters, sites institucionais e projetos digitais.
+                <p className="mt-5 text-[16px] text-[#334155] leading-relaxed">
+                  Experiência com conteúdo multiplataforma, redes sociais, newsletters,
+                  sites institucionais e projetos digitais.
                 </p>
 
               </div>
@@ -231,15 +231,19 @@ export default function Page() {
 
         <section className="container py-32">
 
+          {/* título */}
+
           <div className="flex items-center gap-4 mb-16">
 
             <span className="text-[#FF4D00] text-xl">✦</span>
 
-            <h2 className="text-4xl font-extrabold text-[#0f172a]">
+            <h2 className="text-4xl font-extrabold text-[#0f172a] leading-none">
               Depoimentos
             </h2>
 
           </div>
+
+          {/* cards */}
 
           <div className="grid gap-8 lg:grid-cols-3">
 
