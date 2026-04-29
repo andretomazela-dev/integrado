@@ -17,7 +17,7 @@ const trabalhos = [
   {
     id: "valor",
     categoria: "Valor Econômico",
-    ano: "2026",
+    ano: "2025",
     titulo: "Clima encarece prêmios e muda lógica do resseguro",
     descricao:
       "Especial sobre crise climática, perdas bilionárias e transformação do mercado de seguros.",
@@ -32,69 +32,26 @@ const trabalhos = [
       "Infraestrutura resiliente, eventos extremos e adaptação diante do avanço da crise climática.",
     link: "/repertorio/mudancas-climaticas.pdf",
   },
-
-{
-  id: "oglobo",
-  categoria: "O Globo",
-  ano: "2024",
-  titulo: "Brasil quer seguir exemplo do G20",
-  descricao:
-    "COP30, financiamento climático e o papel do Brasil nas negociações internacionais.",
-  link: "/repertorio/turismo-clima-oglobo.jpg",
-},
-
-{
-  id: "valor",
-  categoria: "Valor Econômico",
-  ano: "2023",
-  titulo: "Caem os alertas de desmatamento",
-  descricao:
-    "Queda do desmatamento na Amazônia, fiscalização ambiental e ações dos governos federal e estaduais.",
-  link: "/repertorio/sustentabilidade-valor-2023.pdf",
-},
-  
-{/* CARD PORTFÓLIO COMPLETO */}
-<a
-  href="https://drive.google.com/drive/folders/1ZSttp2dvNJzzaAQVb8IXh6YnRX-i0CcB?usp=sharing"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="
-    group
-    rounded-3xl
-    bg-[#FF4D00]
-    p-8
-    text-white
-    flex
-    flex-col
-    justify-between
-    min-h-[320px]
-    hover:scale-[1.01]
-    hover:shadow-xl
-    transition
-  "
->
-  <div>
-    <span className="text-[10px] uppercase tracking-[0.18em] text-white/70 font-medium">
-      Portfólio completo
-    </span>
-
-    <h3 className="mt-5 text-3xl font-bold leading-[1.05] tracking-[-0.03em]">
-      Quer ver mais projetos desenvolvidos por mim ao longo da carreira?
-    </h3>
-
-    <p className="mt-5 text-white/85 leading-relaxed text-[15px]">
-      Reportagens, projetos editoriais, comunicação institucional,
-      posicionamento e outros trabalhos realizados ao longo da minha trajetória.
-    </p>
-  </div>
-
-  <div className="mt-8 inline-flex items-center text-sm font-semibold">
-    Acessar portfólio completo ↗
-  </div>
-</a>
-
+  {
+    id: "oglobo",
+    categoria: "O Globo",
+    ano: "2024",
+    titulo: "Brasil quer seguir exemplo do G20",
+    descricao:
+      "COP30, financiamento climático e o papel do Brasil nas negociações internacionais.",
+    link: "/repertorio/turismo-clima-oglobo.jpg",
+  },
+  {
+    id: "valor",
+    categoria: "Valor Econômico",
+    ano: "2023",
+    titulo: "Caem os alertas de desmatamento",
+    descricao:
+      "Queda do desmatamento na Amazônia, fiscalização ambiental e ações dos governos federal e estaduais.",
+    link: "/repertorio/sustentabilidade-valor-2023.pdf",
+  },
 ];
-  
+
 const experiencias = [
   {
     titulo: "Comunicação institucional",
@@ -139,16 +96,16 @@ export default function RepertorioPage() {
       <Header />
 
       {/* HERO */}
-      <section className="container pt-14 pb-12 md:pt-20 md:pb-14">
+      <section className="container pt-16 pb-14 md:pt-24 md:pb-16">
         <span className="text-[11px] uppercase tracking-[0.22em] text-[#FF4D00] font-semibold">
           Repertório
         </span>
 
-        <h1 className="mt-5 max-w-4xl text-4xl md:text-6xl font-extrabold leading-[1.02] tracking-[-0.03em]">
+        <h1 className="mt-5 max-w-5xl text-4xl md:text-6xl font-extrabold leading-[0.98] tracking-[-0.04em]">
           Reportagens, projetos e experiências em comunicação
         </h1>
 
-        <p className="mt-6 max-w-3xl text-lg text-gray-700 leading-relaxed">
+        <p className="mt-7 max-w-3xl text-lg leading-relaxed text-gray-700">
           Meu repertório reúne mais de 20 anos de experiência em comunicação,
           entre empresas, agências e o trabalho como repórter. Aqui, alguns
           trabalhos publicados e relatos de pessoas com quem já trabalhei.
@@ -171,10 +128,10 @@ export default function RepertorioPage() {
                 rounded-full
                 border border-gray-300
                 bg-white
-                px-4 py-2
+                px-5 py-2.5
                 text-[11px]
                 uppercase
-                tracking-wide
+                tracking-[0.08em]
                 text-gray-600
                 hover:border-[#FF4D00]
                 hover:text-[#FF4D00]
@@ -188,9 +145,9 @@ export default function RepertorioPage() {
       </section>
 
       {/* PUBLICAÇÕES */}
-      <section className="py-14 md:py-16 border-t border-gray-200 bg-[#FAFAF8]">
+      <section className="py-16 md:py-20 border-t border-gray-200 bg-[#FAFAF8]">
         <div className="container">
-          <div className="flex items-center gap-3 mb-10">
+          <div className="flex items-center gap-3 mb-12">
             <span className="text-[#FF4D00]">✦</span>
 
             <h2 className="text-2xl md:text-3xl font-bold">
@@ -203,29 +160,82 @@ export default function RepertorioPage() {
               <article
                 key={index}
                 id={item.id}
-                className="scroll-mt-32 bg-white border border-gray-200 rounded-3xl p-7 shadow-sm hover:shadow-md transition"
+                className="
+                  scroll-mt-32
+                  bg-white
+                  border
+                  border-gray-200
+                  rounded-3xl
+                  p-8
+                  shadow-sm
+                  hover:shadow-md
+                  transition
+                  min-h-[320px]
+                  flex
+                  flex-col
+                "
               >
-                <span className="text-[10px] uppercase tracking-wide text-gray-500 font-medium">
+                <span className="text-[10px] uppercase tracking-[0.08em] text-gray-500 font-medium">
                   {item.categoria} • {item.ano}
                 </span>
 
-                <h3 className="mt-4 text-2xl font-bold leading-tight tracking-[-0.02em]">
+                <h3 className="mt-5 text-[34px] leading-[1.05] tracking-[-0.04em] font-extrabold">
                   {item.titulo}
                 </h3>
 
-                <p className="mt-4 text-gray-600 leading-relaxed text-[15px]">
+                <p className="mt-5 text-gray-600 leading-relaxed text-[15px]">
                   {item.descricao}
                 </p>
 
                 <Link
                   href={item.link}
                   target="_blank"
-                  className="inline-flex items-center mt-6 text-sm font-semibold text-[#FF4D00] hover:opacity-80 transition"
+                  className="inline-flex items-center mt-auto pt-8 text-sm font-semibold text-[#FF4D00] hover:opacity-80 transition"
                 >
                   Ler trabalho ↗
                 </Link>
               </article>
             ))}
+
+            {/* CARD PORTFÓLIO */}
+            <a
+              href="https://drive.google.com/drive/folders/1ZSttp2dvNJzzaAQVb8IXh6YnRX-i0CcB?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                group
+                rounded-3xl
+                bg-[#FF4D00]
+                p-8
+                text-white
+                flex
+                flex-col
+                justify-between
+                min-h-[320px]
+                hover:scale-[1.01]
+                hover:shadow-xl
+                transition
+              "
+            >
+              <div>
+                <span className="text-[10px] uppercase tracking-[0.18em] text-white/70 font-medium">
+                  Portfólio completo
+                </span>
+
+                <h3 className="mt-5 text-[34px] leading-[1.05] tracking-[-0.04em] font-extrabold">
+                  Quer ver mais projetos desenvolvidos por mim ao longo da carreira?
+                </h3>
+
+                <p className="mt-5 text-white/85 leading-relaxed text-[15px]">
+                  Reportagens, projetos editoriais, comunicação institucional,
+                  posicionamento e outros trabalhos realizados ao longo da minha trajetória.
+                </p>
+              </div>
+
+              <div className="mt-8 inline-flex items-center text-sm font-semibold">
+                Acessar portfólio completo ↗
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -233,10 +243,10 @@ export default function RepertorioPage() {
       {/* EXPERIÊNCIA */}
       <section
         id="institucional"
-        className="py-14 md:py-16 bg-[#F2F3F5] border-t border-gray-200 scroll-mt-32"
+        className="py-16 md:py-20 bg-[#F2F3F5] border-t border-gray-200 scroll-mt-32"
       >
         <div className="container">
-          <div className="flex items-center gap-3 mb-10">
+          <div className="flex items-center gap-3 mb-12">
             <span className="text-[#FF4D00]">✦</span>
 
             <h2 className="text-2xl md:text-3xl font-bold">
@@ -264,9 +274,9 @@ export default function RepertorioPage() {
       </section>
 
       {/* DEPOIMENTOS */}
-      <section className="py-14 md:py-16 bg-[#FAFAF8] border-t border-gray-200">
+      <section className="py-16 md:py-20 bg-[#FAFAF8] border-t border-gray-200">
         <div className="container">
-          <div className="flex items-center gap-3 mb-10">
+          <div className="flex items-center gap-3 mb-12">
             <span className="text-[#FF4D00]">✦</span>
 
             <h2 className="text-2xl md:text-3xl font-bold">
@@ -300,13 +310,12 @@ export default function RepertorioPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-14 md:py-16">
+      <section className="py-16 md:py-20">
         <div className="container">
           <div className="bg-[#F2F3F5] border border-gray-200 rounded-[32px] p-8 md:p-10">
             <div className="max-w-2xl">
               <h2 className="text-2xl md:text-4xl font-extrabold leading-tight tracking-[-0.03em] text-[#0F172A]">
-                Precisa organizar a comunicação do seu negócio, projeto ou marca
-                pessoal?
+                Precisa organizar a comunicação do seu negócio, projeto ou marca pessoal?
               </h2>
 
               <p className="mt-5 text-base md:text-lg text-gray-700 leading-relaxed">
