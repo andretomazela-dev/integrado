@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -24,7 +26,7 @@ const trabalhos = [
     ano: "2025",
     titulo: "Adaptação urgente",
     descricao:
-      "Infraestrutura resiliente, eventos extremos e adaptação diante da crise climática.",
+      "Infraestrutura resiliente, eventos extremos e adaptação diante do avanço da crise climática.",
     link: "/repertorio/mudancas-climaticas.pdf",
   },
 ];
@@ -52,198 +54,187 @@ const experiencias = [
   },
 ];
 
+const depoimentos = [
+  {
+    texto:
+      "André alia visão estratégica, clareza de comunicação e profundidade editorial.",
+  },
+  {
+    texto:
+      "Tem facilidade para transformar temas complexos em comunicação acessível.",
+  },
+  {
+    texto:
+      "Une pensamento estratégico, repertório jornalístico e visão institucional.",
+  },
+];
+
 export default function RepertorioPage() {
   return (
-    <>
+    <div className="bg-[#F7F7F5] text-[#0F172A]">
       <Header />
 
-      <main className="bg-[#f5f5f3] text-[#0f172a]">
-        {/* HERO */}
-        <section className="max-w-6xl mx-auto px-6 pt-28 pb-24">
-          <span className="text-[11px] uppercase tracking-[0.28em] text-[#ff4d00] font-semibold">
-            Repertório
-          </span>
+      {/* HERO */}
+      <section className="container pt-14 pb-12 md:pt-20 md:pb-14">
+        <span className="text-[11px] uppercase tracking-[0.22em] text-[#FF4D00] font-semibold">
+          Repertório
+        </span>
 
-          <h1 className="mt-8 max-w-4xl text-[56px] leading-[0.98] tracking-[-0.05em] font-black text-[#0b132b]">
-            Comunicação, estratégia e repertório construídos ao longo de mais
-            de 20 anos.
-          </h1>
+        <h1 className="mt-5 max-w-4xl text-4xl md:text-6xl font-extrabold leading-[1.02] tracking-[-0.03em]">
+          Comunicação, estratégia e repertório construídos ao longo de mais de
+          20 anos.
+        </h1>
 
-          <p className="mt-10 max-w-3xl text-[22px] leading-[1.7] text-[#475569]">
-            Meu repertório reúne mais de 20 anos de experiência em comunicação,
-            entre empresas, agências e o trabalho como repórter. Aqui, alguns
-            trabalhos publicados e relatos de pessoas com quem já trabalhei.
-          </p>
+        <p className="mt-6 max-w-3xl text-lg text-gray-700 leading-relaxed">
+          Meu repertório reúne mais de 20 anos de experiência em comunicação,
+          entre empresas, agências e o trabalho como repórter. Aqui, alguns
+          trabalhos publicados e relatos de pessoas com quem já trabalhei.
+        </p>
 
-          <div className="mt-14 flex flex-wrap gap-x-8 gap-y-4 text-[11px] uppercase tracking-[0.18em] text-[#64748b] font-medium">
-            <span>Valor Econômico</span>
-            <span>Gênero & Número</span>
-            <span>O Globo</span>
-            <span>Comunicação institucional</span>
-            <span>Projetos especiais</span>
-          </div>
-        </section>
+        <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-[11px] uppercase tracking-wide text-gray-500">
+          <span>Valor Econômico</span>
+          <span>Gênero & Número</span>
+          <span>O Globo</span>
+          <span>Comunicação institucional</span>
+          <span>Projetos especiais</span>
+        </div>
+      </section>
 
-        {/* PUBLICAÇÕES */}
-        <section className="max-w-6xl mx-auto px-6 pb-28">
-          <div className="flex items-center gap-3 mb-12">
-            <span className="text-[#ff4d00]">✦</span>
+      {/* PUBLICAÇÕES */}
+      <section className="py-14 md:py-16 border-t border-gray-200 bg-[#FAFAF8]">
+        <div className="container">
+          <div className="flex items-center gap-3 mb-10">
+            <span className="text-[#FF4D00]">✦</span>
 
-            <h2 className="text-[38px] tracking-[-0.04em] font-black text-[#0b132b]">
+            <h2 className="text-2xl md:text-3xl font-bold">
               Publicações
             </h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid md:grid-cols-3 gap-6">
             {trabalhos.map((item, index) => (
               <article
                 key={index}
-                className="bg-white border border-[#e5e7eb] rounded-[28px] p-8 hover:shadow-md transition-all duration-300"
+                className="bg-white border border-gray-200 rounded-3xl p-7 shadow-sm hover:shadow-md transition"
               >
-                <span className="text-[10px] uppercase tracking-[0.18em] text-[#64748b] font-semibold">
+                <span className="text-[10px] uppercase tracking-wide text-gray-500 font-medium">
                   {item.categoria} • {item.ano}
                 </span>
 
-                <h3 className="mt-5 text-[34px] leading-[1.02] tracking-[-0.04em] font-black text-[#0b132b]">
+                <h3 className="mt-4 text-2xl font-bold leading-tight tracking-[-0.02em]">
                   {item.titulo}
                 </h3>
 
-                <p className="mt-5 text-[17px] leading-[1.8] text-[#475569]">
+                <p className="mt-4 text-gray-600 leading-relaxed text-[15px]">
                   {item.descricao}
                 </p>
 
                 <Link
                   href={item.link}
                   target="_blank"
-                  className="inline-flex items-center gap-2 mt-8 text-[#ff4d00] font-semibold text-[15px]"
+                  className="inline-flex items-center mt-6 text-sm font-semibold text-[#FF4D00] hover:opacity-80 transition"
                 >
                   Ler trabalho ↗
                 </Link>
               </article>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* EXPERIÊNCIA */}
-        <section className="border-t border-[#e5e7eb]">
-          <div className="max-w-6xl mx-auto px-6 py-28">
-            <div className="flex items-center gap-3 mb-14">
-              <span className="text-[#ff4d00]">✦</span>
+      {/* EXPERIÊNCIA */}
+      <section className="py-14 md:py-16 bg-[#F2F3F5] border-t border-gray-200">
+        <div className="container">
+          <div className="flex items-center gap-3 mb-10">
+            <span className="text-[#FF4D00]">✦</span>
 
-              <h2 className="text-[38px] tracking-[-0.04em] font-black text-[#0b132b]">
-                Experiência
-              </h2>
-            </div>
-
-            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-              {experiencias.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white border border-[#e5e7eb] rounded-[24px] p-7"
-                >
-                  <h3 className="text-[24px] leading-[1.1] tracking-[-0.03em] font-black text-[#0b132b]">
-                    {item.titulo}
-                  </h3>
-
-                  <p className="mt-5 text-[15px] leading-[1.8] text-[#475569]">
-                    {item.texto}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <h2 className="text-2xl md:text-3xl font-bold">
+              Experiência
+            </h2>
           </div>
-        </section>
 
-        {/* DEPOIMENTOS */}
-        <section className="max-w-6xl mx-auto px-6 py-28">
-          <div className="flex items-center gap-3 mb-14">
-            <span className="text-[#ff4d00]">✦</span>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {experiencias.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl border border-gray-200 p-6"
+              >
+                <h3 className="text-xl font-bold leading-snug">
+                  {item.titulo}
+                </h3>
 
-            <h2 className="text-[38px] tracking-[-0.04em] font-black text-[#0b132b]">
+                <p className="mt-4 text-sm text-gray-600 leading-relaxed">
+                  {item.texto}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* DEPOIMENTOS */}
+      <section className="py-14 md:py-16 bg-[#FAFAF8] border-t border-gray-200">
+        <div className="container">
+          <div className="flex items-center gap-3 mb-10">
+            <span className="text-[#FF4D00]">✦</span>
+
+            <h2 className="text-2xl md:text-3xl font-bold">
               Depoimentos
             </h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="bg-white border border-[#e5e7eb] rounded-[28px] p-9">
-              <p className="text-[18px] leading-[1.9] text-[#334155]">
-                “André alia visão estratégica, clareza de comunicação e
-                profundidade editorial.”
-              </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {depoimentos.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-3xl border border-gray-200 p-8"
+              >
+                <p className="text-gray-700 leading-relaxed">
+                  “{item.texto}”
+                </p>
 
-              <div className="mt-8">
-                <strong className="block text-[#0b132b]">
-                  Nome do depoimento
-                </strong>
+                <div className="mt-6">
+                  <strong className="block text-sm">
+                    Nome do depoimento
+                  </strong>
 
-                <span className="text-[#64748b] text-sm">
-                  Empresa ou organização
-                </span>
+                  <span className="text-sm text-gray-500">
+                    Empresa ou organização
+                  </span>
+                </div>
               </div>
-            </div>
-
-            <div className="bg-white border border-[#e5e7eb] rounded-[28px] p-9">
-              <p className="text-[18px] leading-[1.9] text-[#334155]">
-                “Tem facilidade para transformar temas complexos em comunicação
-                acessível.”
-              </p>
-
-              <div className="mt-8">
-                <strong className="block text-[#0b132b]">
-                  Nome do depoimento
-                </strong>
-
-                <span className="text-[#64748b] text-sm">
-                  Empresa ou organização
-                </span>
-              </div>
-            </div>
-
-            <div className="bg-white border border-[#e5e7eb] rounded-[28px] p-9">
-              <p className="text-[18px] leading-[1.9] text-[#334155]">
-                “Une pensamento estratégico, repertório jornalístico e visão
-                institucional.”
-              </p>
-
-              <div className="mt-8">
-                <strong className="block text-[#0b132b]">
-                  Nome do depoimento
-                </strong>
-
-                <span className="text-[#64748b] text-sm">
-                  Empresa ou organização
-                </span>
-              </div>
-            </div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* CTA */}
-        <section className="max-w-6xl mx-auto px-6 pb-32">
-          <div className="bg-[#f8fafc] border border-[#e5e7eb] rounded-[36px] px-10 py-14 md:px-16 md:py-16">
+      {/* CTA */}
+      <section className="py-14 md:py-16">
+        <div className="container">
+          <div className="bg-[#F2F3F5] border border-gray-200 rounded-[32px] p-10 md:p-14">
             <div className="max-w-3xl">
-              <h2 className="text-[54px] leading-[0.98] tracking-[-0.05em] font-black text-[#0b132b]">
+              <h2 className="text-3xl md:text-5xl font-extrabold leading-tight tracking-[-0.03em]">
                 Precisa organizar a comunicação do seu negócio, projeto ou marca
                 pessoal?
               </h2>
 
-              <p className="mt-8 text-[20px] leading-[1.8] text-[#475569]">
+              <p className="mt-6 text-lg text-gray-700 leading-relaxed">
                 Posso ajudar com posicionamento, clareza de comunicação,
                 conteúdo estratégico e estruturação narrativa.
               </p>
 
               <Link
                 href="/contato"
-                className="inline-flex items-center justify-center mt-10 rounded-full bg-[#ff4d00] px-7 py-4 text-white font-semibold hover:opacity-90 transition-opacity"
+                className="inline-flex items-center rounded-2xl px-6 py-3 mt-8 text-sm font-medium bg-[#FF4D00] text-white hover:opacity-90 transition"
               >
                 Vamos conversar
               </Link>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
       <Footer />
-    </>
+    </div>
   );
 }
