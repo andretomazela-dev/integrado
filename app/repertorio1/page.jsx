@@ -24,8 +24,8 @@ const trabalhos = [
     link: "/repertorio/seguros-clima-resseguro.jpg",
   },
   {
-    id: "projetos",
-    categoria: "Infraestrutura & Logística",
+    id: "valor",
+    categoria: "Valor Econômico",
     ano: "2025",
     titulo: "Adaptação urgente",
     descricao:
@@ -84,8 +84,7 @@ export default function RepertorioPage() {
         </span>
 
         <h1 className="mt-5 max-w-4xl text-4xl md:text-6xl font-extrabold leading-[1.02] tracking-[-0.03em]">
-          Comunicação, estratégia e repertório construídos ao longo de mais de
-          20 anos.
+          Reportagens, projetos e experiências em comunicação
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg text-gray-700 leading-relaxed">
