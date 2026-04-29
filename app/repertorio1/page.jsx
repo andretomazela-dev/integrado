@@ -199,7 +199,7 @@ export default function RepertorioPage() {
                 </article>
               ))}
 
-              {/* CARD PORTFÓLIO */}
+              {/* PORTFÓLIO */}
               <article className="rounded-[28px] bg-[#FF4D00] p-8 text-white shadow-lg">
                 <span className="text-[10px] uppercase tracking-[0.18em] text-white/70">
                   Portfólio completo
@@ -240,10 +240,12 @@ export default function RepertorioPage() {
                     rounded-[24px]
                     border border-[#E7E8EA]
                     bg-[#FAFAF8]
-                    p-6
+                    p-7
+                    transition
+                    hover:border-[#D6DADF]
                   "
                 >
-                  <h3 className="text-[18px] leading-[1.2] tracking-[-0.03em] font-[700] text-[#0F172A]">
+                  <h3 className="text-[18px] leading-[1.25] tracking-[-0.03em] font-[700] text-[#0F172A]">
                     {item.titulo}
                   </h3>
 
