@@ -268,35 +268,41 @@ export default function RepertorioPage() {
     </p>
   </div>
 
-  <div className="mt-7 flex flex-wrap gap-3">
-    {[
-      "Hospital São Camilo",
-      "Agências de Comunicação",
-      "Hospital Nove de Julho",
-      "AACD",
-      "Novo Nordisk Brasil",
-      "Valor Econômico",
-      "Janssen Farmacêutica",
-      "Libbs",
-    ].map((empresa) => (
-      <span
-        key={empresa}
-        className="
-          inline-flex items-center
-          rounded-full
-          border border-[#D9DDE3]
-          bg-white
-          px-4 py-2
-          text-[14px]
-          text-[#334155]
-        "
-      >
-        {empresa}
-      </span>
-    ))}
+  <div className="relative mt-10 overflow-x-auto pb-4">
+    
+    {/* linha */}
+    <div className="absolute left-0 top-[18px] h-[1px] w-full bg-[#D9DDE3]" />
+
+    <div className="relative flex min-w-max items-start gap-10">
+      {[
+        "Hospital São Camilo",
+        "Agências de Comunicação",
+        "Hospital Nove de Julho",
+        "AACD",
+        "Novo Nordisk Brasil",
+        "Janssen Farmacêutica",
+        "Libbs",
+        "Valor Econômico",
+      ].map((empresa, index) => (
+        <div key={empresa} className="relative flex flex-col items-start">
+          
+          {/* ponto */}
+          <div
+            className={`
+              relative z-10 h-4 w-4 rounded-full border-4 border-[#F7F7F5]
+              ${index === 7 ? "bg-[#FF4D00]" : "bg-[#0F172A]"}
+            `}
+          />
+
+          {/* label */}
+          <span className="mt-4 text-[14px] leading-[1.5] text-[#334155] whitespace-nowrap">
+            {empresa}
+          </span>
+        </div>
+      ))}
+    </div>
   </div>
 </div>
-  </div>
 </section>
 
         {/* DEPOIMENTOS */}
