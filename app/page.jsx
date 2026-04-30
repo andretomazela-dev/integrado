@@ -461,11 +461,23 @@ return (
                 className={`md:col-span-1 ${inputCls}`}
               />
               <textarea
-                name="mensagem"
-                placeholder="Como posso ajudar?"
-                rows={5}
-                className={`md:col-span-3 ${inputCls}`}
-              />
+  placeholder="Conte brevemente qual é o momento, desafio ou objetivo da sua comunicação."
+  className="
+    min-h-[180px]
+    w-full
+    rounded-[18px]
+    border border-[#D9DDE3]
+    bg-white
+    px-5 py-4
+    text-[15px]
+    leading-[1.7]
+    text-[#0F172A]
+    outline-none
+    transition
+    placeholder:text-[#94A3B8]
+    focus:border-[#FF4D00]
+  "
+/>
 
               {/* Honeypot invisível */}
               <input
