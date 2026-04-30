@@ -23,15 +23,15 @@ export default function RepertorioPage() {
       link: "/repertorio/seguros-clima-resseguro.jpg",
       id: "valor",
     },
-   {
-  id: "valor",
-  categoria: "Valor Econômico",
-  ano: "2024",
-  titulo: "Adaptação urgente",
-  descricao:
-    "Infraestrutura resiliente, eventos extremos e adaptação diante do avanço da crise climática.",
-  link: "/repertorio/mudancas-climaticas.pdf",
-},
+    {
+      id: "valor",
+      categoria: "Valor Econômico",
+      ano: "2024",
+      titulo: "Adaptação urgente",
+      descricao:
+        "Infraestrutura resiliente, eventos extremos e adaptação diante do avanço da crise climática.",
+      link: "/repertorio/mudancas-climaticas.pdf",
+    },
     {
       categoria: "O Globo",
       ano: "2024",
@@ -108,7 +108,7 @@ export default function RepertorioPage() {
           </span>
 
           <div className="mt-5 max-w-3xl">
-            <h1 className="text-[36px] md:text-[54px] leading-[1.02] tracking-[-0.05em] font-[750] text-[#0F172A]">
+            <h1 className="text-[34px] md:text-[48px] leading-[1.02] tracking-[-0.05em] font-[750] text-[#0F172A]">
               Reportagens e projetos em comunicação
             </h1>
 
@@ -221,105 +221,98 @@ export default function RepertorioPage() {
           </div>
         </section>
 
-      {/* EXPERIÊNCIA */}
-<section className="bg-white py-20">
-  <div className="container">
-    
-    {/* TÍTULO */}
-    <div className="mb-10">
-      <h2 className="text-[28px] tracking-[-0.03em] font-[750] text-[#0F172A]">
-        Experiência
-      </h2>
-    </div>
-
-    {/* CARDS */}
-    <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-      {experiencias.map((item, index) => (
-        <div
-          key={index}
-          className="
-            rounded-[28px]
-            border border-[#E7E8EA]
-            bg-[#FAFAF8]
-            p-9
-            transition
-            hover:border-[#D6DADF]
-          "
-        >
-          <h3 className="text-[18px] leading-[1.25] tracking-[-0.03em] font-[700] text-[#0F172A]">
-            {item.titulo}
-          </h3>
-
-          <p className="mt-5 text-[15px] leading-[1.9] text-[#64748B]">
-            {item.texto}
-          </p>
-        </div>
-      ))}
-    </div>
-
-    {/* TRAJETÓRIA */}
-    <div className="mt-16 border-t border-[#E7E8EA] pt-10">
-      
-      <div className="max-w-3xl">
-        <p className="text-[11px] uppercase tracking-[0.16em] text-[#94A3B8]">
-          Trajetória profissional
-        </p>
-
-        <p className="mt-4 text-[15px] leading-[1.9] text-[#475569]">
-          Experiência construída ao longo dos anos em comunicação corporativa,
-          saúde, indústria farmacêutica e jornalismo.
-        </p>
-      </div>
-
-      {/* TIMELINE */}
-      <div className="relative mt-14 overflow-x-auto pb-6">
-        
-        {/* linha */}
-        <div className="absolute left-0 top-[10px] h-[2px] w-full bg-[#D9DDE3]" />
-
-        <div className="relative flex min-w-max items-start gap-16 pr-6">
-          {[
-            "Hospital São Camilo",
-            "Janssen Farmacêutica",
-            "Libbs",
-            "Hospital Nove de Julho",
-            "AACD",
-            "Novo Nordisk Brasil",
-            "Valor Econômico",
-          ].map((empresa, index) => (
-            <div
-              key={empresa}
-              className="relative flex flex-col items-center text-center"
-            >
-              
-              {/* ponto */}
-              <div
-                className={`
-                  relative z-10 h-5 w-5 rounded-full border-[5px] border-white shadow-sm
-                  ${index === 6 ? "bg-[#FF4D00]" : "bg-[#0F172A]"}
-                `}
-              />
-
-              {/* nome */}
-              <span
-                className={`
-                  mt-5 max-w-[120px]
-                  text-[15px]
-                  leading-[1.5]
-                  ${index === 6
-                    ? "font-semibold text-[#0F172A]"
-                    : "text-[#334155]"}
-                `}
-              >
-                {empresa}
-              </span>
+        {/* EXPERIÊNCIA */}
+        <section className="bg-white py-20">
+          <div className="container">
+            <div className="mb-10">
+              <h2 className="text-[28px] tracking-[-0.03em] font-[750] text-[#0F172A]">
+                Experiência
+              </h2>
             </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+            {/* CARDS */}
+            <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+              {experiencias.map((item, index) => (
+                <div
+                  key={index}
+                  className="
+                    rounded-[28px]
+                    border border-[#E7E8EA]
+                    bg-[#FAFAF8]
+                    p-10
+                    min-h-[260px]
+                    transition
+                    hover:border-[#D6DADF]
+                  "
+                >
+                  <h3 className="text-[20px] leading-[1.25] tracking-[-0.03em] font-[700] text-[#0F172A]">
+                    {item.titulo}
+                  </h3>
+
+                  <p className="mt-5 text-[15px] leading-[1.9] text-[#64748B]">
+                    {item.texto}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* TRAJETÓRIA */}
+            <div className="mt-16 border-t border-[#E7E8EA] pt-10">
+              <div className="max-w-3xl">
+                <p className="text-[11px] uppercase tracking-[0.16em] text-[#94A3B8]">
+                  Trajetória profissional
+                </p>
+
+                <p className="mt-4 text-[15px] leading-[1.9] text-[#475569]">
+                  Experiência construída ao longo dos anos em comunicação corporativa,
+                  saúde, indústria farmacêutica e jornalismo.
+                </p>
+              </div>
+
+              {/* TIMELINE */}
+              <div className="relative mt-14 overflow-x-auto pb-8">
+                <div className="absolute left-0 top-[12px] h-[3px] w-full bg-[#D9DDE3]" />
+
+                <div className="relative flex min-w-max items-start gap-20 pr-6">
+                  {[
+                    "Hospital São Camilo",
+                    "Janssen Farmacêutica",
+                    "Libbs",
+                    "Hospital Nove de Julho",
+                    "AACD",
+                    "Novo Nordisk Brasil",
+                    "Valor Econômico",
+                  ].map((empresa, index) => (
+                    <div
+                      key={empresa}
+                      className="relative flex flex-col items-center text-center"
+                    >
+                      <div
+                        className={`
+                          relative z-10 h-6 w-6 rounded-full border-[6px] border-white shadow-sm
+                          ${index === 6 ? "bg-[#FF4D00]" : "bg-[#0F172A]"}
+                        `}
+                      />
+
+                      <span
+                        className={`
+                          mt-5 max-w-[130px]
+                          text-[16px]
+                          leading-[1.5]
+                          ${index === 6
+                            ? "font-semibold text-[#0F172A]"
+                            : "text-[#334155]"}
+                        `}
+                      >
+                        {empresa}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* DEPOIMENTOS */}
         <section className="bg-[#EEF2F5] py-20">
@@ -388,59 +381,59 @@ export default function RepertorioPage() {
         </section>
 
         {/* CTA */}
-<section className="py-24">
-  <div className="container">
-    <div
-      className="
-        grid items-center gap-12
-        rounded-[36px]
-        border border-[#1E293B]
-        bg-[#0F172A]
-        px-8 py-10
-        md:px-12 md:py-10
-        lg:grid-cols-2
-      "
-    >
-      {/* TEXTO */}
-      <div className="max-w-[520px]">
-        <h2 className="text-[28px] md:text-[38px] leading-[1.04] tracking-[-0.045em] font-[720] text-white">
-          Precisa organizar a comunicação do seu negócio, projeto ou marca pessoal?
-        </h2>
+        <section className="py-24">
+          <div className="container">
+            <div
+              className="
+                grid items-center gap-12
+                rounded-[36px]
+                border border-[#1E293B]
+                bg-[#0F172A]
+                px-8 py-10
+                md:px-12 md:py-10
+                lg:grid-cols-2
+              "
+            >
+              {/* TEXTO */}
+              <div className="max-w-[520px]">
+                <h2 className="text-[26px] md:text-[34px] leading-[1.04] tracking-[-0.045em] font-[720] text-white">
+                  Precisa organizar a comunicação do seu negócio, projeto ou marca pessoal?
+                </h2>
 
-        <p className="mt-6 text-[17px] leading-[1.9] text-white/70 max-w-[540px]">
-          Posso ajudar com posicionamento, clareza de comunicação,
-          conteúdo estratégico e estruturação narrativa.
-        </p>
+                <p className="mt-6 text-[17px] leading-[1.9] text-white/70 max-w-[540px]">
+                  Posso ajudar com posicionamento, clareza de comunicação,
+                  conteúdo estratégico e estruturação narrativa.
+                </p>
 
-        <a
-          href="/#contato"
-          className="
-            mt-9 inline-flex items-center justify-center
-            rounded-full
-            bg-[#FF4D00]
-            px-7 py-3.5
-            text-[14px]
-            font-medium
-            text-white
-            transition
-            hover:opacity-90
-          "
-        >
-          Vamos conversar
-        </a>
-      </div>
+                <a
+                  href="/#contato"
+                  className="
+                    mt-9 inline-flex items-center justify-center
+                    rounded-full
+                    bg-[#FF4D00]
+                    px-7 py-3.5
+                    text-[14px]
+                    font-medium
+                    text-white
+                    transition
+                    hover:opacity-90
+                  "
+                >
+                  Vamos conversar
+                </a>
+              </div>
 
-      {/* IMAGEM */}
-      <div className="flex justify-center lg:justify-end">
-        <img
-          src="/repertorio/cta-repertorio.png"
-          alt="Comunicação estratégica"
-          className="w-full max-w-[340px] h-auto object-contain"
-        />
-      </div>
-    </div>
-  </div>
-</section>
+              {/* IMAGEM */}
+              <div className="flex justify-center lg:justify-end">
+                <img
+                  src="/repertorio/cta-repertorio.png"
+                  alt="Comunicação estratégica"
+                  className="w-full max-w-[380px] h-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
