@@ -387,7 +387,7 @@ return (
         </p>
       </div>
 
-     <div className="mt-7 flex flex-wrap items-center gap-4">
+     <div className="mt-7 flex flex-wrap gap-3">
   <Link
     href="/repertorio1"
     className="inline-flex items-center rounded-2xl px-5 py-2.5 text-sm font-medium bg-orange-600 text-white hover:bg-orange-700 transition"
@@ -422,13 +422,6 @@ return (
   >
     Fale comigo
   </a>
-
-  <Link
-    href="/repertorio1"
-    className="text-sm text-[#64748B] hover:text-[#FF4D00] transition"
-  >
-    Projetos e reportagens →
-  </Link>
 </div>
     </div>
 
