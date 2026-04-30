@@ -49,7 +49,7 @@ export default function Header() {
             Conteúdo
           </Link>
 
-          <Link href="/repertorio1" className="hover:text-brand transition">
+          <Link href="/repertorio" className="hover:text-brand transition">
             Repertório
           </Link>
 
@@ -171,7 +171,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/repertorio1"
+              href="/repertorio"
               onClick={() => setMenuOpen(false)}
             >
               Repertório
