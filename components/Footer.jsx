@@ -92,7 +92,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="/conteudo"
+                href="/lab"
                 className="text-white/80 hover:text-[#FF4D00] transition"
               >
                 Conteúdo
