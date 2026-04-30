@@ -278,27 +278,49 @@ return (
             </div>
                                 
             {/* 7 — CTA invertido */}
-            <div
-              className="rounded-2xl p-6 bg-[#FF4D00] text-white shadow-lg hover:opacity-90 transition cursor-pointer ring-1 ring-black/5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FF4D00]"
-              role="button"
-              tabIndex={0}
-              onClick={() => scrollToId("#contato")}
-              onKeyDown={(e) => e.key === "Enter" && scrollToId("#contato")}
-              aria-label="Montamos um pacote sob medida — fale com a gente"
-            >
-              <div className="mb-3">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14M5 12h14"></path>
-                </svg>
-              </div>
-              <h3 className="font-semibold">O que mais você precisa?</h3>
-              <p className="text-sm mt-2 opacity-95">
-                Desenvolvo soluções sob medida e projetos especiais de acordo com o seu desafio atual.
-              </p>
-              <span className="mt-3 inline-block text-xs font-semibold bg-white/15 rounded-full px-3 py-1">
-                Clique para falar comigo
-              </span>
-            </div>
+<div
+  className="
+    rounded-2xl
+    p-7
+    bg-[#FF4D00]
+    text-white
+    shadow-lg
+    transition
+    hover:opacity-95
+    flex flex-col justify-between
+    min-h-[240px]
+  "
+>
+  <div>
+    <h3 className="text-[22px] leading-[1.15] tracking-[-0.03em] font-semibold">
+      Precisa de algo mais específico?
+    </h3>
+
+    <p className="mt-4 text-sm leading-relaxed text-white/90 max-w-[26ch]">
+      Projetos editoriais, comunicação institucional,
+      posicionamento ou estratégias sob medida.
+    </p>
+  </div>
+
+  <button
+    type="button"
+    onClick={() => scrollToId("#contato")}
+    className="
+      mt-7
+      inline-flex w-fit items-center gap-2
+      rounded-full
+      bg-white
+      px-4 py-2
+      text-sm
+      font-medium
+      text-[#FF4D00]
+      transition
+      hover:bg-white/90
+    "
+  >
+    Vamos conversar →
+  </button>
+</div>
           </div>
 
        </div>
