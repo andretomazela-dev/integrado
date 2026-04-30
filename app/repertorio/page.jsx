@@ -4,53 +4,70 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function RepertorioPage() {
-  const trabalhos = [
-    {
-      categoria: "Gênero & Número",
-      ano: "2025",
-      titulo: "Idosos LGBTQIA+ são empurrados de volta para o armário",
-      descricao:
-        "Reportagem sobre envelhecimento, invisibilidade e exclusão social da população LGBTQIA+.",
-      link: "https://www.generonumero.media/reportagens/idosos-lgbtqia-empurrados-armario/",
-      id: "genero",
-    },
-    {
-      categoria: "Valor Econômico",
-      ano: "2025",
-      titulo: "Clima encarece prêmios e muda lógica do resseguro",
-      descricao:
-        "Especial sobre crise climática, perdas bilionárias e transformação do mercado de seguros.",
-      link: "https://valor.globo.com/publicacoes/especiais/seguros-e-resseguros/noticia/2026/04/23/clima-encarece-premios-e-muda-logica-do-resseguro.ghtml",
-      id: "valor",
-    },
-    {
-      id: "infraestrutura",
-      categoria: "Valor Econômico",
-      ano: "2024",
-      titulo: "Adaptação urgente",
-      descricao:
-        "Infraestrutura resiliente, eventos extremos e adaptação diante do avanço da crise climática.",
-      link: "https://valor.globo.com/publicacoes/especiais/revista-infraestrutura-e-logistica/noticia/2025/10/31/infraestrutura-brasileira-incorpora-risco-climatico-e-redefine-modelo-de-concessoes-e-investimentos.ghtml",
-    },
-    {
-      categoria: "O Globo",
-      ano: "2024",
-      titulo: "Brasil quer seguir exemplo do G20",
-      descricao:
-        "COP30, financiamento climático e o papel do Brasil nas negociações internacionais.",
-      link: "https://oglobo.globo.com/mundo/noticia/2024/12/04/turismo-e-desafio-futuro-no-combate-as-mudancas-climaticas.ghtml",
-      id: "oglobo",
-    },
-    {
-      categoria: "Valor Econômico",
-      ano: "2023",
-      titulo: "Caem os alertas de desmatamento",
-      descricao:
-        "Queda do desmatamento na Amazônia, fiscalização ambiental e ações dos governos federal e estaduais.",
-      link: "https://valor.globo.com/publicacoes/especiais/revista-sustentabilidade/noticia/2023/08/31/caem-os-alertas-de-desmatamento-na-amazonia.ghtml",
-      id: "desmatamento",
-    },
-  ];
+ const trabalhos = [
+  {
+    categoria: "Valor Econômico",
+    ano: "2026",
+    titulo: "Clima encarece prêmios e muda lógica do resseguro",
+    descricao:
+      "Com perdas anuais de R$ 60 bilhões, setor enfrenta lacuna de proteção de 91% e adota precificação dinâmica para conter riscos extremos.",
+    link: "https://valor.globo.com/publicacoes/especiais/seguros-e-resseguros/noticia/2026/04/23/clima-encarece-premios-e-muda-logica-do-resseguro.ghtml",
+    id: "valor",
+  },
+
+  {
+    categoria: "Valor Econômico",
+    ano: "2025",
+    titulo:
+      "Infraestrutura brasileira incorpora risco climático e redefine modelo de concessões e investimentos",
+    descricao:
+      "Após as enchentes no Rio Grande do Sul, governo e concessionárias ampliam recursos e exigências de resiliência.",
+    link: "https://valor.globo.com/publicacoes/especiais/revista-infraestrutura-e-logistica/noticia/2025/10/31/infraestrutura-brasileira-incorpora-risco-climatico-e-redefine-modelo-de-concessoes-e-investimentos.ghtml",
+    id: "infraestrutura",
+  },
+
+  {
+    categoria: "Gênero & Número",
+    ano: "2025",
+    titulo: "Idosos LGBTQIA+ são empurrados de volta para o armário",
+    descricao:
+      "Reportagem sobre envelhecimento, invisibilidade e exclusão social da população LGBTQIA+.",
+    link: "https://www.generonumero.media/reportagens/idosos-lgbtqia-empurrados-armario/",
+    id: "genero",
+  },
+
+  {
+    categoria: "Valor Econômico",
+    ano: "2025",
+    titulo:
+      "Ritmo para cumprir meta de universalização do saneamento é insuficiente",
+    descricao:
+      "Mesmo com ampliação de investimentos e infraestrutura, país ainda avança lentamente e mantém desigualdades regionais.",
+    link: "https://valor.globo.com/publicacoes/especiais/saneamento/noticia/2025/03/31/ritmo-para-cumprir-meta-de-universalizacao-do-saneamento-e-insuficiente.ghtml",
+    id: "saneamento",
+  },
+
+  {
+    categoria: "O Globo",
+    ano: "2024",
+    titulo:
+      "Turismo é desafio futuro no combate às mudanças climáticas",
+    descricao:
+      "Mais de 50 países, incluindo o Brasil, assinaram compromisso para reduzir emissões do setor até 2025.",
+    link: "https://oglobo.globo.com/mundo/noticia/2024/12/04/turismo-e-desafio-futuro-no-combate-as-mudancas-climaticas.ghtml",
+    id: "oglobo",
+  },
+
+  {
+    categoria: "Valor Econômico",
+    ano: "2023",
+    titulo: "Caem os alertas de desmatamento na Amazônia",
+    descricao:
+      "Queda de 42,5% nos alertas reflete avanço da fiscalização ambiental e ações dos governos federal e estaduais.",
+    link: "https://valor.globo.com/publicacoes/especiais/revista-sustentabilidade/noticia/2023/08/31/caem-os-alertas-de-desmatamento-na-amazonia.ghtml",
+    id: "desmatamento",
+  },
+];
 
   const experiencias = [
     {
