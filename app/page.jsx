@@ -277,8 +277,10 @@ return (
               </p>
             </div>
                                 
-            <div
+           {/* 7 — CTA invertido */}
+<div
   className="
+    xl:col-start-3
     rounded-2xl
     border border-[#FF4D00]
     bg-[#FF4D00]
