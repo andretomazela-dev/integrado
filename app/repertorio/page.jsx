@@ -221,24 +221,27 @@ export default function RepertorioPage() {
           </div>
         </section>
 
-       {/* EXPERIÊNCIA */}
+      {/* EXPERIÊNCIA */}
 <section className="bg-white py-20">
   <div className="container">
+    
+    {/* TÍTULO */}
     <div className="mb-10">
       <h2 className="text-[28px] tracking-[-0.03em] font-[750] text-[#0F172A]">
         Experiência
       </h2>
     </div>
 
+    {/* CARDS */}
     <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
       {experiencias.map((item, index) => (
         <div
           key={index}
           className="
-            rounded-[24px]
+            rounded-[28px]
             border border-[#E7E8EA]
             bg-[#FAFAF8]
-            p-7
+            p-9
             transition
             hover:border-[#D6DADF]
           "
@@ -247,62 +250,76 @@ export default function RepertorioPage() {
             {item.titulo}
           </h3>
 
-          <p className="mt-4 text-[14px] leading-[1.9] text-[#64748B]">
+          <p className="mt-5 text-[15px] leading-[1.9] text-[#64748B]">
             {item.texto}
           </p>
         </div>
       ))}
     </div>
 
-   {/* TRAJETÓRIA */}
-<div className="mt-14 border-t border-[#E7E8EA] pt-10">
-  <div className="max-w-3xl">
-    <p className="text-[11px] uppercase tracking-[0.16em] text-[#94A3B8]">
-      Trajetória profissional
-    </p>
+    {/* TRAJETÓRIA */}
+    <div className="mt-16 border-t border-[#E7E8EA] pt-10">
+      
+      <div className="max-w-3xl">
+        <p className="text-[11px] uppercase tracking-[0.16em] text-[#94A3B8]">
+          Trajetória profissional
+        </p>
 
-    <p className="mt-4 text-[15px] leading-[1.9] text-[#475569]">
-      Experiência construída ao longo dos anos em empresas,
-      agências e veículos de comunicação dos setores de saúde,
-      terceiro setor, indústria farmacêutica e jornalismo.
-    </p>
-  </div>
+        <p className="mt-4 text-[15px] leading-[1.9] text-[#475569]">
+          Experiência construída ao longo dos anos em comunicação corporativa,
+          saúde, indústria farmacêutica e jornalismo.
+        </p>
+      </div>
 
-  <div className="relative mt-10 overflow-x-auto pb-4">
-    
-    {/* linha */}
-    <div className="absolute left-0 top-[18px] h-[1px] w-full bg-[#D9DDE3]" />
+      {/* TIMELINE */}
+      <div className="relative mt-14 overflow-x-auto pb-6">
+        
+        {/* linha */}
+        <div className="absolute left-0 top-[10px] h-[2px] w-full bg-[#D9DDE3]" />
 
-    <div className="relative flex min-w-max items-start gap-10">
-      {[
-        "Hospital São Camilo",
-        "Agências de Comunicação",
-        "Hospital Nove de Julho",
-        "AACD",
-        "Novo Nordisk Brasil",
-        "Janssen Farmacêutica",
-        "Libbs",
-        "Valor Econômico",
-      ].map((empresa, index) => (
-        <div key={empresa} className="relative flex flex-col items-start">
-          
-          {/* ponto */}
-          <div
-            className={`
-              relative z-10 h-4 w-4 rounded-full border-4 border-[#F7F7F5]
-              ${index === 7 ? "bg-[#FF4D00]" : "bg-[#0F172A]"}
-            `}
-          />
+        <div className="relative flex min-w-max items-start gap-16 pr-6">
+          {[
+            "Hospital São Camilo",
+            "Janssen Farmacêutica",
+            "Libbs",
+            "Hospital Nove de Julho",
+            "AACD",
+            "Novo Nordisk Brasil",
+            "Valor Econômico",
+          ].map((empresa, index) => (
+            <div
+              key={empresa}
+              className="relative flex flex-col items-center text-center"
+            >
+              
+              {/* ponto */}
+              <div
+                className={`
+                  relative z-10 h-5 w-5 rounded-full border-[5px] border-white shadow-sm
+                  ${index === 6 ? "bg-[#FF4D00]" : "bg-[#0F172A]"}
+                `}
+              />
 
-          {/* label */}
-          <span className="mt-4 text-[14px] leading-[1.5] text-[#334155] whitespace-nowrap">
-            {empresa}
-          </span>
+              {/* nome */}
+              <span
+                className={`
+                  mt-5 max-w-[120px]
+                  text-[15px]
+                  leading-[1.5]
+                  ${index === 6
+                    ? "font-semibold text-[#0F172A]"
+                    : "text-[#334155]"}
+                `}
+              >
+                {empresa}
+              </span>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   </div>
-</div>
+</section>
 </section>
 
         {/* DEPOIMENTOS */}
