@@ -153,7 +153,7 @@ export default function Header() {
               href="/#servicos"
               onClick={() => setMenuOpen(false)}
             >
-              LAB
+              Serviços
             </a>
 
             <Link
@@ -167,7 +167,7 @@ export default function Header() {
               href="/lab"
               onClick={() => setMenuOpen(false)}
             >
-              Conteúdo
+              LAB
             </Link>
 
             <Link
