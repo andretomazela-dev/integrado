@@ -26,8 +26,8 @@ export default function SistemaPosicionamento() {
               </h1>
 
               <p className="mt-5 text-lg text-gray-700 leading-[1.8] max-w-xl">
-                Transformo o que sua empresa faz em uma comunicação clara,
-                consistente e aplicável.
+                Organizo a comunicação do seu negócio para que o mercado
+                entenda, confie e reconheça o valor do que você faz.
               </p>
 
               <p className="mt-6 font-semibold border-l-4 border-[#FF4D00] pl-4 text-[#1E293B] leading-[1.7]">
@@ -129,8 +129,8 @@ export default function SistemaPosicionamento() {
                   </h3>
 
                   <p className="mt-3 text-sm leading-[1.8] text-[#64748B]">
-                    Entendimento do negócio, desafios,
-                    posicionamento atual e objetivos.
+                    Entendimento do negócio,
+                    desafios, posicionamento atual e objetivos.
                   </p>
                 </div>
 
@@ -140,12 +140,12 @@ export default function SistemaPosicionamento() {
                   </span>
 
                   <h3 className="mt-3 font-semibold text-[#0F172A]">
-                    Estrutura estratégica
+                    Organização da comunicação
                   </h3>
 
                   <p className="mt-3 text-sm leading-[1.8] text-[#64748B]">
-                    Definição de narrativa, diferenciais,
-                    mensagens-chave e direcionamentos.
+                    Definição de narrativa,
+                    diferenciais, mensagens-chave e direcionamentos.
                   </p>
                 </div>
 
@@ -155,7 +155,7 @@ export default function SistemaPosicionamento() {
                   </span>
 
                   <h3 className="mt-3 font-semibold text-[#0F172A]">
-                    Aplicação prática
+                    Materiais e direcionamentos
                   </h3>
 
                   <p className="mt-3 text-sm leading-[1.8] text-[#64748B]">
@@ -201,9 +201,8 @@ export default function SistemaPosicionamento() {
             </h2>
 
             <p className="text-gray-700 mb-10 max-w-2xl leading-[1.9]">
-              A comunicação deixa de ser pontual e passa a ter direção.
-              O que sua empresa faz se torna compreensível,
-              consistente e aplicável.
+              A comunicação deixa de depender de improviso
+              e passa a sustentar posicionamento, percepção e crescimento.
             </p>
 
             <div className="card-soft">
@@ -214,8 +213,8 @@ export default function SistemaPosicionamento() {
                 </h3>
 
                 <p className="text-gray-600 max-w-xl leading-[1.8]">
-                  Clareza estratégica aplicada ao negócio,
-                  com direcionamento prático de comunicação.
+                  Comunicação mais organizada, consistente
+                  e alinhada aos objetivos do negócio.
                 </p>
               </div>
 
@@ -265,11 +264,11 @@ export default function SistemaPosicionamento() {
                   </div>
 
                   <h4 className="font-semibold mb-2">
-                    Forma consistente
+                    Comunicação alinhada
                   </h4>
 
                   <p className="text-sm text-gray-600 leading-[1.8]">
-                    Discursos e conteúdos conectados ao posicionamento.
+                    Conteúdos, discurso e presença conectados ao posicionamento.
                   </p>
                 </div>
 
@@ -313,7 +312,7 @@ export default function SistemaPosicionamento() {
                   </p>
 
                   <h2 className="mt-3 text-2xl md:text-3xl font-bold tracking-[-0.03em]">
-                    Posso estruturar um caminho possível de trabalho.
+                    Vamos entender o momento do seu negócio e organizar a comunicação a partir disso.
                   </h2>
 
                   <p className="mt-5 text-white/70 leading-[1.9]">
