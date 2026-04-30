@@ -441,68 +441,80 @@ return (
           </p>
 
           {!sent ? (
-            <form onSubmit={handleSubmit} className="grid gap-3 md:grid-cols-3">
-              <input
-                name="nome"
-                placeholder="Nome"
-                required
-                className={`md:col-span-1 ${inputCls}`}
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                required
-                className={`md:col-span-1 ${inputCls}`}
-              />
-              <input
-                name="telefone"
-                placeholder="Telefone (opcional)"
-                className={`md:col-span-1 ${inputCls}`}
-              />
-              <textarea
-  placeholder="Conte brevemente qual é o momento, desafio ou objetivo da sua comunicação."
-  className="
-    min-h-[180px]
-    w-full
-    rounded-[18px]
-    border border-[#D9DDE3]
-    bg-white
-    px-5 py-4
-    text-[15px]
-    leading-[1.7]
-    text-[#0F172A]
-    outline-none
-    transition
-    placeholder:text-[#94A3B8]
-    focus:border-[#FF4D00]
-  "
-/>
+  <form onSubmit={handleSubmit} className="mt-8">
+    
+    {/* LINHA INPUTS */}
+    <div className="grid gap-3 md:grid-cols-3">
+      <input
+        name="nome"
+        placeholder="Nome"
+        required
+        className={inputCls}
+      />
 
-              {/* Honeypot invisível */}
-              <input
-                type="text"
-                name="website"
-                tabIndex={-1}
-                autoComplete="off"
-                className="hidden"
-              />
+      <input
+        type="email"
+        name="email"
+        placeholder="E-mail"
+        required
+        className={inputCls}
+      />
 
-              <div className="md:col-span-3 flex justify-end">
-                <button
-                  type="submit"
-                  className="btn btn-primary rounded-2xl px-6"
-                  disabled={sending}
-                >
-                  {sending ? "Enviando..." : "Enviar"}
-                </button>
-              </div>
-            </form>
-          ) : (
-            <div className="p-4 rounded-xl border border-green-200 bg-green-50 text-green-700">
-              Mensagem enviada! Eu te respondo em breve 😉
-            </div>
-          )}
+      <input
+        name="telefone"
+        placeholder="Telefone (opcional)"
+        className={inputCls}
+      />
+    </div>
+
+    {/* TEXTAREA */}
+    <textarea
+      name="mensagem"
+      placeholder="Conte brevemente qual é o momento, desafio ou objetivo da sua comunicação."
+      required
+      className="
+        mt-3
+        min-h-[190px]
+        w-full
+        rounded-xl
+        border border-gray-300
+        bg-white
+        text-gray-900
+        placeholder-gray-400
+        px-4 py-4
+        leading-relaxed
+        focus:outline-none
+        focus:ring-2
+        focus:ring-orange-500/60
+        focus:border-orange-500
+      "
+    />
+
+    {/* Honeypot invisível */}
+    <input
+      type="text"
+      name="website"
+      tabIndex={-1}
+      autoComplete="off"
+      className="hidden"
+    />
+
+    {/* BOTÃO */}
+    <div className="mt-4 flex justify-end">
+      <button
+        type="submit"
+        className="btn btn-primary rounded-2xl px-6"
+        disabled={sending}
+      >
+        {sending ? "Enviando..." : "Enviar"}
+      </button>
+    </div>
+  </form>
+) : (
+  <div className="p-4 rounded-xl border border-green-200 bg-green-50 text-green-700">
+    Mensagem enviada! Eu te respondo em breve 😉
+  </div>
+)}
 
           {err && (
             <div className="mt-3 p-3 rounded-md border border-red-200 bg-red-50 text-red-700">
