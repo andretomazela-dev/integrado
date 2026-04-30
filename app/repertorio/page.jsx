@@ -23,15 +23,15 @@ export default function RepertorioPage() {
       link: "/repertorio/seguros-clima-resseguro.jpg",
       id: "valor",
     },
-    {
-      categoria: "Infraestrutura & Logística",
-      ano: "2024",
-      titulo: "Adaptação urgente",
-      descricao:
-        "Infraestrutura resiliente, eventos extremos e adaptação diante do avanço da crise climática.",
-      link: "/repertorio/adaptacao-urgente.jpg",
-      id: "projetos",
-    },
+   {
+  id: "valor",
+  categoria: "Valor Econômico",
+  ano: "2024",
+  titulo: "Adaptação urgente",
+  descricao:
+    "Infraestrutura resiliente, eventos extremos e adaptação diante do avanço da crise climática.",
+  link: "/repertorio/mudancas-climaticas.pdf",
+},
     {
       categoria: "O Globo",
       ano: "2024",
