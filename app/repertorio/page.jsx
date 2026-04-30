@@ -20,17 +20,17 @@ export default function RepertorioPage() {
       titulo: "Clima encarece prêmios e muda lógica do resseguro",
       descricao:
         "Especial sobre crise climática, perdas bilionárias e transformação do mercado de seguros.",
-      link: "/repertorio/seguros-clima-resseguro.jpg",
+      link: "https://valor.globo.com/publicacoes/especiais/seguros-e-resseguros/noticia/2026/04/23/clima-encarece-premios-e-muda-logica-do-resseguro.ghtml",
       id: "valor",
     },
     {
-      id: "valor",
+      id: "infraestrutura",
       categoria: "Valor Econômico",
       ano: "2024",
       titulo: "Adaptação urgente",
       descricao:
         "Infraestrutura resiliente, eventos extremos e adaptação diante do avanço da crise climática.",
-      link: "/repertorio/mudancas-climaticas.pdf",
+      link: "https://valor.globo.com/publicacoes/especiais/revista-infraestrutura-e-logistica/noticia/2025/10/31/infraestrutura-brasileira-incorpora-risco-climatico-e-redefine-modelo-de-concessoes-e-investimentos.ghtml",
     },
     {
       categoria: "O Globo",
@@ -38,7 +38,7 @@ export default function RepertorioPage() {
       titulo: "Brasil quer seguir exemplo do G20",
       descricao:
         "COP30, financiamento climático e o papel do Brasil nas negociações internacionais.",
-      link: "/repertorio/turismo-clima-oglobo.jpg",
+      link: "https://oglobo.globo.com/mundo/noticia/2024/12/04/turismo-e-desafio-futuro-no-combate-as-mudancas-climaticas.ghtml",
       id: "oglobo",
     },
     {
@@ -47,8 +47,8 @@ export default function RepertorioPage() {
       titulo: "Caem os alertas de desmatamento",
       descricao:
         "Queda do desmatamento na Amazônia, fiscalização ambiental e ações dos governos federal e estaduais.",
-      link: "/repertorio/sustentabilidade-valor-2023.pdf",
-      id: "valor",
+      link: "https://valor.globo.com/publicacoes/especiais/revista-sustentabilidade/noticia/2023/08/31/caem-os-alertas-de-desmatamento-na-amazonia.ghtml",
+      id: "desmatamento",
     },
   ];
 
@@ -192,31 +192,13 @@ export default function RepertorioPage() {
                   <a
                     href={item.link}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="mt-7 inline-flex items-center gap-2 text-[14px] font-medium text-[#FF4D00] hover:opacity-80"
                   >
                     Ler trabalho ↗
                   </a>
                 </article>
               ))}
-
-              {/* PORTFÓLIO */}
-              <article className="rounded-[28px] bg-[#FF4D00] p-8 text-white shadow-lg">
-                <span className="text-[10px] uppercase tracking-[0.18em] text-white/70">
-                  Portfólio completo
-                </span>
-
-                <h3 className="mt-5 text-[24px] leading-[1.12] tracking-[-0.03em] font-[720]">
-                  Quer ver mais projetos desenvolvidos ao longo da carreira?
-                </h3>
-
-                <a
-                  href="https://drive.google.com/drive/folders/1ZSttp2dvNJzzaAQVb8IXh6YnRX-i0CcB?usp=sharing"
-                  target="_blank"
-                  className="mt-10 inline-flex items-center gap-2 text-[14px] font-medium text-white"
-                >
-                  Acessar portfólio completo ↗
-                </a>
-              </article>
             </div>
           </div>
         </section>
@@ -270,10 +252,10 @@ export default function RepertorioPage() {
               </div>
 
               {/* TIMELINE */}
-              <div className="relative mt-14 overflow-x-auto pb-8">
+              <div className="relative mt-14 pb-8">
                 <div className="absolute left-0 top-[12px] h-[3px] w-full bg-[#D9DDE3]" />
 
-                <div className="relative flex min-w-max items-start gap-20 pr-6">
+                <div className="relative flex items-start justify-between gap-12 lg:gap-14">
                   {[
                     "Hospital São Camilo",
                     "Janssen Farmacêutica",
@@ -285,7 +267,7 @@ export default function RepertorioPage() {
                   ].map((empresa, index) => (
                     <div
                       key={empresa}
-                      className="relative flex flex-col items-center text-center"
+                      className="relative flex flex-col items-center text-center flex-1"
                     >
                       <div
                         className={`
@@ -296,7 +278,7 @@ export default function RepertorioPage() {
 
                       <span
                         className={`
-                          mt-5 max-w-[130px]
+                          mt-5 max-w-[110px]
                           text-[16px]
                           leading-[1.5]
                           ${index === 6
@@ -318,11 +300,9 @@ export default function RepertorioPage() {
         <section className="bg-[#EEF2F5] py-20">
           <div className="container">
             <div className="mb-10">
-              <div>
-                <h2 className="text-[28px] tracking-[-0.03em] font-[750] text-[#0F172A]">
-                  Depoimentos
-                </h2>
-              </div>
+              <h2 className="text-[28px] tracking-[-0.03em] font-[750] text-[#0F172A]">
+                Depoimentos
+              </h2>
 
               <p className="mt-4 max-w-2xl text-[15px] leading-[1.9] text-[#64748B]">
                 Recomendações de profissionais que acompanharam meu
@@ -362,6 +342,7 @@ export default function RepertorioPage() {
             <a
               href="https://www.linkedin.com/in/tomazela/details/recommendations/"
               target="_blank"
+              rel="noopener noreferrer"
               className="
                 mt-8 inline-flex items-center gap-2
                 rounded-full
