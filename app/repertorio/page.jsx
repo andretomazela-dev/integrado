@@ -254,31 +254,48 @@ export default function RepertorioPage() {
       ))}
     </div>
 
-    {/* TRAJETÓRIA */}
-    <div className="mt-12 border-t border-[#E7E8EA] pt-8">
-      <p className="text-[11px] uppercase tracking-[0.16em] text-[#94A3B8]">
-        Trajetória profissional
-      </p>
+   {/* TRAJETÓRIA */}
+<div className="mt-14 border-t border-[#E7E8EA] pt-10">
+  <div className="max-w-3xl">
+    <p className="text-[11px] uppercase tracking-[0.16em] text-[#94A3B8]">
+      Trajetória profissional
+    </p>
 
-      <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-3 text-[15px] text-[#475569]">
-        <span>Hospital São Camilo</span>
-        <span className="text-[#CBD5E1]">→</span>
+    <p className="mt-4 text-[15px] leading-[1.9] text-[#475569]">
+      Experiência construída ao longo dos anos em empresas,
+      agências e veículos de comunicação dos setores de saúde,
+      terceiro setor, indústria farmacêutica e jornalismo.
+    </p>
+  </div>
 
-        <span>Agências de Comunicação</span>
-        <span className="text-[#CBD5E1]">→</span>
-
-        <span>Hospital Nove de Julho</span>
-        <span className="text-[#CBD5E1]">→</span>
-
-        <span>AACD</span>
-        <span className="text-[#CBD5E1]">→</span>
-
-        <span>Novo Nordisk Brasil</span>
-        <span className="text-[#CBD5E1]">→</span>
-
-        <span>Valor Econômico</span>
-      </div>
-    </div>
+  <div className="mt-7 flex flex-wrap gap-3">
+    {[
+      "Hospital São Camilo",
+      "Agências de Comunicação",
+      "Hospital Nove de Julho",
+      "AACD",
+      "Novo Nordisk Brasil",
+      "Valor Econômico",
+      "Janssen Farmacêutica",
+      "Libbs",
+    ].map((empresa) => (
+      <span
+        key={empresa}
+        className="
+          inline-flex items-center
+          rounded-full
+          border border-[#D9DDE3]
+          bg-white
+          px-4 py-2
+          text-[14px]
+          text-[#334155]
+        "
+      >
+        {empresa}
+      </span>
+    ))}
+  </div>
+</div>
   </div>
 </section>
 
