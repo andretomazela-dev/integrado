@@ -298,75 +298,77 @@ export default function SistemaPosicionamento() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="section">
-          <div className="container">
+       {/* CTA */}
+<section className="section">
+  <div className="container">
 
-            <div className="rounded-[32px] bg-[#0F172A] p-8 md:p-10 text-white">
+    <div className="rounded-[32px] bg-[#0F172A] p-8 md:p-10 text-white">
 
-              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
 
-                <div className="max-w-2xl">
-                  <p className="uppercase text-[11px] tracking-[0.16em] text-white/50">
-                    Próximo passo
-                  </p>
+        <div className="max-w-2xl">
+          <p className="uppercase text-[11px] tracking-[0.16em] text-white/50">
+            Próximo passo
+          </p>
 
-                  <h2 className="mt-3 text-2xl md:text-3xl font-bold tracking-[-0.03em]">
-                    Vamos entender o momento do seu negócio e organizar a comunicação a partir disso.
-                  </h2>
+          <h2 className="mt-3 text-2xl md:text-3xl font-bold tracking-[-0.03em] leading-[1.15]">
+            Vamos organizar a comunicação do seu negócio com mais direção e consistência.
+          </h2>
 
-                  <p className="mt-5 text-white/70 leading-[1.9]">
-                    O primeiro passo é entender o momento,
-                    os desafios e os objetivos do negócio.
-                  </p>
-                </div>
+          <p className="mt-5 text-white/70 leading-[1.9] max-w-xl">
+            Cada projeto começa com uma análise do contexto,
+            da comunicação atual e dos objetivos da marca.
+          </p>
+        </div>
 
-                <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col sm:flex-row items-start gap-4 shrink-0">
 
-                  <Link
-                    href="https://wiry-ironclad-70b.notion.site/ae99670c396f4122abe80725faa36792?pvs=105"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="
-                      inline-flex items-center justify-center
-                      rounded-full
-                      bg-[#FF4D00]
-                      px-6 py-3
-                      text-sm
-                      font-medium
-                      text-white
-                      transition
-                      hover:opacity-90
-                    "
-                  >
-                    Solicitar análise inicial →
-                  </Link>
+          <Link
+            href="https://wiry-ironclad-70b.notion.site/ae99670c396f4122abe80725faa36792?pvs=105"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              inline-flex items-center justify-center
+              rounded-full
+              bg-[#FF4D00]
+              px-8 py-4
+              text-sm
+              font-medium
+              whitespace-nowrap
+              text-white
+              transition
+              hover:opacity-90
+            "
+          >
+            Solicitar análise inicial →
+          </Link>
 
-                  <Link
-                    href="/repertorio"
-                    className="
-                      inline-flex items-center justify-center
-                      rounded-full
-                      border border-white/20
-                      px-6 py-3
-                      text-sm
-                      font-medium
-                      text-white
-                      transition
-                      hover:bg-white/10
-                    "
-                  >
-                    Ver repertório
-                  </Link>
+          <Link
+            href="/repertorio"
+            className="
+              inline-flex items-center justify-center
+              rounded-full
+              border border-white/20
+              px-7 py-4
+              text-sm
+              font-medium
+              whitespace-nowrap
+              text-white/90
+              transition
+              hover:bg-white/10
+            "
+          >
+            Ver repertório
+          </Link>
 
-                </div>
+        </div>
 
-              </div>
+      </div>
 
-            </div>
+    </div>
 
-          </div>
-        </section>
+  </div>
+</section>
 
       </main>
 
