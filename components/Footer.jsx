@@ -53,7 +53,7 @@ export default function Footer() {
     <footer className="bg-[#0F172A] text-white border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-14">
-          
+
           {/* COLUNA 1 */}
           <div>
             <Image
@@ -95,7 +95,7 @@ export default function Footer() {
                 href="/conteudo"
                 className="text-white/80 hover:text-[#FF4D00] transition"
               >
-                LAB
+                Conteúdo
               </Link>
 
               <Link
@@ -103,6 +103,13 @@ export default function Footer() {
                 className="text-white/80 hover:text-[#FF4D00] transition"
               >
                 Repertório
+              </Link>
+
+              <Link
+                href="/#sobre"
+                className="text-white/80 hover:text-[#FF4D00] transition"
+              >
+                Sobre
               </Link>
 
               <a
