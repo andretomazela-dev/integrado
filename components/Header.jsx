@@ -46,7 +46,7 @@ export default function Header() {
           </Link>
 
           <Link href="/lab" className="hover:text-brand transition">
-            Conteúdo
+            LAB
           </Link>
 
           <Link href="/repertorio" className="hover:text-brand transition">
