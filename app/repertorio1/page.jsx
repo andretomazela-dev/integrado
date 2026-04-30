@@ -107,7 +107,7 @@ export default function RepertorioPage() {
 
           <div className="mt-5 max-w-3xl">
             <h1 className="text-[36px] md:text-[54px] leading-[1.02] tracking-[-0.05em] font-[750] text-[#0F172A]">
-              Reportagens, projetos e repertório em comunicação
+              Reportagens e projetos em comunicação
             </h1>
 
             <p className="mt-7 max-w-2xl text-[17px] leading-[1.9] text-[#475569]">
