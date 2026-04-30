@@ -389,7 +389,7 @@ return (
 
      <div className="mt-7 flex flex-wrap gap-3">
   <Link
-    href="/repertorio1"
+    href="/repertorio"
     className="inline-flex items-center rounded-2xl px-5 py-2.5 text-sm font-medium bg-orange-600 text-white hover:bg-orange-700 transition"
   >
     Ver repertório
