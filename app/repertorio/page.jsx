@@ -31,7 +31,7 @@ export default function RepertorioPage() {
     ano: "2025",
     titulo: "Idosos LGBTQIA+ são empurrados de volta para o armário",
     descricao:
-      "Reportagem sobre envelhecimento, invisibilidade e exclusão social da população LGBTQIA+.",
+      "Geração que inaugurou o orgulho LGBTQIA+ enfrenta preconceitos antigos dentro e fora da família e no próprio sistema de saúde.",
     link: "https://www.generonumero.media/reportagens/idosos-lgbtqia-empurrados-armario/",
     id: "genero",
   },
