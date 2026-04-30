@@ -387,33 +387,49 @@ return (
         </p>
       </div>
 
-      <div className="mt-6 flex flex-wrap gap-3">
-        <Link
-          href="https://www.linkedin.com/in/tomazela"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center rounded-2xl px-5 py-2.5 text-sm font-medium bg-orange-600 text-white hover:bg-orange-700 transition"
-        >
-          Ver LinkedIn
-        </Link>
+     <div className="mt-7">
+  <div className="flex flex-wrap gap-3">
+    <Link
+      href="/repertorio1"
+      className="inline-flex items-center rounded-2xl px-5 py-2.5 text-sm font-medium bg-orange-600 text-white hover:bg-orange-700 transition"
+    >
+      Ver repertório
+    </Link>
 
-        <a
-          href="#contato"
-          onClick={(e) => {
-            e.preventDefault();
-            const el = document.querySelector("#contato");
-            if (el) {
-              const header = document.querySelector("header");
-              const offset = header?.offsetHeight ? header.offsetHeight + 12 : 80;
-              const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
-              window.scrollTo({ top: y, behavior: "smooth" });
-            }
-          }}
-          className="inline-block btn btn-outline"
-        >
-          Fale comigo
-        </a>
-      </div>
+    <a
+      href="#contato"
+      onClick={(e) => {
+        e.preventDefault();
+        const el = document.querySelector("#contato");
+
+        if (el) {
+          const header = document.querySelector("header");
+          const offset = header?.offsetHeight
+            ? header.offsetHeight + 12
+            : 80;
+
+          const y =
+            el.getBoundingClientRect().top +
+            window.pageYOffset -
+            offset;
+
+          window.scrollTo({
+            top: y,
+            behavior: "smooth",
+          });
+        }
+      }}
+      className="inline-block btn btn-outline"
+    >
+      Fale comigo
+    </a>
+  </div>
+
+  <p className="mt-4 text-[15px] leading-[1.7] text-[#64748B] max-w-[520px]">
+    Conheça alguns projetos, reportagens e trabalhos desenvolvidos
+    ao longo da minha trajetória em comunicação.
+  </p>
+</div>
     </div>
 
   </div>
