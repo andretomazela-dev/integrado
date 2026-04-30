@@ -221,40 +221,66 @@ export default function RepertorioPage() {
           </div>
         </section>
 
-        {/* EXPERIÊNCIA */}
-        <section className="bg-white py-20">
-          <div className="container">
-            <div className="mb-10">
-              <h2 className="text-[28px] tracking-[-0.03em] font-[750] text-[#0F172A]">
-                Experiência
-              </h2>
-            </div>
+       {/* EXPERIÊNCIA */}
+<section className="bg-white py-20">
+  <div className="container">
+    <div className="mb-10">
+      <h2 className="text-[28px] tracking-[-0.03em] font-[750] text-[#0F172A]">
+        Experiência
+      </h2>
+    </div>
 
-            <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-              {experiencias.map((item, index) => (
-                <div
-                  key={index}
-                  className="
-                    rounded-[24px]
-                    border border-[#E7E8EA]
-                    bg-[#FAFAF8]
-                    p-7
-                    transition
-                    hover:border-[#D6DADF]
-                  "
-                >
-                  <h3 className="text-[18px] leading-[1.25] tracking-[-0.03em] font-[700] text-[#0F172A]">
-                    {item.titulo}
-                  </h3>
+    <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+      {experiencias.map((item, index) => (
+        <div
+          key={index}
+          className="
+            rounded-[24px]
+            border border-[#E7E8EA]
+            bg-[#FAFAF8]
+            p-7
+            transition
+            hover:border-[#D6DADF]
+          "
+        >
+          <h3 className="text-[18px] leading-[1.25] tracking-[-0.03em] font-[700] text-[#0F172A]">
+            {item.titulo}
+          </h3>
 
-                  <p className="mt-4 text-[14px] leading-[1.9] text-[#64748B]">
-                    {item.texto}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+          <p className="mt-4 text-[14px] leading-[1.9] text-[#64748B]">
+            {item.texto}
+          </p>
+        </div>
+      ))}
+    </div>
+
+    {/* TRAJETÓRIA */}
+    <div className="mt-12 border-t border-[#E7E8EA] pt-8">
+      <p className="text-[11px] uppercase tracking-[0.16em] text-[#94A3B8]">
+        Trajetória profissional
+      </p>
+
+      <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-3 text-[15px] text-[#475569]">
+        <span>Hospital São Camilo</span>
+        <span className="text-[#CBD5E1]">→</span>
+
+        <span>Agências de Comunicação</span>
+        <span className="text-[#CBD5E1]">→</span>
+
+        <span>Hospital Nove de Julho</span>
+        <span className="text-[#CBD5E1]">→</span>
+
+        <span>AACD</span>
+        <span className="text-[#CBD5E1]">→</span>
+
+        <span>Novo Nordisk Brasil</span>
+        <span className="text-[#CBD5E1]">→</span>
+
+        <span>Valor Econômico</span>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* DEPOIMENTOS */}
         <section className="bg-[#EEF2F5] py-20">
