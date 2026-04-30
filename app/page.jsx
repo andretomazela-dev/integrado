@@ -277,28 +277,27 @@ return (
               </p>
             </div>
                                 
-            {/* 7 — CTA invertido */}
-<div
+            <div
   className="
     rounded-2xl
-    p-7
+    border border-[#FF4D00]
     bg-[#FF4D00]
+    p-7
     text-white
-    shadow-lg
     transition
     hover:opacity-95
     flex flex-col justify-between
-    min-h-[240px]
   "
 >
   <div>
-    <h3 className="text-[22px] leading-[1.15] tracking-[-0.03em] font-semibold">
+    <h3 className="text-[18px] leading-[1.25] tracking-[-0.02em] font-semibold">
       Precisa de algo mais específico?
     </h3>
 
-    <p className="mt-4 text-sm leading-relaxed text-white/90 max-w-[26ch]">
-      Projetos editoriais, comunicação institucional,
-      posicionamento ou estratégias sob medida.
+    <p className="mt-4 text-[14px] leading-[1.8] text-white/90 max-w-[32ch]">
+      Projetos editoriais, comunicação institucional
+      e estratégias sob medida para marcas,
+      lideranças e projetos.
     </p>
   </div>
 
@@ -306,16 +305,13 @@ return (
     type="button"
     onClick={() => scrollToId("#contato")}
     className="
-      mt-7
-      inline-flex w-fit items-center gap-2
-      rounded-full
-      bg-white
-      px-4 py-2
-      text-sm
+      mt-6
+      inline-flex items-center gap-2
+      text-[14px]
       font-medium
-      text-[#FF4D00]
+      text-white
+      hover:opacity-80
       transition
-      hover:bg-white/90
     "
   >
     Vamos conversar →
