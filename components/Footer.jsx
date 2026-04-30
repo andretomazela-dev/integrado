@@ -95,7 +95,7 @@ export default function Footer() {
                 href="/lab"
                 className="text-white/80 hover:text-[#FF4D00] transition"
               >
-                Conteúdo
+                LAB
               </Link>
 
               <Link
