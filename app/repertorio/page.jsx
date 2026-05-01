@@ -255,62 +255,105 @@ export default function RepertorioPage() {
               ))}
             </div>
 
-            {/* TRAJETÓRIA */}
-            <div className="mt-16 border-t border-[#E7E8EA] pt-10">
-              <div className="max-w-3xl">
-                <p className="text-[11px] uppercase tracking-[0.16em] text-[#94A3B8]">
-                  Trajetória profissional
-                </p>
+         {/* TRAJETÓRIA */}
+<div className="mt-16 border-t border-[#E7E8EA] pt-10">
+  <div className="max-w-3xl">
+    <p className="text-[11px] uppercase tracking-[0.16em] text-[#94A3B8]">
+      Trajetória profissional
+    </p>
 
-                <p className="mt-4 text-[15px] leading-[1.9] text-[#475569]">
-                  Experiência construída ao longo dos anos em comunicação corporativa,
-                  saúde, indústria farmacêutica e jornalismo.
-                </p>
-              </div>
+    <p className="mt-4 text-[15px] leading-[1.9] text-[#475569]">
+      Experiência construída ao longo dos anos em comunicação corporativa,
+      saúde, indústria farmacêutica e jornalismo.
+    </p>
+  </div>
 
-              {/* TIMELINE */}
-              <div className="relative mt-14 pb-8">
-                <div className="absolute left-0 top-[12px] h-[3px] w-full bg-[#D9DDE3]" />
+  {/* MOBILE */}
+  <div className="mt-12 flex flex-col gap-8 md:hidden">
+    {[
+      "Hospital São Camilo",
+      "Janssen Farmacêutica",
+      "Libbs",
+      "Hospital Nove de Julho",
+      "AACD",
+      "Novo Nordisk Brasil",
+      "Valor Econômico",
+    ].map((empresa, index, array) => (
+      <div key={empresa} className="relative flex items-start gap-5">
+        
+        {/* Linha */}
+        {index !== array.length - 1 && (
+          <div className="absolute left-[11px] top-7 h-[72px] w-[2px] bg-[#D9DDE3]" />
+        )}
 
-                <div className="relative flex items-start justify-between gap-12 lg:gap-14">
-                  {[
-                    "Hospital São Camilo",
-                    "Janssen Farmacêutica",
-                    "Libbs",
-                    "Hospital Nove de Julho",
-                    "AACD",
-                    "Novo Nordisk Brasil",
-                    "Valor Econômico",
-                  ].map((empresa, index) => (
-                    <div
-                      key={empresa}
-                      className="relative flex flex-col items-center text-center flex-1"
-                    >
-                      <div
-                        className={`
-                          relative z-10 h-6 w-6 rounded-full border-[6px] border-white shadow-sm
-                          ${index === 6 ? "bg-[#FF4D00]" : "bg-[#0F172A]"}
-                        `}
-                      />
+        {/* Ponto */}
+        <div
+          className={`
+            relative z-10 mt-1 h-6 w-6 rounded-full border-[6px] border-white shadow-sm shrink-0
+            ${index === 6 ? "bg-[#FF4D00]" : "bg-[#0F172A]"}
+          `}
+        />
 
-                      <span
-                        className={`
-                          mt-5 max-w-[110px]
-                          text-[16px]
-                          leading-[1.5]
-                          ${index === 6
-                            ? "font-semibold text-[#0F172A]"
-                            : "text-[#334155]"}
-                        `}
-                      >
-                        {empresa}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* Texto */}
+        <span
+          className={`
+            text-[18px]
+            leading-[1.55]
+            tracking-[-0.02em]
+            ${index === 6
+              ? "font-semibold text-[#0F172A]"
+              : "text-[#334155]"}
+          `}
+        >
+          {empresa}
+        </span>
+      </div>
+    ))}
+  </div>
+
+  {/* DESKTOP */}
+  <div className="relative mt-14 hidden md:block pb-8">
+    <div className="absolute left-0 top-[12px] h-[3px] w-full bg-[#D9DDE3]" />
+
+    <div className="relative flex items-start justify-between gap-8 lg:gap-10">
+      {[
+        "Hospital São Camilo",
+        "Janssen Farmacêutica",
+        "Libbs",
+        "Hospital Nove de Julho",
+        "AACD",
+        "Novo Nordisk Brasil",
+        "Valor Econômico",
+      ].map((empresa, index) => (
+        <div
+          key={empresa}
+          className="relative flex flex-col items-center text-center flex-1"
+        >
+          <div
+            className={`
+              relative z-10 h-6 w-6 rounded-full border-[6px] border-white shadow-sm
+              ${index === 6 ? "bg-[#FF4D00]" : "bg-[#0F172A]"}
+            `}
+          />
+
+          <span
+            className={`
+              mt-5 max-w-[110px]
+              text-[15px]
+              leading-[1.5]
+              tracking-[-0.01em]
+              ${index === 6
+                ? "font-semibold text-[#0F172A]"
+                : "text-[#334155]"}
+            `}
+          >
+            {empresa}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
         </section>
 
         {/* DEPOIMENTOS */}
