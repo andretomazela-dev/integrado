@@ -4,70 +4,70 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function RepertorioPage() {
- const trabalhos = [
-  {
-    categoria: "Valor Econômico",
-    ano: "2026",
-    titulo: "Clima encarece prêmios e muda lógica do resseguro",
-    descricao:
-      "Com perdas anuais de R$ 60 bilhões, setor enfrenta lacuna de proteção de 91% e adota precificação dinâmica para conter riscos extremos.",
-    link: "https://valor.globo.com/publicacoes/especiais/seguros-e-resseguros/noticia/2026/04/23/clima-encarece-premios-e-muda-logica-do-resseguro.ghtml",
-    id: "valor",
-  },
+  const trabalhos = [
+    {
+      categoria: "Valor Econômico",
+      ano: "2026",
+      titulo: "Clima encarece prêmios e muda lógica do resseguro",
+      descricao:
+        "Com perdas anuais de R$ 60 bilhões, setor enfrenta lacuna de proteção de 91% e adota precificação dinâmica para conter riscos extremos.",
+      link: "https://valor.globo.com/publicacoes/especiais/seguros-e-resseguros/noticia/2026/04/23/clima-encarece-premios-e-muda-logica-do-resseguro.ghtml",
+      id: "valor",
+    },
 
-  {
-    categoria: "Valor Econômico",
-    ano: "2025",
-    titulo:
-      "Infraestrutura brasileira incorpora risco climático e redefine modelo de concessões e investimentos",
-    descricao:
-      "Após as enchentes no Rio Grande do Sul, governo e concessionárias ampliam recursos e exigências de resiliência.",
-    link: "https://valor.globo.com/publicacoes/especiais/revista-infraestrutura-e-logistica/noticia/2025/10/31/infraestrutura-brasileira-incorpora-risco-climatico-e-redefine-modelo-de-concessoes-e-investimentos.ghtml",
-    id: "infraestrutura",
-  },
+    {
+      categoria: "Valor Econômico",
+      ano: "2025",
+      titulo:
+        "Infraestrutura brasileira incorpora risco climático e redefine modelo de concessões e investimentos",
+      descricao:
+        "Após as enchentes no Rio Grande do Sul, governo e concessionárias ampliam recursos e exigências de resiliência.",
+      link: "https://valor.globo.com/publicacoes/especiais/revista-infraestrutura-e-logistica/noticia/2025/10/31/infraestrutura-brasileira-incorpora-risco-climatico-e-redefine-modelo-de-concessoes-e-investimentos.ghtml",
+      id: "infraestrutura",
+    },
 
-  {
-    categoria: "Gênero & Número",
-    ano: "2025",
-    titulo: "Idosos LGBTQIA+ são empurrados de volta para o armário",
-    descricao:
-      "Geração que inaugurou o orgulho LGBTQIA+ enfrenta preconceitos antigos dentro e fora da família e no próprio sistema de saúde.",
-    link: "https://www.generonumero.media/reportagens/idosos-lgbtqia-empurrados-armario/",
-    id: "genero",
-  },
+    {
+      categoria: "Gênero & Número",
+      ano: "2025",
+      titulo: "Idosos LGBTQIA+ são empurrados de volta para o armário",
+      descricao:
+        "Geração que inaugurou o orgulho LGBTQIA+ enfrenta preconceitos antigos dentro e fora da família e no próprio sistema de saúde.",
+      link: "https://www.generonumero.media/reportagens/idosos-lgbtqia-empurrados-armario/",
+      id: "genero",
+    },
 
-  {
-    categoria: "Valor Econômico",
-    ano: "2025",
-    titulo:
-      "Ritmo para cumprir meta de universalização do saneamento é insuficiente",
-    descricao:
-      "Mesmo com ampliação de investimentos e infraestrutura, país ainda avança lentamente e mantém desigualdades regionais.",
-    link: "https://valor.globo.com/publicacoes/especiais/saneamento/noticia/2025/03/31/ritmo-para-cumprir-meta-de-universalizacao-do-saneamento-e-insuficiente.ghtml",
-    id: "saneamento",
-  },
+    {
+      categoria: "Valor Econômico",
+      ano: "2025",
+      titulo:
+        "Ritmo para cumprir meta de universalização do saneamento é insuficiente",
+      descricao:
+        "Mesmo com ampliação de investimentos e infraestrutura, país ainda avança lentamente e mantém desigualdades regionais.",
+      link: "https://valor.globo.com/publicacoes/especiais/saneamento/noticia/2025/03/31/ritmo-para-cumprir-meta-de-universalizacao-do-saneamento-e-insuficiente.ghtml",
+      id: "saneamento",
+    },
 
-  {
-    categoria: "O Globo",
-    ano: "2024",
-    titulo:
-      "Turismo é desafio futuro no combate às mudanças climáticas",
-    descricao:
-      "Mais de 50 países, incluindo o Brasil, assinaram compromisso para reduzir emissões do setor até 2025.",
-    link: "https://oglobo.globo.com/mundo/noticia/2024/12/04/turismo-e-desafio-futuro-no-combate-as-mudancas-climaticas.ghtml",
-    id: "oglobo",
-  },
+    {
+      categoria: "O Globo",
+      ano: "2024",
+      titulo:
+        "Turismo é desafio futuro no combate às mudanças climáticas",
+      descricao:
+        "Mais de 50 países, incluindo o Brasil, assinaram compromisso para reduzir emissões do setor até 2025.",
+      link: "https://oglobo.globo.com/mundo/noticia/2024/12/04/turismo-e-desafio-futuro-no-combate-as-mudancas-climaticas.ghtml",
+      id: "oglobo",
+    },
 
-  {
-    categoria: "Valor Econômico",
-    ano: "2023",
-    titulo: "Caem os alertas de desmatamento na Amazônia",
-    descricao:
-      "Queda de 42,5% nos alertas reflete avanço da fiscalização ambiental e ações dos governos federal e estaduais.",
-    link: "https://valor.globo.com/publicacoes/especiais/revista-sustentabilidade/noticia/2023/08/31/caem-os-alertas-de-desmatamento-na-amazonia.ghtml",
-    id: "desmatamento",
-  },
-];
+    {
+      categoria: "Valor Econômico",
+      ano: "2023",
+      titulo: "Caem os alertas de desmatamento na Amazônia",
+      descricao:
+        "Queda de 42,5% nos alertas reflete avanço da fiscalização ambiental e ações dos governos federal e estaduais.",
+      link: "https://valor.globo.com/publicacoes/especiais/revista-sustentabilidade/noticia/2023/08/31/caem-os-alertas-de-desmatamento-na-amazonia.ghtml",
+      id: "desmatamento",
+    },
+  ];
 
   const experiencias = [
     {
@@ -118,8 +118,10 @@ export default function RepertorioPage() {
       <Header />
 
       <main className="bg-[#F7F7F5] text-[#0F172A]">
+
         {/* HERO */}
         <section className="container pt-16 pb-14 md:pt-20 md:pb-16">
+
           <span className="text-[10px] uppercase tracking-[0.24em] text-[#FF4D00] font-semibold">
             Repertório
           </span>
@@ -143,8 +145,6 @@ export default function RepertorioPage() {
               { label: "Valor Econômico", id: "valor" },
               { label: "Gênero & Número", id: "genero" },
               { label: "O Globo", id: "oglobo" },
-              { label: "Comunicação institucional", id: "institucional" },
-              { label: "Projetos especiais", id: "projetos" },
             ].map((item) => (
               <a
                 key={item.id}
@@ -168,11 +168,14 @@ export default function RepertorioPage() {
               </a>
             ))}
           </div>
+
         </section>
 
         {/* PUBLICAÇÕES */}
         <section className="border-t border-[#E7E8EA] py-20">
+
           <div className="container">
+
             <div className="mb-10">
               <h2 className="text-[28px] tracking-[-0.03em] font-[750] text-[#0F172A]">
                 Publicações
@@ -180,7 +183,9 @@ export default function RepertorioPage() {
             </div>
 
             <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-3">
+
               {trabalhos.map((item, index) => (
+
                 <article
                   key={index}
                   id={item.id}
@@ -194,6 +199,7 @@ export default function RepertorioPage() {
                     hover:shadow-lg
                   "
                 >
+
                   <span className="text-[10px] uppercase tracking-[0.14em] text-[#64748B]">
                     {item.categoria} • {item.ano}
                   </span>
@@ -214,15 +220,22 @@ export default function RepertorioPage() {
                   >
                     Ler trabalho ↗
                   </a>
+
                 </article>
+
               ))}
+
             </div>
+
           </div>
+
         </section>
 
         {/* EXPERIÊNCIA */}
         <section className="bg-white py-20">
+
           <div className="container">
+
             <div className="mb-10">
               <h2 className="text-[28px] tracking-[-0.03em] font-[750] text-[#0F172A]">
                 Experiência
@@ -231,7 +244,9 @@ export default function RepertorioPage() {
 
             {/* CARDS */}
             <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+
               {experiencias.map((item, index) => (
+
                 <div
                   key={index}
                   className="
@@ -244,6 +259,7 @@ export default function RepertorioPage() {
                     hover:border-[#D6DADF]
                   "
                 >
+
                   <h3 className="text-[20px] leading-[1.25] tracking-[-0.03em] font-[700] text-[#0F172A]">
                     {item.titulo}
                   </h3>
@@ -251,114 +267,137 @@ export default function RepertorioPage() {
                   <p className="mt-5 text-[15px] leading-[1.9] text-[#64748B]">
                     {item.texto}
                   </p>
+
                 </div>
+
               ))}
+
             </div>
 
-         {/* TRAJETÓRIA */}
-<div className="mt-16 border-t border-[#E7E8EA] pt-10">
-  <div className="max-w-3xl">
-    <p className="text-[11px] uppercase tracking-[0.16em] text-[#94A3B8]">
-      Trajetória profissional
-    </p>
+            {/* TRAJETÓRIA */}
+            <div className="mt-16 border-t border-[#E7E8EA] pt-10">
 
-    <p className="mt-4 text-[15px] leading-[1.9] text-[#475569]">
-      Experiência construída ao longo dos anos em comunicação corporativa,
-      saúde, indústria farmacêutica e jornalismo.
-    </p>
-  </div>
+              <div className="max-w-3xl">
+                <p className="text-[11px] uppercase tracking-[0.16em] text-[#94A3B8]">
+                  Trajetória profissional
+                </p>
 
-  {/* MOBILE */}
-  <div className="mt-12 flex flex-col gap-8 md:hidden">
-    {[
-      "Hospital São Camilo",
-      "Janssen Farmacêutica",
-      "Libbs",
-      "Hospital Nove de Julho",
-      "AACD",
-      "Novo Nordisk Brasil",
-      "Valor Econômico",
-    ].map((empresa, index, array) => (
-      <div key={empresa} className="relative flex items-start gap-5">
-        
-        {/* Linha */}
-        {index !== array.length - 1 && (
-          <div className="absolute left-[11px] top-7 h-[72px] w-[2px] bg-[#D9DDE3]" />
-        )}
+                <p className="mt-4 text-[15px] leading-[1.9] text-[#475569]">
+                  Experiência construída ao longo dos anos em comunicação corporativa,
+                  saúde, indústria farmacêutica e jornalismo.
+                </p>
+              </div>
 
-        {/* Ponto */}
-        <div
-          className={`
-            relative z-10 mt-1 h-6 w-6 rounded-full border-[6px] border-white shadow-sm shrink-0
-            ${index === 6 ? "bg-[#FF4D00]" : "bg-[#0F172A]"}
-          `}
-        />
+              {/* MOBILE */}
+              <div className="mt-12 flex flex-col gap-8 md:hidden">
 
-        {/* Texto */}
-        <span
-          className={`
-            text-[18px]
-            leading-[1.55]
-            tracking-[-0.02em]
-            ${index === 6
-              ? "font-semibold text-[#0F172A]"
-              : "text-[#334155]"}
-          `}
-        >
-          {empresa}
-        </span>
-      </div>
-    ))}
-  </div>
+                {[
+                  "Hospital São Camilo",
+                  "Janssen Farmacêutica",
+                  "Libbs",
+                  "Hospital Nove de Julho",
+                  "AACD",
+                  "Novo Nordisk Brasil",
+                  "Valor Econômico",
+                ].map((empresa, index, array) => (
 
-  {/* DESKTOP */}
-  <div className="relative mt-14 hidden md:block pb-8">
-    <div className="absolute left-0 top-[12px] h-[3px] w-full bg-[#D9DDE3]" />
+                  <div
+                    key={empresa}
+                    className="relative flex items-start gap-5"
+                  >
 
-    <div className="relative flex items-start justify-between gap-8 lg:gap-10">
-      {[
-        "Hospital São Camilo",
-        "Janssen Farmacêutica",
-        "Libbs",
-        "Hospital Nove de Julho",
-        "AACD",
-        "Novo Nordisk Brasil",
-        "Valor Econômico",
-      ].map((empresa, index) => (
-        <div
-          key={empresa}
-          className="relative flex flex-col items-center text-center flex-1"
-        >
-          <div
-            className={`
-              relative z-10 h-6 w-6 rounded-full border-[6px] border-white shadow-sm
-              ${index === 6 ? "bg-[#FF4D00]" : "bg-[#0F172A]"}
-            `}
-          />
+                    {index !== array.length - 1 && (
+                      <div className="absolute left-[11px] top-7 h-[72px] w-[2px] bg-[#D9DDE3]" />
+                    )}
 
-          <span
-            className={`
-              mt-5 max-w-[110px]
-              text-[15px]
-              leading-[1.5]
-              tracking-[-0.01em]
-              ${index === 6
-                ? "font-semibold text-[#0F172A]"
-                : "text-[#334155]"}
-            `}
-          >
-            {empresa}
-          </span>
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
+                    <div
+                      className={`
+                        relative z-10 mt-1 h-6 w-6 shrink-0 rounded-full border-[6px] border-white shadow-sm
+                        ${index === 6 ? "bg-[#FF4D00]" : "bg-[#0F172A]"}
+                      `}
+                    />
+
+                    <span
+                      className={`
+                        text-[18px] leading-[1.55] tracking-[-0.02em]
+                        ${index === 6
+                          ? "font-semibold text-[#0F172A]"
+                          : "text-[#334155]"}
+                      `}
+                    >
+                      {empresa}
+                    </span>
+
+                  </div>
+
+                ))}
+
+              </div>
+
+              {/* DESKTOP */}
+              <div className="relative mt-14 hidden md:block pb-8">
+
+                <div className="absolute left-0 top-[12px] h-[3px] w-full bg-[#D9DDE3]" />
+
+                <div className="relative flex items-start justify-between gap-8 lg:gap-10">
+
+                  {[
+                    "Hospital São Camilo",
+                    "Janssen Farmacêutica",
+                    "Libbs",
+                    "Hospital Nove de Julho",
+                    "AACD",
+                    "Novo Nordisk Brasil",
+                    "Valor Econômico",
+                  ].map((empresa, index) => (
+
+                    <div
+                      key={empresa}
+                      className="relative flex flex-1 flex-col items-center text-center"
+                    >
+
+                      <div
+                        className={`
+                          relative z-10 h-6 w-6 rounded-full border-[6px] border-white shadow-sm
+                          ${index === 6 ? "bg-[#FF4D00]" : "bg-[#0F172A]"}
+                        `}
+                      />
+
+                      <span
+                        className={`
+                          mt-5 max-w-[110px]
+                          text-[15px]
+                          leading-[1.5]
+                          tracking-[-0.01em]
+                          ${index === 6
+                            ? "font-semibold text-[#0F172A]"
+                            : "text-[#334155]"}
+                        `}
+                      >
+                        {empresa}
+                      </span>
+
+                    </div>
+
+                  ))}
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
 
         {/* DEPOIMENTOS */}
         <section className="bg-[#EEF2F5] py-20">
+
           <div className="container">
+
             <div className="mb-10">
+
               <h2 className="text-[28px] tracking-[-0.03em] font-[750] text-[#0F172A]">
                 Depoimentos
               </h2>
@@ -368,10 +407,13 @@ export default function RepertorioPage() {
                 trabalho em comunicação corporativa, conteúdo e
                 posicionamento institucional.
               </p>
+
             </div>
 
             <div className="grid gap-7 md:grid-cols-3">
+
               {depoimentos.map((item, index) => (
+
                 <div
                   key={index}
                   className="
@@ -381,11 +423,13 @@ export default function RepertorioPage() {
                     border border-[#E7E8EA]
                   "
                 >
+
                   <p className="text-[16px] leading-[1.95] text-[#334155]">
                     “{item.texto}”
                   </p>
 
                   <div className="mt-7 border-t border-[#E7E8EA] pt-5">
+
                     <strong className="block text-[15px] font-semibold text-[#0F172A]">
                       {item.nome}
                     </strong>
@@ -393,9 +437,13 @@ export default function RepertorioPage() {
                     <span className="mt-1 block text-[13px] text-[#64748B]">
                       {item.cargo}
                     </span>
+
                   </div>
+
                 </div>
+
               ))}
+
             </div>
 
             <a
@@ -417,12 +465,16 @@ export default function RepertorioPage() {
             >
               Ver recomendações no LinkedIn ↗
             </a>
+
           </div>
+
         </section>
 
         {/* CTA */}
         <section className="py-24">
+
           <div className="container">
+
             <div
               className="
                 grid items-center gap-12
@@ -434,8 +486,10 @@ export default function RepertorioPage() {
                 lg:grid-cols-2
               "
             >
+
               {/* TEXTO */}
               <div className="max-w-[520px]">
+
                 <h2 className="text-[26px] md:text-[34px] leading-[1.04] tracking-[-0.045em] font-[720] text-white">
                   Precisa organizar a comunicação do seu negócio, projeto ou marca pessoal?
                 </h2>
@@ -461,22 +515,30 @@ export default function RepertorioPage() {
                 >
                   Vamos conversar
                 </a>
+
               </div>
 
               {/* IMAGEM */}
               <div className="flex justify-center lg:justify-end">
+
                 <img
                   src="/repertorio/cta-repertorio.png"
                   alt="Comunicação estratégica"
                   className="w-full max-w-[380px] h-auto object-contain"
                 />
+
               </div>
+
             </div>
+
           </div>
+
         </section>
+
       </main>
 
       <Footer />
+
     </>
   );
 }
