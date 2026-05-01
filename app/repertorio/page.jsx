@@ -354,7 +354,6 @@ export default function RepertorioPage() {
     </div>
   </div>
 </div>
-        </section>
 
         {/* DEPOIMENTOS */}
         <section className="bg-[#EEF2F5] py-20">
