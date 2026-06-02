@@ -21,6 +21,7 @@ export default function Header() {
       }`}
     >
       <div className="container flex items-center justify-between py-3">
+        
         {/* LOGO DESKTOP */}
 <Link href="/" className="hidden md:flex items-center">
   <Image
@@ -30,7 +31,7 @@ export default function Header() {
     height={120}
     priority
     className={`w-auto transition-all duration-200 ${
-      scrolled ? "h-[72px]" : "h-[82px]"
+      scrolled ? "h-[60px]" : "h-[68px]"
     }`}
   />
 </Link>
