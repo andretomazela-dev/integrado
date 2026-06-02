@@ -22,8 +22,11 @@ export default function Header() {
     >
       <div className="container flex items-center justify-between py-3">
         
-        {/* LOGO DESKTOP */}
-<Link href="/" className="hidden md:flex items-center">
+       {/* LOGO DESKTOP */}
+<Link
+  href="/"
+  className="hidden md:flex items-center pt-[2px]"
+>
   <Image
     src="/brand/svg/tomazela-logo-horizontal-transparente.svg"
     alt="Tomazela"
@@ -37,7 +40,10 @@ export default function Header() {
 </Link>
 
 {/* LOGO MOBILE */}
-<Link href="/" className="flex md:hidden items-center">
+<Link
+  href="/"
+  className="flex md:hidden items-center pt-[2px]"
+>
   <Image
     src="/brand/svg/tomazela-simbolo-laranja-transparente.svg"
     alt="Tomazela"
