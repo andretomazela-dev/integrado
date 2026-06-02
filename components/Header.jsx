@@ -24,7 +24,7 @@ export default function Header() {
         {/* LOGO DESKTOP */}
 <Link href="/" className="hidden md:flex items-center">
   <Image
-    src="/brand/svg/tomazela-logo-horizontal-laranja.svg"
+    src="/brand/svg/tomazela-logo-horizontal-transparente.svg"
     alt="Tomazela"
     width={440}
     height={120}
