@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 100" width="480" height="100">
+  <!-- Symbol -->
+  <g>
+    <!-- Bubble -->
+    <rect x="4" y="4" width="78" height="72" rx="16" fill="none" stroke="#E85D0C" stroke-width="4.5"/>
+    <!-- Tail -->
+    <path d="M18 75 L10 96 L36 75 Z" fill="#E85D0C"/>
+    <!-- Ring outer -->
+    <circle cx="46" cy="38" r="22" fill="none" stroke="#E85D0C" stroke-width="4.5"/>
+    <!-- Ring middle -->
+    <circle cx="46" cy="38" r="12" fill="none" stroke="#E85D0C" stroke-width="4.5"/>
+    <!-- Center dot -->
+    <circle cx="46" cy="38" r="4" fill="#E85D0C"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="104" y="52" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="38" font-weight="600" fill="#1A1A1A" letter-spacing="3">TOMAZELA</text>
+  <text x="106" y="72" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#E85D0C" letter-spacing="5">ESTRATÉGIA &amp; COMUNICAÇÃO</text>
+</svg>
