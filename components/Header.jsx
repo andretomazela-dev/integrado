@@ -21,19 +21,31 @@ export default function Header() {
       }`}
     >
       <div className="container flex items-center justify-between py-3">
-        {/* LOGO */}
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/logo-tomazela.png"
-            alt="Tomazela"
-            width={440}
-            height={120}
-            priority
-            className={`w-auto transition-all duration-200 ${
-              scrolled ? "h-[85px] sm:h-[105px]" : "h-[100px] sm:h-[125px]"
-            }`}
-          />
-        </Link>
+        {/* LOGO DESKTOP */}
+<Link href="/" className="hidden md:flex items-center">
+  <Image
+    src="/brand/svg/tomazela-logo-horizontal-laranja.svg"
+    alt="Tomazela"
+    width={440}
+    height={120}
+    priority
+    className={`w-auto transition-all duration-200 ${
+      scrolled ? "h-[72px]" : "h-[82px]"
+    }`}
+  />
+</Link>
+
+{/* LOGO MOBILE */}
+<Link href="/" className="flex md:hidden items-center">
+  <Image
+    src="/brand/svg/tomazela-simbolo-laranja-transparente.svg"
+    alt="Tomazela"
+    width={48}
+    height={48}
+    priority
+    className="w-11 h-11"
+  />
+</Link>
 
         {/* MENU DESKTOP */}
         <nav className="hidden md:flex items-center gap-6">
