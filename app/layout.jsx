@@ -24,20 +24,17 @@ export const metadata = {
         type: "image/png",
       },
     ],
+
+    apple: [
+      {
+        url: "/favicon/tomazela-favicon-128x128.png",
+        sizes: "128x128",
+        type: "image/png",
+      },
+    ],
   },
 
   manifest: "/site.webmanifest",
 
   themeColor: "#FF4D00",
 };
-
-export default function RootLayout({ children }) {
-  return (
-    <html lang="pt-BR">
-      <body>
-        {children}
-        <Analytics />
-      </body>
-    </html>
-  );
-}
