@@ -56,13 +56,14 @@ export default function Footer() {
 
           {/* COLUNA 1 */}
           <div>
-            <Image
-              src="/logo-tomazela-br-fundotransp.png"
-              alt="Tomazela | Estratégia & Comunicação"
-              width={170}
-              height={50}
-              priority
-            />
+           <Image
+  src="/brand/svg/tomazela-logo-horizontal-branco-transparente.svg"
+  alt="Tomazela | Estratégia & Comunicação"
+  width={190}
+  height={56}
+  priority
+  className="w-auto h-[56px]"
+/>
 
             <p className="mt-6 text-[15px] leading-7 text-white/70 max-w-sm">
               Comunicação estratégica, conteúdo e posicionamento
