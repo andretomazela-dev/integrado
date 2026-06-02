@@ -22,10 +22,10 @@ export default function Header() {
     >
       <div className="container flex items-center justify-between py-3">
         
-       {/* LOGO DESKTOP */}
+       {/* LOGO */}
 <Link
   href="/"
-  className="hidden md:flex items-center pt-[2px]"
+  className="flex items-center pt-[2px]"
 >
   <Image
     src="/brand/svg/tomazela-logo-horizontal-transparente.svg"
@@ -34,23 +34,10 @@ export default function Header() {
     height={120}
     priority
     className={`w-auto transition-all duration-200 ${
-      scrolled ? "h-[60px]" : "h-[68px]"
+      scrolled
+        ? "h-[42px] md:h-[60px]"
+        : "h-[48px] md:h-[68px]"
     }`}
-  />
-</Link>
-
-{/* LOGO MOBILE */}
-<Link
-  href="/"
-  className="flex md:hidden items-center pt-[2px]"
->
-  <Image
-    src="/brand/svg/tomazela-simbolo-laranja-transparente.svg"
-    alt="Tomazela"
-    width={48}
-    height={48}
-    priority
-    className="w-11 h-11"
   />
 </Link>
 
