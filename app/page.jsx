@@ -77,53 +77,61 @@ return (
 
       {/* HERO */}
       <section
-        id="home"
-        className="container pt-14 pb-6 md:pt-20 md:pb-8 grid md:grid-cols-2 gap-10 items-center scroll-mt-28"
+  id="home"
+  className="container pt-14 pb-6 md:pt-20 md:pb-8 grid md:grid-cols-2 gap-10 items-center scroll-mt-28"
+>
+  <div className="animate-[fadeUp_.7s_ease-out]">
+    <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
+      Comunicação estratégica para quem gera impacto real.
+    </h1>
+
+    <p className="mt-4 text-lg text-gray-700">
+      Desenvolvo estratégias e narrativas para marcas e lideranças
+      que buscam relevância, não apenas visibilidade. Com método e verdade.
+    </p>
+
+    <p className="mt-3 text-sm text-gray-600">
+      André Tomazela · jornalista e consultor em comunicação estratégica
+    </p>
+
+    <div className="mt-6 flex flex-wrap gap-3">
+      <a
+        href="#servicos"
+        onClick={(e) => {
+          e.preventDefault();
+          scrollToId("#servicos");
+        }}
+        className="btn btn-primary"
       >
-        <div>
-          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
-            Comunicação estratégica para quem gera impacto real.
-          </h1>
-          <p className="mt-4 text-lg text-gray-700">
-            Desenvolvo estratégias e narrativas para marcas e lideranças 
-            que buscam relevância, não apenas visibilidade. Com método e verdade.
-          </p>
-          <p className="mt-3 text-sm text-gray-600">
-         André Tomazela · jornalista e consultor em comunicação estratégica
-         </p>
-        <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="#servicos"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToId("#servicos");
-              }}
-              className="btn btn-primary"
-            >
-              Como eu trabalho
-            </a>
+        Como eu trabalho
+      </a>
 
-            <Link href="/manifesto" className="btn btn-outline" aria-label="Leia nosso manifesto">
-              O manifesto
-            </Link>
-          </div>
-          <p className="mt-6 text-sm text-gray-600">
-            São Paulo • Brasil •{" "}
-            <a className="underline" href="mailto:andre@andretomazela.com.br">
-              andre@andretomazela.com.br
-            </a>
-          </p>
-        </div>
+      <Link
+        href="/manifesto"
+        className="btn btn-outline"
+        aria-label="Leia nosso manifesto"
+      >
+        O manifesto
+      </Link>
+    </div>
 
-       <div className="rounded-2xl shadow-card overflow-hidden bg-white flex items-center justify-center p-6">
-  <img
-    src="/Ilustracao_estrategia_comunicacao.png"
-    alt="Estratégia de comunicação"
-    className="w-full h-auto object-contain max-h-[420px]"
-    loading="lazy"
-  />
-</div>
-      </section>
+    <p className="mt-6 text-sm text-gray-600">
+      São Paulo • Brasil •{" "}
+      <a className="underline" href="mailto:andre@andretomazela.com.br">
+        andre@andretomazela.com.br
+      </a>
+    </p>
+  </div>
+
+  <div className="rounded-2xl shadow-card overflow-hidden bg-white flex items-center justify-center p-6 animate-[fadeUp_.9s_ease-out]">
+    <img
+      src="/Ilustracao_estrategia_comunicacao.png"
+      alt="Estratégia de comunicação"
+      className="w-full h-auto object-contain max-h-[420px]"
+      loading="lazy"
+    />
+  </div>
+</section>
      {/* SERVIÇOS */}
 <section id="servicos" className="bg-gray-50 pt-8 pb-14 md:pt-10 md:pb-16 scroll-mt-28">
   <div className="container">
