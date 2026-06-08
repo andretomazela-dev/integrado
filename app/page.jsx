@@ -379,16 +379,16 @@ return (
     <div className="flex justify-center md:justify-start md:-mt-4">
       <div className="relative w-64 h-64 md:w-72 md:h-72">
 
-        <div className="relative w-full h-full rounded-full overflow-hidden shadow-md border border-gray-200">
-          <Image
-            src="/andretomazelafoto.png"
-            alt="André Tomazela"
-            fill
-            priority
-            className="object-cover object-top"
-            sizes="(max-width: 768px) 256px, 288px"
-          />
-        </div>
+        <div className="relative w-full h-full rounded-full overflow-hidden border border-gray-200 shadow-md transition-all duration-500 hover:shadow-xl">
+  <Image
+    src="/andretomazelafoto.png"
+    alt="André Tomazela"
+    fill
+    priority
+    className="object-cover object-top transition-transform duration-700 hover:scale-[1.04]"
+    sizes="(max-width: 768px) 256px, 288px"
+  />
+</div>
       </div>
     </div>
 
