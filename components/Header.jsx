@@ -42,7 +42,7 @@ export default function Header() {
 </Link>
 
         {/* MENU DESKTOP */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-7 text-[15px] font-medium">
           <a href="/#servicos" className="hover:text-brand transition">
             Serviços
           </a>
