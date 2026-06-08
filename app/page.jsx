@@ -377,7 +377,7 @@ return (
 
     {/* FOTO */}
     <div className="flex justify-center md:justify-start md:-mt-4">
-      <div className="relative w-64 h-64 md:w-72 md:h-72">
+      <div className="relative w-64 h-64 md:w-80 md:h-80">
 
         <div className="relative w-full h-full rounded-full overflow-hidden border border-gray-200 shadow-md transition-all duration-500 hover:shadow-xl">
   <Image
